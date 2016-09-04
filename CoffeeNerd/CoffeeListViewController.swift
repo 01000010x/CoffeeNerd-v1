@@ -100,7 +100,20 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
         }
         
     }
-
+    
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        
+        //changeCellBackgroundAtIndexPath(indexPath)
+        return indexPath
+    }
+    
+    func changeCellBackgroundAtIndexPath(indexPath: NSIndexPath) {
+        let cell = tableListView.cellForRowAtIndexPath(indexPath) as! CustomCell
+        let cellBackgroundColor = UIColor(red: 81.0/255.0, green: 73.0/255.0, blue: 73.0/255.0, alpha: 1.0)
+        cell.backgroundColor = cellBackgroundColor
+    }
+    
+    
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         (cell as! CustomCell).watchFrameChanges()
     }
