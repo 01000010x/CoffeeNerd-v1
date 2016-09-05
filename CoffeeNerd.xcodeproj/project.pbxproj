@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */; };
+		1DBC959D1D7CD01E00A18D5B /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC959B1D7CD01E00A18D5B /* MenuViewController.xib */; };
+		1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */; };
 		1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */; };
 		1DBDB6DA1D7441DA00C996E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D91D7441DA00C996E1 /* Assets.xcassets */; };
 		1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6DB1D7441DA00C996E1 /* LaunchScreen.storyboard */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1DBC959B1D7CD01E00A18D5B /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CloseMenu.pdf; path = ../../../../Downloads/CloseMenu.pdf; sourceTree = "<group>"; };
 		1DBDB6CF1D7441DA00C996E1 /* CoffeeNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DBDB6D91D7441DA00C996E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 				1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */,
 				1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */,
 				1DBDB6EB1D75638E00C996E1 /* CoffeeDetailsViewController.xib */,
+				1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */,
+				1DBC959B1D7CD01E00A18D5B /* MenuViewController.xib */,
 				1DBDB7251D75998C00C996E1 /* CustomCell.swift */,
 				1DBDB7261D75998C00C996E1 /* CustomCell.xib */,
 				1DBDB7291D75A94B00C996E1 /* Model */,
@@ -165,6 +173,7 @@
 		1DBDB7221D75929E00C996E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */,
 				1DBDB7201D75929A00C996E1 /* MenuButton.pdf */,
 				1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */,
 			);
@@ -252,12 +261,14 @@
 				1DBDB7211D75929A00C996E1 /* MenuButton.pdf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
 				1DBDB71A1D7582C100C996E1 /* Raleway-MediumItalic.ttf in Resources */,
+				1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */,
 				1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */,
 				1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */,
 				1DBDB6DA1D7441DA00C996E1 /* Assets.xcassets in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
 				1DBDB7151D7582C100C996E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
+				1DBC959D1D7CD01E00A18D5B /* MenuViewController.xib in Resources */,
 				1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */,
 				1DBDB71C1D7582C100C996E1 /* Raleway-SemiBold.ttf in Resources */,
 				1DBDB7101D7582C100C996E1 /* Raleway-Bold.ttf in Resources */,
@@ -279,6 +290,7 @@
 				1DBDB6F01D75642500C996E1 /* CoffeeListViewController.swift in Sources */,
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
+				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
 				1DBDB72D1D75B76100C996E1 /* BrewType.swift in Sources */,
 				1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */,
 				1DBDB72B1D75A98100C996E1 /* Coffee.swift in Sources */,

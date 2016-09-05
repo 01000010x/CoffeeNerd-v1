@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let initialViewController = CoffeeListViewController(nibName: "CoffeeListViewController", bundle: nil)
+        let initialViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
         window!.rootViewController = initialViewController
         window!.makeKeyAndVisible()
         
