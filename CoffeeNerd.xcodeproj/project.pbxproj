@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */; };
-		1DBC959D1D7CD01E00A18D5B /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC959B1D7CD01E00A18D5B /* MenuViewController.xib */; };
 		1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */; };
 		1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */; };
-		1DBDB6DA1D7441DA00C996E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D91D7441DA00C996E1 /* Assets.xcassets */; };
 		1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6DB1D7441DA00C996E1 /* LaunchScreen.storyboard */; };
 		1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */; };
 		1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */; };
-		1DBDB6ED1D75638E00C996E1 /* CoffeeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6EB1D75638E00C996E1 /* CoffeeDetailsViewController.xib */; };
 		1DBDB6F01D75642500C996E1 /* CoffeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6EE1D75642500C996E1 /* CoffeeListViewController.swift */; };
-		1DBDB6F11D75642500C996E1 /* CoffeeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6EF1D75642500C996E1 /* CoffeeListViewController.xib */; };
 		1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6FA1D7582C100C996E1 /* OFL.txt */; };
 		1DBDB70E1D7582C100C996E1 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6FB1D7582C100C996E1 /* Raleway-Black.ttf */; };
 		1DBDB70F1D7582C100C996E1 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6FC1D7582C100C996E1 /* Raleway-BlackItalic.ttf */; };
@@ -37,28 +33,48 @@
 		1DBDB71D1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB70A1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf */; };
 		1DBDB71E1D7582C100C996E1 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB70B1D7582C100C996E1 /* Raleway-Thin.ttf */; };
 		1DBDB71F1D7582C100C996E1 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB70C1D7582C100C996E1 /* Raleway-ThinItalic.ttf */; };
-		1DBDB7211D75929A00C996E1 /* MenuButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB7201D75929A00C996E1 /* MenuButton.pdf */; };
 		1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */; };
 		1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB7251D75998C00C996E1 /* CustomCell.swift */; };
 		1DBDB7281D75998C00C996E1 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB7261D75998C00C996E1 /* CustomCell.xib */; };
 		1DBDB72B1D75A98100C996E1 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB72A1D75A98100C996E1 /* Coffee.swift */; };
 		1DBDB72D1D75B76100C996E1 /* BrewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB72C1D75B76100C996E1 /* BrewType.swift */; };
+		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
+		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
+		1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35281D847B0C004086F7 /* Shop.pdf */; };
+		1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35301D847FF9004086F7 /* Main.storyboard */; };
+		1DCC35431D8592F3004086F7 /* ColdBrewWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35321D8592F3004086F7 /* ColdBrewWhite.pdf */; };
+		1DCC35441D8592F3004086F7 /* EspressoWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35331D8592F3004086F7 /* EspressoWhite.pdf */; };
+		1DCC35451D8592F3004086F7 /* FrenchPressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35341D8592F3004086F7 /* FrenchPressWhite.pdf */; };
+		1DCC35461D8592F3004086F7 /* FilterWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35351D8592F3004086F7 /* FilterWhite.pdf */; };
+		1DCC35471D8592F3004086F7 /* AeropressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35361D8592F3004086F7 /* AeropressWhite.pdf */; };
+		1DCC35481D8592F3004086F7 /* ItalienneWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35371D8592F3004086F7 /* ItalienneWhite.pdf */; };
+		1DCC35491D8592F3004086F7 /* SiphonWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35381D8592F3004086F7 /* SiphonWhite.pdf */; };
+		1DCC354A1D8592F3004086F7 /* Espresso.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35391D8592F3004086F7 /* Espresso.pdf */; };
+		1DCC354B1D8592F3004086F7 /* Italienne.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC353A1D8592F3004086F7 /* Italienne.pdf */; };
+		1DCC354D1D8592F3004086F7 /* ColdBrew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC353C1D8592F3004086F7 /* ColdBrew.pdf */; };
+		1DCC354E1D8592F3004086F7 /* Siphon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC353D1D8592F3004086F7 /* Siphon.pdf */; };
+		1DCC354F1D8592F3004086F7 /* Aeropress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC353E1D8592F3004086F7 /* Aeropress.pdf */; };
+		1DCC35501D8592F3004086F7 /* FrenchPress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC353F1D8592F3004086F7 /* FrenchPress.pdf */; };
+		1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */; };
+		1DCC35571D8593A9004086F7 /* Filter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35551D8593A9004086F7 /* Filter.pdf */; };
+		1DCC35591D85942F004086F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35581D85942F004086F7 /* Assets.xcassets */; };
+		1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */; };
+		1DCC355F1D860CF1004086F7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */; };
+		1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35601D860F6E004086F7 /* ProjectColors.swift */; };
+		1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */; };
+		1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		1DBC959B1D7CD01E00A18D5B /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CloseMenu.pdf; path = ../../../../Downloads/CloseMenu.pdf; sourceTree = "<group>"; };
 		1DBDB6CF1D7441DA00C996E1 /* CoffeeNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DBDB6D91D7441DA00C996E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DBDB6DC1D7441DA00C996E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DBDB6DE1D7441DA00C996E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CellDescriptor.plist; path = ../../../../Downloads/CellDescriptor.plist; sourceTree = "<group>"; };
 		1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsViewController.swift; sourceTree = "<group>"; };
-		1DBDB6EB1D75638E00C996E1 /* CoffeeDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoffeeDetailsViewController.xib; sourceTree = "<group>"; };
 		1DBDB6EE1D75642500C996E1 /* CoffeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListViewController.swift; sourceTree = "<group>"; };
-		1DBDB6EF1D75642500C996E1 /* CoffeeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoffeeListViewController.xib; sourceTree = "<group>"; };
 		1DBDB6FA1D7582C100C996E1 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OFL.txt; path = ../../../../Downloads/Raleway/OFL.txt; sourceTree = "<group>"; };
 		1DBDB6FB1D7582C100C996E1 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Black.ttf"; path = "../../../../Downloads/Raleway/Raleway-Black.ttf"; sourceTree = "<group>"; };
 		1DBDB6FC1D7582C100C996E1 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BlackItalic.ttf"; path = "../../../../Downloads/Raleway/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -78,12 +94,36 @@
 		1DBDB70A1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBoldItalic.ttf"; path = "../../../../Downloads/Raleway/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		1DBDB70B1D7582C100C996E1 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "../../../../Downloads/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		1DBDB70C1D7582C100C996E1 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ThinItalic.ttf"; path = "../../../../Downloads/Raleway/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
-		1DBDB7201D75929A00C996E1 /* MenuButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MenuButton.pdf; path = ../../../../Downloads/MenuButton.pdf; sourceTree = "<group>"; };
 		1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Magnifier.pdf; path = ../../../../Downloads/Magnifier.pdf; sourceTree = "<group>"; };
 		1DBDB7251D75998C00C996E1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1DBDB7261D75998C00C996E1 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		1DBDB72A1D75A98100C996E1 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		1DBDB72C1D75B76100C996E1 /* BrewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewType.swift; sourceTree = "<group>"; };
+		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
+		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
+		1DCC35281D847B0C004086F7 /* Shop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Shop.pdf; path = ../../../../Downloads/Shop.pdf; sourceTree = "<group>"; };
+		1DCC35301D847FF9004086F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1DCC35321D8592F3004086F7 /* ColdBrewWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrewWhite.pdf; path = ../../../../Downloads/ColdBrewWhite.pdf; sourceTree = "<group>"; };
+		1DCC35331D8592F3004086F7 /* EspressoWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EspressoWhite.pdf; path = ../../../../Downloads/EspressoWhite.pdf; sourceTree = "<group>"; };
+		1DCC35341D8592F3004086F7 /* FrenchPressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPressWhite.pdf; path = ../../../../Downloads/FrenchPressWhite.pdf; sourceTree = "<group>"; };
+		1DCC35351D8592F3004086F7 /* FilterWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FilterWhite.pdf; path = ../../../../Downloads/FilterWhite.pdf; sourceTree = "<group>"; };
+		1DCC35361D8592F3004086F7 /* AeropressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite.pdf; path = ../../../../Downloads/AeropressWhite.pdf; sourceTree = "<group>"; };
+		1DCC35371D8592F3004086F7 /* ItalienneWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ItalienneWhite.pdf; path = ../../../../Downloads/ItalienneWhite.pdf; sourceTree = "<group>"; };
+		1DCC35381D8592F3004086F7 /* SiphonWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SiphonWhite.pdf; path = ../../../../Downloads/SiphonWhite.pdf; sourceTree = "<group>"; };
+		1DCC35391D8592F3004086F7 /* Espresso.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Espresso.pdf; path = ../../../../Downloads/Espresso.pdf; sourceTree = "<group>"; };
+		1DCC353A1D8592F3004086F7 /* Italienne.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Italienne.pdf; path = ../../../../Downloads/Italienne.pdf; sourceTree = "<group>"; };
+		1DCC353C1D8592F3004086F7 /* ColdBrew.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrew.pdf; path = ../../../../Downloads/ColdBrew.pdf; sourceTree = "<group>"; };
+		1DCC353D1D8592F3004086F7 /* Siphon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Siphon.pdf; path = ../../../../Downloads/Siphon.pdf; sourceTree = "<group>"; };
+		1DCC353E1D8592F3004086F7 /* Aeropress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Aeropress.pdf; path = ../../../../Downloads/Aeropress.pdf; sourceTree = "<group>"; };
+		1DCC353F1D8592F3004086F7 /* FrenchPress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPress.pdf; path = ../../../../Downloads/FrenchPress.pdf; sourceTree = "<group>"; };
+		1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MenuButtonBrown.pdf; path = ../../../../Downloads/MenuButtonBrown.pdf; sourceTree = "<group>"; };
+		1DCC35551D8593A9004086F7 /* Filter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Filter.pdf; path = ../../../../Downloads/Filter.pdf; sourceTree = "<group>"; };
+		1DCC35581D85942F004086F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerCup.pdf; path = ../../../../Downloads/TimerCup.pdf; sourceTree = "<group>"; };
+		1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1DCC35601D860F6E004086F7 /* ProjectColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
+		1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawBorders.swift"; sourceTree = "<group>"; };
+		1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawLines.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,16 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */,
-				1DBDB6EE1D75642500C996E1 /* CoffeeListViewController.swift */,
-				1DBDB6EF1D75642500C996E1 /* CoffeeListViewController.xib */,
-				1DBDB6DB1D7441DA00C996E1 /* LaunchScreen.storyboard */,
-				1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */,
-				1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */,
-				1DBDB6EB1D75638E00C996E1 /* CoffeeDetailsViewController.xib */,
-				1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */,
-				1DBC959B1D7CD01E00A18D5B /* MenuViewController.xib */,
-				1DBDB7251D75998C00C996E1 /* CustomCell.swift */,
-				1DBDB7261D75998C00C996E1 /* CustomCell.xib */,
+				1DCC355B1D85D326004086F7 /* Interface */,
+				1DCC355A1D85D31A004086F7 /* Controller */,
 				1DBDB7291D75A94B00C996E1 /* Model */,
 				1DBDB6F61D75823B00C996E1 /* Ressources */,
 			);
@@ -136,8 +168,12 @@
 		1DBDB6F61D75823B00C996E1 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				1DBDB6D91D7441DA00C996E1 /* Assets.xcassets */,
+				1DCC35581D85942F004086F7 /* Assets.xcassets */,
 				1DBDB6DE1D7441DA00C996E1 /* Info.plist */,
+				1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */,
+				1DCC35601D860F6E004086F7 /* ProjectColors.swift */,
+				1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */,
+				1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */,
 				1DBDB7221D75929E00C996E1 /* Images */,
 				1DBDB6F71D75824A00C996E1 /* Fonts */,
 			);
@@ -173,9 +209,27 @@
 		1DBDB7221D75929E00C996E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */,
-				1DBDB7201D75929A00C996E1 /* MenuButton.pdf */,
+				1DCC35321D8592F3004086F7 /* ColdBrewWhite.pdf */,
+				1DCC35331D8592F3004086F7 /* EspressoWhite.pdf */,
+				1DCC35341D8592F3004086F7 /* FrenchPressWhite.pdf */,
+				1DCC35351D8592F3004086F7 /* FilterWhite.pdf */,
+				1DCC35361D8592F3004086F7 /* AeropressWhite.pdf */,
+				1DCC35371D8592F3004086F7 /* ItalienneWhite.pdf */,
+				1DCC35381D8592F3004086F7 /* SiphonWhite.pdf */,
+				1DCC35391D8592F3004086F7 /* Espresso.pdf */,
+				1DCC353A1D8592F3004086F7 /* Italienne.pdf */,
+				1DCC353C1D8592F3004086F7 /* ColdBrew.pdf */,
+				1DCC353D1D8592F3004086F7 /* Siphon.pdf */,
+				1DCC353E1D8592F3004086F7 /* Aeropress.pdf */,
+				1DCC353F1D8592F3004086F7 /* FrenchPress.pdf */,
+				1DCC35271D847B0C004086F7 /* TimerIcon.pdf */,
+				1DCC35281D847B0C004086F7 /* Shop.pdf */,
+				1DCC35231D847A8D004086F7 /* Origin.pdf */,
 				1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */,
+				1DCC35551D8593A9004086F7 /* Filter.pdf */,
+				1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */,
+				1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */,
+				1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -187,6 +241,28 @@
 				1DBDB72A1D75A98100C996E1 /* Coffee.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		1DCC355A1D85D31A004086F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDB6EE1D75642500C996E1 /* CoffeeListViewController.swift */,
+				1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */,
+				1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */,
+				1DBDB7251D75998C00C996E1 /* CustomCell.swift */,
+				1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1DCC355B1D85D326004086F7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDB7261D75998C00C996E1 /* CustomCell.xib */,
+				1DCC35301D847FF9004086F7 /* Main.storyboard */,
+				1DBDB6DB1D7441DA00C996E1 /* LaunchScreen.storyboard */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,34 +325,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBDB7131D7582C100C996E1 /* Raleway-ExtraBoldItalic.ttf in Resources */,
-				1DBDB6F11D75642500C996E1 /* CoffeeListViewController.xib in Resources */,
 				1DBDB7281D75998C00C996E1 /* CustomCell.xib in Resources */,
+				1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */,
+				1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */,
 				1DBDB7141D7582C100C996E1 /* Raleway-ExtraLight.ttf in Resources */,
+				1DCC354D1D8592F3004086F7 /* ColdBrew.pdf in Resources */,
+				1DCC35441D8592F3004086F7 /* EspressoWhite.pdf in Resources */,
+				1DCC354A1D8592F3004086F7 /* Espresso.pdf in Resources */,
+				1DCC35461D8592F3004086F7 /* FilterWhite.pdf in Resources */,
 				1DBDB70E1D7582C100C996E1 /* Raleway-Black.ttf in Resources */,
 				1DBDB71E1D7582C100C996E1 /* Raleway-Thin.ttf in Resources */,
 				1DBDB7161D7582C100C996E1 /* Raleway-Italic.ttf in Resources */,
 				1DBDB7111D7582C100C996E1 /* Raleway-BoldItalic.ttf in Resources */,
-				1DBDB6ED1D75638E00C996E1 /* CoffeeDetailsViewController.xib in Resources */,
+				1DCC35451D8592F3004086F7 /* FrenchPressWhite.pdf in Resources */,
+				1DCC35481D8592F3004086F7 /* ItalienneWhite.pdf in Resources */,
 				1DBDB7121D7582C100C996E1 /* Raleway-ExtraBold.ttf in Resources */,
-				1DBDB7211D75929A00C996E1 /* MenuButton.pdf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
+				1DCC35571D8593A9004086F7 /* Filter.pdf in Resources */,
 				1DBDB71A1D7582C100C996E1 /* Raleway-MediumItalic.ttf in Resources */,
+				1DCC35491D8592F3004086F7 /* SiphonWhite.pdf in Resources */,
 				1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */,
+				1DCC354B1D8592F3004086F7 /* Italienne.pdf in Resources */,
+				1DCC35591D85942F004086F7 /* Assets.xcassets in Resources */,
 				1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */,
 				1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */,
-				1DBDB6DA1D7441DA00C996E1 /* Assets.xcassets in Resources */,
+				1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */,
+				1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */,
+				1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */,
+				1DCC354F1D8592F3004086F7 /* Aeropress.pdf in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
 				1DBDB7151D7582C100C996E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
-				1DBC959D1D7CD01E00A18D5B /* MenuViewController.xib in Resources */,
 				1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */,
 				1DBDB71C1D7582C100C996E1 /* Raleway-SemiBold.ttf in Resources */,
+				1DCC354E1D8592F3004086F7 /* Siphon.pdf in Resources */,
 				1DBDB7101D7582C100C996E1 /* Raleway-Bold.ttf in Resources */,
 				1DBDB7171D7582C100C996E1 /* Raleway-Light.ttf in Resources */,
 				1DBDB7191D7582C100C996E1 /* Raleway-Medium.ttf in Resources */,
 				1DBDB71D1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				1DBDB71F1D7582C100C996E1 /* Raleway-ThinItalic.ttf in Resources */,
+				1DCC35431D8592F3004086F7 /* ColdBrewWhite.pdf in Resources */,
+				1DCC35471D8592F3004086F7 /* AeropressWhite.pdf in Resources */,
 				1DBDB70F1D7582C100C996E1 /* Raleway-BlackItalic.ttf in Resources */,
+				1DCC35501D8592F3004086F7 /* FrenchPress.pdf in Resources */,
+				1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +383,13 @@
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
 				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
+				1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */,
+				1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */,
+				1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */,
 				1DBDB72D1D75B76100C996E1 /* BrewType.swift in Sources */,
 				1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */,
 				1DBDB72B1D75A98100C996E1 /* Coffee.swift in Sources */,
+				1DCC355F1D860CF1004086F7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

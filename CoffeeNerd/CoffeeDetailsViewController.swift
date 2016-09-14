@@ -10,10 +10,17 @@ import UIKit
 
 class CoffeeDetailsViewController: UIViewController {
 
+    @IBOutlet var containerBottomView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        drawAllSeparatorLines()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +28,13 @@ class CoffeeDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func drawAllSeparatorLines() {
+        // Draw 1st line (under menu view)
+        let start = CGPointMake(containerBottomView.frame.width / 10.0, 0)
+        let end = CGPointMake(containerBottomView.frame.width - (containerBottomView.frame.width / 10.0), 0)
+        containerBottomView.drawLine(start, end: end, color: UIColor.whiteColor())
+    }
+    
     /*
     // MARK: - Navigation
 
