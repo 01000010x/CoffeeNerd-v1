@@ -34,18 +34,18 @@ class MenuViewController: UIViewController {
     
     func drawAllSeparatorLines() {
         // Draw 1st line (under menu view)
-        var start = CGPointMake(0, 0)
-        var end = CGPointMake(underMenuView.frame.width, 0)
+        var start = CGPoint(x: 0, y: 0)
+        var end = CGPoint(x: underMenuView.frame.width, y: 0)
         underMenuView.drawLine(start, end: end, color: ProjectColors.SeparatorColor.LightGrey)
         
         // Draw 2nd line (under settings view)
-        start = CGPointMake(20, underSettingsView.frame.height / 2)
-        end = CGPointMake(underSettingsView.frame.size.width - 20, underSettingsView.frame.height / 2)
+        start = CGPoint(x: 20, y: underSettingsView.frame.height / 2)
+        end = CGPoint(x: underSettingsView.frame.size.width - 20, y: underSettingsView.frame.height / 2)
         underSettingsView.drawLine(start, end: end, color: ProjectColors.SeparatorColor.DarkGrey)
         
         // Draw 3rd line (under your coffee view)
-        start = CGPointMake(20, underYourCoffeeView.frame.height / 2)
-        end = CGPointMake(underYourCoffeeView.frame.width - 20, underYourCoffeeView.frame.height / 2)
+        start = CGPoint(x: 20, y: underYourCoffeeView.frame.height / 2)
+        end = CGPoint(x: underYourCoffeeView.frame.width - 20, y: underYourCoffeeView.frame.height / 2)
         underYourCoffeeView.drawLine(start, end: end, color: ProjectColors.SeparatorColor.DarkGrey)
     }
     

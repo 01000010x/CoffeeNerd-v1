@@ -30,9 +30,9 @@ class CoffeeDetailsViewController: UIViewController {
     
     func drawAllSeparatorLines() {
         // Draw 1st line (under menu view)
-        let start = CGPointMake(containerBottomView.frame.width / 10.0, 0)
-        let end = CGPointMake(containerBottomView.frame.width - (containerBottomView.frame.width / 10.0), 0)
-        containerBottomView.drawLine(start, end: end, color: UIColor.whiteColor())
+        let start = CGPoint(x: containerBottomView.frame.width / 10.0, y: 0)
+        let end = CGPoint(x: containerBottomView.frame.width - (containerBottomView.frame.width / 10.0), y: 0)
+        containerBottomView.drawLine(start, end: end, color: UIColor.white)
     }
     
     /*

@@ -11,7 +11,7 @@ import UIKit
 
 extension UIView {
     
-    func drawButtonBorders(sides: [String], color: UIColor) {
+    func drawButtonBorders(_ sides: [String], color: UIColor) {
         for side: String in sides {
             switch side {
             case "Left":
@@ -28,31 +28,31 @@ extension UIView {
         }
     }
     
-    func drawBottomLine(color: UIColor) {
+    func drawBottomLine(_ color: UIColor) {
         let bottomBorder = CALayer()
-        bottomBorder.frame = CGRectMake(0.0, self.frame.height-1, self.frame.width, 1)
-        bottomBorder.backgroundColor = color.CGColor
+        bottomBorder.frame = CGRect(x: 0.0, y: self.frame.height-1, width: self.frame.width, height: 1)
+        bottomBorder.backgroundColor = color.cgColor
         self.layer.addSublayer(bottomBorder)
     }
     
-    func drawTopLine(color: UIColor) {
+    func drawTopLine(_ color: UIColor) {
         let topBorder = CALayer()
-        topBorder.frame = CGRectMake(0.0, 0.0, self.frame.width, 1)
-        topBorder.backgroundColor = color.CGColor
+        topBorder.frame = CGRect(x: 0.0, y: 0.0, width: self.frame.width, height: 1)
+        topBorder.backgroundColor = color.cgColor
         self.layer.addSublayer(topBorder)
     }
     
-    func drawRightLine(color: UIColor) {
+    func drawRightLine(_ color: UIColor) {
         let rightBorder = CALayer()
-        rightBorder.frame = CGRectMake(self.frame.width-1, 0.0, 1.0, self.frame.height)
-        rightBorder.backgroundColor = color.CGColor
+        rightBorder.frame = CGRect(x: self.frame.width-1, y: 0.0, width: 1.0, height: self.frame.height)
+        rightBorder.backgroundColor = color.cgColor
         self.layer.addSublayer(rightBorder)
     }
     
-    func drawLeftLine(color: UIColor) {
+    func drawLeftLine(_ color: UIColor) {
         let leftBorder = CALayer()
-        leftBorder.frame = CGRectMake(0.0, 0.0, 1.0, self.frame.height)
-        leftBorder.backgroundColor = color.CGColor
+        leftBorder.frame = CGRect(x: 0.0, y: 0.0, width: 1.0, height: self.frame.height)
+        leftBorder.backgroundColor = color.cgColor
         self.layer.addSublayer(leftBorder)
     }
 }

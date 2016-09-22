@@ -30,7 +30,7 @@ class CustomCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
@@ -38,26 +38,26 @@ class CustomCell: UITableViewCell {
     
     func checkHeight() {
         if frame.size.height < CustomCell.expandedHeight {
-            button1.hidden = true
-            button2.hidden = true
-            button3.hidden = true
-            button4.hidden = true
-            button5.hidden = true
-            button6.hidden = true
+            button1.isHidden = true
+            button2.isHidden = true
+            button3.isHidden = true
+            button4.isHidden = true
+            button5.isHidden = true
+            button6.isHidden = true
         } else {
-            button1.hidden = false
-            button2.hidden = false
-            button3.hidden = false
-            button4.hidden = false
-            button5.hidden = false
-            button6.hidden = false
+            button1.isHidden = false
+            button2.isHidden = false
+            button3.isHidden = false
+            button4.isHidden = false
+            button5.isHidden = false
+            button6.isHidden = false
         }
     }
     
     
     func watchFrameChanges() {
         if !isObserving {
-            addObserver(self, forKeyPath: "frame", options: [NSKeyValueObservingOptions.New, NSKeyValueObservingOptions.Initial], context: nil)
+            addObserver(self, forKeyPath: "frame", options: [NSKeyValueObservingOptions.new, NSKeyValueObservingOptions.initial], context: nil)
             isObserving = true
         }
     }
@@ -70,7 +70,7 @@ class CustomCell: UITableViewCell {
         }
     }
     
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "frame" {
             checkHeight()
         }

@@ -12,16 +12,16 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
 
     @IBOutlet var tableListView: UITableView!
     
-    let textCellIdentifier = "customCell"
+    let textCellIdentifier = "coffeeCell"
     var coffeeList: [Coffee]?
-    var selectedIndexPath: NSIndexPath?
+    var selectedIndexPath: IndexPath?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Register the nib containing the cell
-        tableListView.registerNib(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: textCellIdentifier)
+       // tableListView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: textCellIdentifier)
         
         // Initialising the coffe list
         initCoffeeList()
@@ -38,11 +38,11 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
         super.didReceiveMemoryWarning()
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let coffeeListProvided = coffeeList {
             return coffeeListProvided.count
         } else {
@@ -50,10 +50,11 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("customCell", forIndexPath: indexPath) as! CustomCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
         
-        if let coffeeListProvided = coffeeList, let coffeeProvided: Coffee = coffeeListProvided[indexPath.row] {
+        if let coffeeListProvided = coffeeList {
+            let coffeeProvided: Coffee = coffeeListProvided[(indexPath as NSIndexPath).row]
             cell.name.text = coffeeProvided.name
             cell.country.text = coffeeProvided.country
         }
@@ -78,7 +79,7 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
         coffeeList?.append(coffeeFive)
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let previousIndexPath = selectedIndexPath
         
         if indexPath == selectedIndexPath {
@@ -87,7 +88,7 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
             selectedIndexPath = indexPath
         }
         
-        var indexPaths: [NSIndexPath] = []
+        var indexPaths: [IndexPath] = []
         if let previous = previousIndexPath {
             indexPaths.append(previous)
         }
@@ -96,40 +97,37 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableVi
             indexPaths.append(current)
         }
         if indexPaths.count > 0 {
-            tableListView.reloadRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
+            tableListView.reloadRows(at: indexPaths, with: UITableViewRowAnimation.automatic)
         }
         
     }
     
-    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         
         //changeCellBackgroundAtIndexPath(indexPath)
         return indexPath
     }
     
-    func changeCellBackgroundAtIndexPath(indexPath: NSIndexPath) {
-        let cell = tableListView.cellForRowAtIndexPath(indexPath) as! CustomCell
+    func changeCellBackgroundAtIndexPath(_ indexPath: IndexPath) {
+        let cell = tableListView.cellForRow(at: indexPath) as! CustomCell
         let cellBackgroundColor = UIColor(red: 81.0/255.0, green: 73.0/255.0, blue: 73.0/255.0, alpha: 1.0)
         cell.backgroundColor = cellBackgroundColor
     }
     
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         (cell as! CustomCell).watchFrameChanges()
     }
     
-    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         (cell as! CustomCell).ignoreFrameChanges()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        for cell in tableListView.visibleCells as! [CustomCell] {
-            cell.ignoreFrameChanges()
-        }
     }
      
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath == selectedIndexPath {
             return CustomCell.expandedHeight
         } else {

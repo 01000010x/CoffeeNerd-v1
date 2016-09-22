@@ -11,16 +11,16 @@ import UIKit
 
 extension UIView {
     
-    func drawLine(start: CGPoint, end: CGPoint, color: UIColor) {
+    func drawLine(_ start: CGPoint, end: CGPoint, color: UIColor) {
         //design the path
         let path = UIBezierPath()
-        path.moveToPoint(start)
-        path.addLineToPoint(end)
+        path.move(to: start)
+        path.addLine(to: end)
         
         //design path in layer
         let shapeLayer = CAShapeLayer()
-        shapeLayer.path = path.CGPath
-        shapeLayer.strokeColor = color.CGColor
+        shapeLayer.path = path.cgPath
+        shapeLayer.strokeColor = color.cgColor
         shapeLayer.lineWidth = 1.0
         
         self.layer.addSublayer(shapeLayer)
