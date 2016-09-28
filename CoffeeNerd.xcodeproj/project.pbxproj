@@ -13,6 +13,8 @@
 		1D065A431D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A421D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift */; };
 		1D065A4F1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */; };
 		1D494F651D944B09008A07C5 /* CoffeeListExpendableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F641D944B09008A07C5 /* CoffeeListExpendableCell.swift */; };
+		1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */; };
+		1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */; };
 		1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */; };
 		1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */; };
 		1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */; };
@@ -80,6 +82,8 @@
 		1D065A421D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SelectiveRoundedCorners.swift"; sourceTree = "<group>"; };
 		1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ChangeAppearanceBasedOnState.swift"; sourceTree = "<group>"; };
 		1D494F641D944B09008A07C5 /* CoffeeListExpendableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListExpendableCell.swift; sourceTree = "<group>"; };
+		1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeViewController.swift; sourceTree = "<group>"; };
+		1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeCell.swift; sourceTree = "<group>"; };
 		1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CloseMenu.pdf; path = ../../../../Downloads/CloseMenu.pdf; sourceTree = "<group>"; };
 		1DBDB6CF1D7441DA00C996E1 /* CoffeeNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +176,7 @@
 				1D065A3C1D8C8860002231A1 /* HeaderReusableCell.swift */,
 				1D494F641D944B09008A07C5 /* CoffeeListExpendableCell.swift */,
 				1D065A401D8C9F8F002231A1 /* FooterReusableCell.swift */,
+				1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */,
 				1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */,
 				1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */,
+				1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -424,11 +430,13 @@
 				1DBDB6F01D75642500C996E1 /* CoffeeListViewController.swift in Sources */,
 				1D494F651D944B09008A07C5 /* CoffeeListExpendableCell.swift in Sources */,
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
+				1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */,
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
 				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
 				1D065A3F1D8C88CB002231A1 /* SettingCellView.swift in Sources */,
 				1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */,
 				1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */,
+				1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */,
 				1D065A431D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift in Sources */,
 				1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */,
 				1D065A4F1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift in Sources */,

@@ -168,11 +168,15 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     
+    // Replace saving / loading and controller var : weightUnitSelected and settingsList with a CoffeeSettings Class and a
+    // a singleton design pattern on app delegate level.
+    // instead of creating the load functions and the two variables in each controller needed it
     func saveSettings() {
         NSKeyedArchiver.archiveRootObject(settingsList, toFile: itemArchiveURL.path!)
         let defaults = UserDefaults.standard
         defaults.set(weightUnitSelected, forKey: "weightSetting")
     }
+    
     
     func loadSettings() {
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
@@ -187,6 +191,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         }
     }
 
+    // END OF REPLACEMENT 
     
     // MARK: IBActions
     
