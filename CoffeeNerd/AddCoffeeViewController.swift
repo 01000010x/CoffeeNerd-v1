@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,6 +16,8 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet var shopTextField: UITextField!
     @IBOutlet var caffeinatedSegmentedControl: UISegmentedControl!
     @IBOutlet var validateButton: UIButton!
+    
+    let dataController = DataController.sharedInstance
     
     let itemArchiveURL: NSURL = {
         let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -27,14 +30,17 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         case ounces
     }
     
+    var coffeeListFromDB = [NSManagedObject]()
+    var brewTypeList = [NSManagedObject]()
+    
     var weightUnitSelected: String = WeightUnit.grams.rawValue
     var settingsList: [BrewSetting] = []
     var settingsListPosessed: [BrewSetting] = []
+    var coffeeBean: CoffeeBean?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureHeaderTextFields()
-        loadSettings()
         
     }
 
@@ -52,9 +58,14 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         shopTextField.drawBottomLine(separatorColor, padding: padding)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadSettings()
+        fetchCoffeeBean()
+        didThisWork()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return settingsListPosessed.count
     }
     
@@ -98,7 +109,48 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func validateButtonTapped(_ sender: UIButton) {
+        saveCoffeeBeans()
+        self.navigationController?.popViewController(animated: true)
         
+    }
+    
+    func saveCoffeeBeans() {
+        let managedContext = dataController.managedObjectContext
+        let entity =  NSEntityDescription.entity(forEntityName: CoffeeBean.identifier, in:managedContext)
         
+        let newCoffeeBean = NSManagedObject(entity: entity!, insertInto: managedContext)
+        newCoffeeBean.setValue(nameTextField.text, forKey: "name")
+        newCoffeeBean.setValue(originTextField.text, forKey: "origin")
+        newCoffeeBean.setValue(shopTextField.text, forKey: "shop")
+        newCoffeeBean.setValue(true, forKey: "isCaffeinated")
+        
+        // Créer les BrewType aussi
+        // Ajouter les BrewType au coffeeBean
+    
+        do {
+            try managedContext.save()
+            dismiss(animated: true, completion: nil)
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+    func fetchCoffeeBean() {
+        let managedContext = dataController.managedObjectContext
+        let fetchRequest = NSFetchRequest<CoffeeBean>(entityName: "CoffeeBean")
+        // try let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "CoffeeBean")
+        
+        do {
+            let results = try managedContext.fetch(fetchRequest as! NSFetchRequest<NSFetchRequestResult>)
+            coffeeListFromDB = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }
+    
+    func didThisWork() {
+        for coffeeBean in coffeeListFromDB {
+            print(coffeeBean.value(forKey: "name"))
+        }
     }
 }

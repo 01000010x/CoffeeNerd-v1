@@ -7,131 +7,65 @@
 //
 
 import UIKit
+import CoreData
 
-class CoffeeListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class CoffeeListViewController: UIViewController, UITableViewDelegate {
     @IBOutlet var tableListView: UITableView!
+    @IBOutlet var addCoffeeButton: UIButton!
     
     let textCellIdentifier = "coffeeCell"
-    var coffeeList: [Coffee]?
-    var selectedIndexPath: IndexPath?
-    
+        
+    lazy var dataSource: CoffeeListDataSource = {
+        return CoffeeListDataSource(tableView: self.tableListView)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Register the nib containing the cell
-       // tableListView.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: textCellIdentifier)
-        
-        // Initialising the coffe list
-        initCoffeeList()
-        
-        if let coffeeListProvided = coffeeList {
-            for i in 0..<coffeeListProvided.count {
-                print(i)
-            }
-        }
-
+        self.tableListView.dataSource = dataSource
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let coffeeListProvided = coffeeList {
-            return coffeeListProvided.count
-        } else {
-            return 0
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
-        
-        if let coffeeListProvided = coffeeList {
-            let coffeeProvided: Coffee = coffeeListProvided[(indexPath as NSIndexPath).row]
-            cell.name.text = coffeeProvided.name
-            cell.country.text = coffeeProvided.country
-        }
-        
-        return cell
-    }
-    
-    func initCoffeeList() {
-        // Acces base de donnees et remplir tableau avec une liste de cafés
-        
-        // temporaire, cafés en dur
-        let coffeeOne = Coffee(name: "Moka Sidamo", country: "Colombie", shop: "brulerie de ternes", brewTypeArray: nil)
-        let coffeeTwo = Coffee(name: "Guat middle", country: "Guatemala", shop: "brulerie de ternes", brewTypeArray: nil)
-        let coffeeThree = Coffee(name: "Murasami", country: "Ethiopie", shop: "Escargot d'or", brewTypeArray: nil)
-        let coffeeFour = Coffee(name: "Baby Honey", country: "Japon", shop: "Escargot d'or", brewTypeArray: nil)
-        let coffeeFive = Coffee(name: "Geisha", country: "Brésil", shop: "Café Lanni", brewTypeArray: nil)
-        
-        coffeeList = [coffeeOne]
-        coffeeList?.append(coffeeTwo)
-        coffeeList?.append(coffeeThree)
-        coffeeList?.append(coffeeFour)
-        coffeeList?.append(coffeeFive)
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let previousIndexPath = selectedIndexPath
-        
-        if indexPath == selectedIndexPath {
-            selectedIndexPath = nil
-        } else {
-            selectedIndexPath = indexPath
-        }
-        
-        var indexPaths: [IndexPath] = []
-        if let previous = previousIndexPath {
-            indexPaths.append(previous)
-        }
-        
-        if let current = selectedIndexPath {
-            indexPaths.append(current)
-        }
-        if indexPaths.count > 0 {
-            tableListView.reloadRows(at: indexPaths, with: UITableViewRowAnimation.automatic)
-        }
-        
-    }
-    
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        
-        //changeCellBackgroundAtIndexPath(indexPath)
-        return indexPath
-    }
-    
-    func changeCellBackgroundAtIndexPath(_ indexPath: IndexPath) {
-        let cell = tableListView.cellForRow(at: indexPath) as! CustomCell
-        let cellBackgroundColor = UIColor(red: 81.0/255.0, green: 73.0/255.0, blue: 73.0/255.0, alpha: 1.0)
-        cell.backgroundColor = cellBackgroundColor
-    }
-    
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        (cell as! CustomCell).watchFrameChanges()
-    }
-    
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        (cell as! CustomCell).ignoreFrameChanges()
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
-     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath == selectedIndexPath {
-            return CustomCell.expandedHeight
-        } else {
-            return CustomCell.defaultHeight
+    
+    // MARK: UITableViewDelegate
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+            let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "AddCoffeeController") as! AddCoffeeViewController
+            let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath)
+            destinationController.coffeeBean = selectedCoffeeBean
+            self.present(destinationController, animated:true, completion: nil)
+        }
+        edit.backgroundColor = ProjectColors.Grey.Faded
+        
+        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+            let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath) as NSManagedObject
+            self.dataSource.managedObjectContext.delete(selectedCoffeeBean) // créer une méhode dans le data source nan ?
+            DataController.sharedInstance.saveContext()
+        }
+        
+        delete.backgroundColor = ProjectColors.Red
+        
+        return [edit, delete]
+    }
+    
+    
+    // MARK: FetchedResultsControllerDelegate
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableListView.reloadData()
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailsViewSegue" {
+            guard let destinationController = segue.destination as? CoffeeDetailsViewController, let indexPath = tableListView.indexPathForSelectedRow else { return }
+            
+            let coffeeBeanSelected = self.dataSource.object(atIndexPath: indexPath)
+            destinationController.coffeeBean = coffeeBeanSelected
         }
     }
 }

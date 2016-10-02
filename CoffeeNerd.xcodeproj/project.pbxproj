@@ -44,8 +44,14 @@
 		1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */; };
 		1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB7251D75998C00C996E1 /* CustomCell.swift */; };
 		1DBDB7281D75998C00C996E1 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB7261D75998C00C996E1 /* CustomCell.xib */; };
-		1DBDB72B1D75A98100C996E1 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB72A1D75A98100C996E1 /* Coffee.swift */; };
-		1DBDB72D1D75B76100C996E1 /* BrewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB72C1D75B76100C996E1 /* BrewType.swift */; };
+		1DC8AFBF1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */; };
+		1DC8AFC31D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFC11D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld */; };
+		1DC8AFDA1D9D27FF00478934 /* BrewType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFD81D9D27FF00478934 /* BrewType+CoreDataClass.swift */; };
+		1DC8AFDD1D9D288A00478934 /* BrewType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFDC1D9D288A00478934 /* BrewType+CoreDataProperties.swift */; };
+		1DC8AFDF1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFDE1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift */; };
+		1DC8AFE11D9E705000478934 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE01D9E705000478934 /* CoreDataStack.swift */; };
+		1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */; };
+		1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
 		1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35281D847B0C004086F7 /* Shop.pdf */; };
@@ -115,8 +121,14 @@
 		1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Magnifier.pdf; path = ../../../../Downloads/Magnifier.pdf; sourceTree = "<group>"; };
 		1DBDB7251D75998C00C996E1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1DBDB7261D75998C00C996E1 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		1DBDB72A1D75A98100C996E1 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
-		1DBDB72C1D75B76100C996E1 /* BrewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewType.swift; sourceTree = "<group>"; };
+		1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoffeeBean+CoreDataClass.swift"; path = "../CoffeeBean+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1DC8AFC21D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeeNerdDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1DC8AFD81D9D27FF00478934 /* BrewType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BrewType+CoreDataClass.swift"; path = "../BrewType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1DC8AFDC1D9D288A00478934 /* BrewType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BrewType+CoreDataProperties.swift"; path = "../BrewType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1DC8AFDE1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoffeeBean+CoreDataProperties.swift"; path = "../CoffeeBean+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1DC8AFE01D9E705000478934 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeFetchResultsController.swift; sourceTree = "<group>"; };
+		1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListDataSourceController.swift; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
 		1DCC35281D847B0C004086F7 /* Shop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Shop.pdf; path = ../../../../Downloads/Shop.pdf; sourceTree = "<group>"; };
@@ -218,6 +230,8 @@
 				1DBDB6DE1D7441DA00C996E1 /* Info.plist */,
 				1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */,
 				1DCC35601D860F6E004086F7 /* ProjectColors.swift */,
+				1DC8AFC11D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld */,
+				1DC8AFE01D9E705000478934 /* CoreDataStack.swift */,
 				1DBDB7221D75929E00C996E1 /* Images */,
 				1DBDB6F71D75824A00C996E1 /* Fonts */,
 			);
@@ -282,9 +296,11 @@
 		1DBDB7291D75A94B00C996E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1DBDB72C1D75B76100C996E1 /* BrewType.swift */,
-				1DBDB72A1D75A98100C996E1 /* Coffee.swift */,
 				1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */,
+				1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */,
+				1DC8AFDE1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift */,
+				1DC8AFD81D9D27FF00478934 /* BrewType+CoreDataClass.swift */,
+				1DC8AFDC1D9D288A00478934 /* BrewType+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,10 +309,12 @@
 			isa = PBXGroup;
 			children = (
 				1DBDB6EE1D75642500C996E1 /* CoffeeListViewController.swift */,
+				1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */,
 				1DBDB6EA1D75638E00C996E1 /* CoffeeDetailsViewController.swift */,
 				1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */,
 				1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */,
 				1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */,
+				1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -429,23 +447,29 @@
 			files = (
 				1DBDB6F01D75642500C996E1 /* CoffeeListViewController.swift in Sources */,
 				1D494F651D944B09008A07C5 /* CoffeeListExpendableCell.swift in Sources */,
+				1DC8AFDD1D9D288A00478934 /* BrewType+CoreDataProperties.swift in Sources */,
+				1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */,
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
 				1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */,
+				1DC8AFDA1D9D27FF00478934 /* BrewType+CoreDataClass.swift in Sources */,
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
+				1DC8AFDF1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift in Sources */,
 				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
 				1D065A3F1D8C88CB002231A1 /* SettingCellView.swift in Sources */,
 				1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */,
 				1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */,
+				1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */,
 				1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */,
 				1D065A431D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift in Sources */,
 				1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */,
 				1D065A4F1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift in Sources */,
-				1DBDB72D1D75B76100C996E1 /* BrewType.swift in Sources */,
 				1D065A3D1D8C8860002231A1 /* HeaderReusableCell.swift in Sources */,
 				1D065A411D8C9F8F002231A1 /* FooterReusableCell.swift in Sources */,
+				1DC8AFC31D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld in Sources */,
 				1DDA5C4D1D89F0FC00D75110 /* BrewSetting.swift in Sources */,
+				1DC8AFE11D9E705000478934 /* CoreDataStack.swift in Sources */,
 				1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */,
-				1DBDB72B1D75A98100C996E1 /* Coffee.swift in Sources */,
+				1DC8AFBF1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift in Sources */,
 				1DCC355F1D860CF1004086F7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +630,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DC8AFC11D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1DC8AFC21D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodel */,
+			);
+			currentVersion = 1DC8AFC21D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodel */;
+			path = CoffeeNerdDataModel.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DBDB6C71D7441DA00C996E1 /* Project object */;
 }

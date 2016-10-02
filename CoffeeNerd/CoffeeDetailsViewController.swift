@@ -5,12 +5,15 @@
 //  Created by Baptiste Leguey on 8/30/16.
 //  Copyright © 2016 Baptiste Leguey. All rights reserved.
 //
-
+import Foundation
 import UIKit
+import CoreData
 
-class CoffeeDetailsViewController: UIViewController {
+class CoffeeDetailsViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet var containerBottomView: UIView!
+    
+    var coffeeBean: CoffeeBean?
     
     override func viewDidLoad() {
         super.viewDidLoad()
