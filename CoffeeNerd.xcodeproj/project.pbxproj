@@ -51,16 +51,6 @@
 		1DC8AFE11D9E705000478934 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE01D9E705000478934 /* CoreDataStack.swift */; };
 		1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */; };
 		1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */; };
-		1DC8AFF01DA143B100478934 /* BeehouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE61DA143B100478934 /* BeehouseWhite.pdf */; };
-		1DC8AFF11DA143B100478934 /* Beehouse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE71DA143B100478934 /* Beehouse.pdf */; };
-		1DC8AFF21DA143B100478934 /* BonmacWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE81DA143B100478934 /* BonmacWhite.pdf */; };
-		1DC8AFF31DA143B100478934 /* Bonmac.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE91DA143B100478934 /* Bonmac.pdf */; };
-		1DC8AFF41DA143B100478934 /* EvasoloWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFEA1DA143B100478934 /* EvasoloWhite.pdf */; };
-		1DC8AFF51DA143B100478934 /* Evasolo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFEB1DA143B100478934 /* Evasolo.pdf */; };
-		1DC8AFF61DA143B100478934 /* KalitaWaveWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFEC1DA143B100478934 /* KalitaWaveWhite.pdf */; };
-		1DC8AFF71DA143B100478934 /* KalitaWave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFED1DA143B100478934 /* KalitaWave.pdf */; };
-		1DC8AFF81DA143B100478934 /* V60White.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFEE1DA143B100478934 /* V60White.pdf */; };
-		1DC8AFF91DA143B100478934 /* V60.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFEF1DA143B100478934 /* V60.pdf */; };
 		1DC8AFFB1DA1467300478934 /* FooterReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFFA1DA1467300478934 /* FooterReusableCell.swift */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
@@ -138,16 +128,6 @@
 		1DC8AFE01D9E705000478934 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeFetchResultsController.swift; sourceTree = "<group>"; };
 		1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListDataSourceController.swift; sourceTree = "<group>"; };
-		1DC8AFE61DA143B100478934 /* BeehouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/BeehouseWhite.pdf"; sourceTree = "<group>"; };
-		1DC8AFE71DA143B100478934 /* Beehouse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Beehouse.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/Beehouse.pdf"; sourceTree = "<group>"; };
-		1DC8AFE81DA143B100478934 /* BonmacWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BonmacWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/BonmacWhite.pdf"; sourceTree = "<group>"; };
-		1DC8AFE91DA143B100478934 /* Bonmac.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Bonmac.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/Bonmac.pdf"; sourceTree = "<group>"; };
-		1DC8AFEA1DA143B100478934 /* EvasoloWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvasoloWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/EvasoloWhite.pdf"; sourceTree = "<group>"; };
-		1DC8AFEB1DA143B100478934 /* Evasolo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Evasolo.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/Evasolo.pdf"; sourceTree = "<group>"; };
-		1DC8AFEC1DA143B100478934 /* KalitaWaveWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWaveWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/KalitaWaveWhite.pdf"; sourceTree = "<group>"; };
-		1DC8AFED1DA143B100478934 /* KalitaWave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWave.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/KalitaWave.pdf"; sourceTree = "<group>"; };
-		1DC8AFEE1DA143B100478934 /* V60White.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60White.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/V60White.pdf"; sourceTree = "<group>"; };
-		1DC8AFEF1DA143B100478934 /* V60.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/V60.pdf"; sourceTree = "<group>"; };
 		1DC8AFFA1DA1467300478934 /* FooterReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterReusableCell.swift; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
@@ -308,16 +288,6 @@
 				1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */,
 				1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */,
 				1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */,
-				1DC8AFE61DA143B100478934 /* BeehouseWhite.pdf */,
-				1DC8AFE71DA143B100478934 /* Beehouse.pdf */,
-				1DC8AFE81DA143B100478934 /* BonmacWhite.pdf */,
-				1DC8AFE91DA143B100478934 /* Bonmac.pdf */,
-				1DC8AFEA1DA143B100478934 /* EvasoloWhite.pdf */,
-				1DC8AFEB1DA143B100478934 /* Evasolo.pdf */,
-				1DC8AFEC1DA143B100478934 /* KalitaWaveWhite.pdf */,
-				1DC8AFED1DA143B100478934 /* KalitaWave.pdf */,
-				1DC8AFEE1DA143B100478934 /* V60White.pdf */,
-				1DC8AFEF1DA143B100478934 /* V60.pdf */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -431,32 +401,25 @@
 				1DCC35461D8592F3004086F7 /* FilterWhite.pdf in Resources */,
 				1DBDB70E1D7582C100C996E1 /* Raleway-Black.ttf in Resources */,
 				1DBDB71E1D7582C100C996E1 /* Raleway-Thin.ttf in Resources */,
-				1DC8AFF81DA143B100478934 /* V60White.pdf in Resources */,
 				1DBDB7161D7582C100C996E1 /* Raleway-Italic.ttf in Resources */,
 				1DBDB7111D7582C100C996E1 /* Raleway-BoldItalic.ttf in Resources */,
 				1DCC35451D8592F3004086F7 /* FrenchPressWhite.pdf in Resources */,
 				1DCC35481D8592F3004086F7 /* ItalienneWhite.pdf in Resources */,
 				1DBDB7121D7582C100C996E1 /* Raleway-ExtraBold.ttf in Resources */,
-				1DC8AFF41DA143B100478934 /* EvasoloWhite.pdf in Resources */,
-				1DC8AFF91DA143B100478934 /* V60.pdf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
 				1DCC35571D8593A9004086F7 /* Filter.pdf in Resources */,
 				1DBDB71A1D7582C100C996E1 /* Raleway-MediumItalic.ttf in Resources */,
-				1DC8AFF11DA143B100478934 /* Beehouse.pdf in Resources */,
 				1DCC35491D8592F3004086F7 /* SiphonWhite.pdf in Resources */,
 				1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */,
 				1DCC354B1D8592F3004086F7 /* Italienne.pdf in Resources */,
 				1DCC35591D85942F004086F7 /* Assets.xcassets in Resources */,
 				1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */,
-				1DC8AFF21DA143B100478934 /* BonmacWhite.pdf in Resources */,
 				1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */,
 				1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */,
 				1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */,
-				1DC8AFF31DA143B100478934 /* Bonmac.pdf in Resources */,
 				1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */,
 				1DCC354F1D8592F3004086F7 /* Aeropress.pdf in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
-				1DC8AFF61DA143B100478934 /* KalitaWaveWhite.pdf in Resources */,
 				1DBDB7151D7582C100C996E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
 				1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */,
@@ -468,10 +431,7 @@
 				1DBDB71D1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				1DBDB71F1D7582C100C996E1 /* Raleway-ThinItalic.ttf in Resources */,
 				1DCC35431D8592F3004086F7 /* ColdBrewWhite.pdf in Resources */,
-				1DC8AFF71DA143B100478934 /* KalitaWave.pdf in Resources */,
 				1DCC35471D8592F3004086F7 /* AeropressWhite.pdf in Resources */,
-				1DC8AFF01DA143B100478934 /* BeehouseWhite.pdf in Resources */,
-				1DC8AFF51DA143B100478934 /* Evasolo.pdf in Resources */,
 				1DBDB70F1D7582C100C996E1 /* Raleway-BlackItalic.ttf in Resources */,
 				1DCC35501D8592F3004086F7 /* FrenchPress.pdf in Resources */,
 				1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */,
