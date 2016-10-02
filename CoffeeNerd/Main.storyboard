@@ -301,12 +301,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-6J-9Ou">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-6J-9Ou">
                                 <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="OXm-oI-Hva">
                                     <size key="itemSize" width="300" height="70"/>
                                     <size key="headerReferenceSize" width="50" height="110"/>
-                                    <size key="footerReferenceSize" width="50" height="200"/>
+                                    <size key="footerReferenceSize" width="50" height="60"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -330,7 +330,6 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.94117647059999998" green="0.92941176469999998" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="Llg-Qa-6No" firstAttribute="leading" secondItem="A6a-dG-qBG" secondAttribute="centerX" multiplier="0.8" id="D8G-8B-7Of"/>
                                             <constraint firstItem="Llg-Qa-6No" firstAttribute="centerY" secondItem="A6a-dG-qBG" secondAttribute="centerY" id="GDc-N7-ReE"/>
@@ -349,12 +348,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQl-6c-A33">
-                                            <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="24"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.94117647059999998" green="0.92941176469999998" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.92941176470588238" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="gQl-6c-A33" firstAttribute="leading" secondItem="A1D-lS-MhH" secondAttribute="leadingMargin" constant="20" id="Ktv-NM-G3g"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="gQl-6c-A33" secondAttribute="trailing" constant="20" id="Q8i-M1-HeW"/>
@@ -366,14 +365,11 @@
                                     </connections>
                                 </collectionReusableView>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooterReusableCell" id="saB-Ff-URq" customClass="FooterReusableCell" customModule="CoffeeNerd" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="180" width="375" height="200"/>
+                                    <rect key="frame" x="0.0" y="180" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-Va-Wt4">
                                             <color key="backgroundColor" red="0.31764705879999999" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="62" id="kDx-be-hK4"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
                                             <state key="normal" title="OK">
                                                 <color key="titleColor" red="0.94117647059999998" green="0.92941176469999998" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -382,45 +378,16 @@
                                                 <action selector="validateButtonTapped:" destination="t3t-fT-ZMv" eventType="touchUpInside" id="45p-iZ-o9F"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You weight in ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbH-MP-6gw">
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="q2S-EH-OqU"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Raleway-Light" family="Raleway" pointSize="24"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Caa-9F-YNA">
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="42" id="1vB-7y-MMe"/>
-                                            </constraints>
-                                            <segments>
-                                                <segment title="GRAMS (GR)"/>
-                                                <segment title="OUNCES (OZ)"/>
-                                            </segments>
-                                            <color key="tintColor" red="0.31764705879999999" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="valueChangedSwitch:" destination="t3t-fT-ZMv" eventType="valueChanged" id="Kcr-Fv-VPi"/>
-                                            </connections>
-                                        </segmentedControl>
                                     </subviews>
                                     <color key="backgroundColor" red="0.94117647059999998" green="0.92941176469999998" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="RbH-MP-6gw" firstAttribute="centerX" secondItem="saB-Ff-URq" secondAttribute="centerX" id="0IW-9i-lOv"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="RbH-MP-6gw" secondAttribute="trailing" constant="20" id="KYA-Ap-8GC"/>
                                         <constraint firstAttribute="trailing" secondItem="zxh-Va-Wt4" secondAttribute="trailing" id="PXM-ED-ipF"/>
-                                        <constraint firstItem="Caa-9F-YNA" firstAttribute="top" secondItem="RbH-MP-6gw" secondAttribute="bottom" constant="10" id="Qmy-eR-njQ"/>
                                         <constraint firstItem="zxh-Va-Wt4" firstAttribute="leading" secondItem="saB-Ff-URq" secondAttribute="leading" id="RE2-dc-QEd"/>
-                                        <constraint firstItem="RbH-MP-6gw" firstAttribute="leading" secondItem="saB-Ff-URq" secondAttribute="leadingMargin" constant="20" id="XLb-43-0BF"/>
-                                        <constraint firstItem="RbH-MP-6gw" firstAttribute="top" secondItem="saB-Ff-URq" secondAttribute="topMargin" constant="20" id="ail-eB-UNh"/>
-                                        <constraint firstItem="Caa-9F-YNA" firstAttribute="leading" secondItem="saB-Ff-URq" secondAttribute="leadingMargin" constant="30" id="hLe-Hb-0jT"/>
+                                        <constraint firstItem="zxh-Va-Wt4" firstAttribute="top" secondItem="saB-Ff-URq" secondAttribute="top" id="UCX-Dv-Mmf"/>
                                         <constraint firstAttribute="bottom" secondItem="zxh-Va-Wt4" secondAttribute="bottom" id="q1x-w1-Emr"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Caa-9F-YNA" secondAttribute="trailing" constant="30" id="q3e-2k-ZBf"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="validateButton" destination="zxh-Va-Wt4" id="Bko-bB-rIN"/>
-                                        <outlet property="weightText" destination="RbH-MP-6gw" id="3zJ-m8-1rL"/>
-                                        <outlet property="weightUnitSwitch" destination="Caa-9F-YNA" id="JxH-8k-8hK"/>
                                     </connections>
                                 </collectionReusableView>
                                 <connections>
@@ -433,21 +400,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuButtonBrown" translatesAutoresizingMaskIntoConstraints="NO" id="kkz-uC-e2Y">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="8Rc-FW-lth"/>
-                                    <constraint firstAttribute="height" constant="60" id="G0M-ha-2UB"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.92941176469999998" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.92941176470588238" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Pff-6J-9Ou" firstAttribute="top" secondItem="Whj-FL-PUE" secondAttribute="bottom" constant="45" id="JCs-tP-AfA"/>
-                            <constraint firstItem="ble-Vq-gwJ" firstAttribute="top" secondItem="Whj-FL-PUE" secondAttribute="bottom" constant="-5" id="Kn3-4U-wwR"/>
+                            <constraint firstItem="ble-Vq-gwJ" firstAttribute="top" secondItem="Whj-FL-PUE" secondAttribute="bottom" constant="20" id="Kn3-4U-wwR"/>
                             <constraint firstAttribute="trailing" secondItem="Pff-6J-9Ou" secondAttribute="trailing" id="Tgh-Oc-H0y"/>
-                            <constraint firstItem="kkz-uC-e2Y" firstAttribute="top" secondItem="FcC-JI-aaQ" secondAttribute="top" id="WKF-Y0-9Ib"/>
                             <constraint firstItem="ble-Vq-gwJ" firstAttribute="centerX" secondItem="FcC-JI-aaQ" secondAttribute="centerX" id="ms5-63-w8l"/>
-                            <constraint firstItem="kkz-uC-e2Y" firstAttribute="leading" secondItem="FcC-JI-aaQ" secondAttribute="leading" id="n8T-5n-wBf"/>
                             <constraint firstItem="Pff-6J-9Ou" firstAttribute="leading" secondItem="FcC-JI-aaQ" secondAttribute="leading" id="uC4-hD-b54"/>
                             <constraint firstItem="Ip5-mX-85O" firstAttribute="top" secondItem="Pff-6J-9Ou" secondAttribute="bottom" id="wlO-Lm-fZ4"/>
                         </constraints>
@@ -458,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATN-ww-iAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1207" y="788"/>
+            <point key="canvasLocation" x="-1207.2" y="787.55622188905556"/>
         </scene>
         <!--ShopsMap-->
         <scene sceneID="40e-5i-G9d">
@@ -1164,9 +1123,9 @@
         <!--Navigation Controller-->
         <scene sceneID="4bW-id-qfh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1vM-UH-hFT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1vM-UH-hFT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G5T-dz-oIM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="G5T-dz-oIM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

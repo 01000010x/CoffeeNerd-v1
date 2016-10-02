@@ -9,19 +9,18 @@
 import UIKit
 
 class SettingsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    // MARK: Declaration
+    
+    // MARK: IBOutlets
     
     @IBOutlet var collectionView: UICollectionView!
     
-    enum WeightUnit: String {
-        case grams
-        case ounces
-    }
     
-    var weightUnitSelected: String = WeightUnit.grams.rawValue
+    // MARK: Constants and Variables Declaration
     
+    // List of the possible brew method in the app - will evolve depending on the user will
     var settingsList: [BrewSetting] = [BrewSetting(name: "Espresso"), BrewSetting(name: "French Press"), BrewSetting(name: "Cold Brew"),  BrewSetting(name: "Chemex"), BrewSetting(name: "V60"), BrewSetting(name: "Kalita Wave"), BrewSetting(name: "Bonmac"), BrewSetting(name: "Italian"), BrewSetting(name: "Vacuum"), BrewSetting(name: "Aeropress"), BrewSetting(name: "Bee House"), BrewSetting(name: "Eva Solo")]
     
+    // Place where are stored the app settings (ie: Which brew methods did the user select
     let itemArchiveURL: NSURL = {
         let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = documentDirectories.first!
@@ -32,27 +31,24 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     // MARK: View Controller
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        collectionView.reloadData()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadSettings()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.automaticallyAdjustsScrollViewInsets = false
+        collectionView.reloadData()
+    }
+
     
-    // MARK: Collection View
+    
+    // MARK: Collection View Data Source
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -69,6 +65,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         let selected = settingsList[(indexPath as NSIndexPath).row].isPosessed
         cell.labelView.text = settingsList[(indexPath as NSIndexPath).row].name
         updateCellAppearance(cell, atIndexPath: indexPath, isSelected: selected)
+        
         return cell
     }
     
@@ -82,7 +79,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
             reusableview = headerView
         } else {
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterReusableCell", for: indexPath) as! FooterReusableCell
-            footerView.initWeightSwitch(weightUnit: weightUnitSelected)
             reusableview = footerView
         }
         
@@ -105,8 +101,9 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     // MARK: - UICollectionViewFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let picDimension = (self.view.frame.size.width - 1) / 2.0
-        return CGSize(width: picDimension, height: 70)
+        let cellWidth = (self.view.frame.size.width - 1) / 2.0
+        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y - 176) / 6
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
     
@@ -144,7 +141,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     
     func presentAlertPickABrewingMethod() {
-        let alertController = UIAlertController(title: "Brewing Method Missing", message: "You must pick at least one brewing method", preferredStyle: .actionSheet)
+        let alertController = UIAlertController(title: "Brewing Method Missing", message: "You must pick at least one brewing method", preferredStyle: .alert)
         let callAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(callAction)
         present(alertController, animated: true, completion: nil)
@@ -168,13 +165,11 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     
-    // Replace saving / loading and controller var : weightUnitSelected and settingsList with a CoffeeSettings Class and a
+    // Replace saving / loading and controller var : settingsList with a CoffeeSettings Class and a
     // a singleton design pattern on app delegate level.
     // instead of creating the load functions and the two variables in each controller needed it
     func saveSettings() {
         NSKeyedArchiver.archiveRootObject(settingsList, toFile: itemArchiveURL.path!)
-        let defaults = UserDefaults.standard
-        defaults.set(weightUnitSelected, forKey: "weightSetting")
     }
     
     
@@ -182,16 +177,9 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
             settingsList = archivedItems
         }
-        
-        let defaults = UserDefaults.standard
-        if let weightArchived = defaults.string(forKey: "weightSetting") {
-            weightUnitSelected = weightArchived
-        } else {
-            weightUnitSelected = WeightUnit.grams.rawValue
-        }
     }
 
-    // END OF REPLACEMENT 
+
     
     // MARK: IBActions
     
@@ -203,16 +191,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
             presentAlertPickABrewingMethod()
         }
     }
-    
-    
-    @IBAction func valueChangedSwitch(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            weightUnitSelected = WeightUnit.grams.rawValue
-        } else {
-            weightUnitSelected = WeightUnit.ounces.rawValue
-        }
-    }
-    
 }
 
 
