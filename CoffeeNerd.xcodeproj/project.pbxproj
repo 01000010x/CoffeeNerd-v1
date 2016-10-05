@@ -95,7 +95,6 @@
 		1DD330F01DA5154D009F2222 /* ShopsDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD330E81DA5154D009F2222 /* ShopsDeselected.pdf */; };
 		1DD330F11DA5154D009F2222 /* SettingsDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD330E91DA5154D009F2222 /* SettingsDeselected.pdf */; };
 		1DD330F31DA51B9F009F2222 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD330F21DA51B9F009F2222 /* TabBarController.swift */; };
-		1DD330F51DA5370C009F2222 /* coffeetest.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD330F41DA5370C009F2222 /* coffeetest.pdf */; };
 		1DDA5C4D1D89F0FC00D75110 /* BrewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */; };
 		1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */; };
 /* End PBXBuildFile section */
@@ -191,7 +190,6 @@
 		1DD330E81DA5154D009F2222 /* ShopsDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ShopsDeselected.pdf; path = ../../../../Downloads/ShopsDeselected.pdf; sourceTree = "<group>"; };
 		1DD330E91DA5154D009F2222 /* SettingsDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SettingsDeselected.pdf; path = ../../../../Downloads/SettingsDeselected.pdf; sourceTree = "<group>"; };
 		1DD330F21DA51B9F009F2222 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		1DD330F41DA5370C009F2222 /* coffeetest.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = coffeetest.pdf; path = ../../../../Downloads/coffeetest.pdf; sourceTree = "<group>"; };
 		1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSetting.swift; sourceTree = "<group>"; };
 		1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Default.pdf; path = ../../../../Downloads/Default.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -304,7 +302,6 @@
 		1DBDB7221D75929E00C996E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1DD330F41DA5370C009F2222 /* coffeetest.pdf */,
 				1DD330E21DA5154C009F2222 /* AddCoffeeSelected.pdf */,
 				1DD330E31DA5154D009F2222 /* AddCoffeeDeselected.pdf */,
 				1DD330E41DA5154D009F2222 /* CoffeeListDeselected.pdf */,
@@ -510,7 +507,6 @@
 				1DD330EC1DA5154D009F2222 /* CoffeeListDeselected.pdf in Resources */,
 				1DD330ED1DA5154D009F2222 /* SettingsSelected.pdf in Resources */,
 				1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */,
-				1DD330F51DA5370C009F2222 /* coffeetest.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
