@@ -452,20 +452,23 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="55U-3y-ejf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="55U-3y-ejf">
+                                <frame key="frameInset" width="1000" height="1000"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopCell" id="mGW-Mq-nP4">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mGW-Mq-nP4" id="krW-Gl-iwF">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="1000" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1xO-r4-0N2"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1xO-r4-0N2">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.92941176469999998" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -664,16 +667,16 @@
                                                         <constraint firstAttribute="trailing" secondItem="Yx0-DG-xq4" secondAttribute="trailing" constant="20" id="oPf-z1-PZM"/>
                                                     </constraints>
                                                 </view>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="12" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rvw-H6-I3H">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="12" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rvw-H6-I3H">
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="88" id="wvi-Ls-NEc"/>
                                                         <constraint firstAttribute="height" constant="71" id="yTJ-ej-Pa1"/>
                                                     </constraints>
                                                     <color key="textColor" red="0.31764705879999999" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="60"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="25" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFy-jq-AaX">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="25" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFy-jq-AaX">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="71" id="LcA-Ey-Qgg"/>
                                                         <constraint firstAttribute="width" constant="88" id="s2h-Vo-3xV"/>
@@ -754,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfK-Yj-0ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="-58"/>
+            <point key="canvasLocation" x="-20" y="-58.020989505247378"/>
         </scene>
         <!--CoffeeDetails-->
         <scene sceneID="FMF-bf-HA0">
@@ -998,6 +1001,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="brewTypeGrindLabel" destination="eA8-CD-0hc" id="abz-pS-msj"/>
+                        <outlet property="brewTypeIcon" destination="BO9-a8-hL5" id="L8k-Wb-WZZ"/>
+                        <outlet property="brewTypeNameLabel" destination="VGO-U7-YcP" id="wTE-4g-6aT"/>
+                        <outlet property="brewTypeWeightLabel" destination="MH3-Wm-jFw" id="abZ-Y4-Pe7"/>
+                        <outlet property="coffeeNameLabel" destination="RmI-X8-Mpc" id="KC3-Cv-39c"/>
+                        <outlet property="coffeeOriginLabel" destination="eiy-tT-U7w" id="FNy-8I-Ptu"/>
+                        <outlet property="coffeeShopLabel" destination="p0h-oA-R1V" id="ahe-hF-9Nc"/>
                         <outlet property="containerBottomView" destination="AEC-nR-obM" id="3Jj-xq-QhS"/>
                     </connections>
                 </viewController>
@@ -1123,7 +1133,7 @@
         <!--Navigation Controller-->
         <scene sceneID="4bW-id-qfh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1vM-UH-hFT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1vM-UH-hFT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="G5T-dz-oIM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

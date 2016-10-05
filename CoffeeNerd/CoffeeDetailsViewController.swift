@@ -11,14 +11,30 @@ import CoreData
 
 class CoffeeDetailsViewController: UIViewController, UITableViewDelegate {
 
+    // MARK: Variables and Outlets
+    
     @IBOutlet var containerBottomView: UIView!
+    @IBOutlet var coffeeNameLabel: UILabel!
+    @IBOutlet var coffeeOriginLabel: UILabel!
+    @IBOutlet var coffeeShopLabel: UILabel!
+    @IBOutlet var brewTypeWeightLabel: UILabel!
+    @IBOutlet var brewTypeGrindLabel: UILabel!
+    @IBOutlet var brewTypeNameLabel: UILabel!
+    @IBOutlet var brewTypeIcon: UIImageView!
     
     var coffeeBean: CoffeeBean?
+    var brewType: BrewType?
+    
+    
+    // MARK: View Controller
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        initTextLabels()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidLayoutSubviews() {
@@ -28,8 +44,10 @@ class CoffeeDetailsViewController: UIViewController, UITableViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: Internal functions
     
     func drawAllSeparatorLines() {
         // Draw 1st line (under menu view)
@@ -38,14 +56,10 @@ class CoffeeDetailsViewController: UIViewController, UITableViewDelegate {
         containerBottomView.drawLine(start, end: end, color: UIColor.white)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func initTextLabels() {
+        coffeeNameLabel.text = coffeeBean?.name
+        coffeeOriginLabel.text = coffeeBean?.origin
+        coffeeShopLabel.text = coffeeBean?.shop
     }
-    */
-
+    
 }

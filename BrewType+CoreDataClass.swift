@@ -11,5 +11,6 @@ import CoreData
 
 
 public class BrewType: NSManagedObject {
-
+    static let identifier: String = "BrewType"
+    
 }

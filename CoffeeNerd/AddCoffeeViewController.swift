@@ -11,43 +11,47 @@ import CoreData
 
 class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // MARK: Variables & Outlets Declaration
+    
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var originTextField: UITextField!
     @IBOutlet var shopTextField: UITextField!
     @IBOutlet var caffeinatedSegmentedControl: UISegmentedControl!
     @IBOutlet var validateButton: UIButton!
     
+    // Singleton of CoreData Stack
     let dataController = DataController.sharedInstance
     
+    // Path to save users info. We use it to save and fetch the user settings
     let itemArchiveURL: NSURL = {
         let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = documentDirectories.first!
         return documentDirectory.appendingPathComponent("item.archive") as NSURL
     }()
     
-    enum WeightUnit: String {
-        case grams
-        case ounces
+    // Array of BrewType. It contains the BrewTypes for a single CoffeeBean
+    var brewTypeList = [BrewType]()
+    
+    // Array of possible BrewSettings
+    var settingsListPosessed: [BrewSetting] = []
+    
+    // Coffee Bean that will be created and set in this view Controller
+    var coffeeBean: CoffeeBean?
+    
+    
+    // MARK: View Controller
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureHeaderTextFields()
+        loadSettings()
     }
     
-    var coffeeListFromDB = [NSManagedObject]()
-    var brewTypeList = [NSManagedObject]()
-    
-    var weightUnitSelected: String = WeightUnit.grams.rawValue
-    var settingsList: [BrewSetting] = []
-    var settingsListPosessed: [BrewSetting] = []
-    var coffeeBean: CoffeeBean?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureHeaderTextFields()
-        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -57,16 +61,18 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         originTextField.drawBottomLine(separatorColor, padding: padding)
         shopTextField.drawBottomLine(separatorColor, padding: padding)
     }
+
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        loadSettings()
-        fetchCoffeeBean()
-        didThisWork()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+
+    
+    // MARK: Table View DataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsListPosessed.count
+        return brewTypeList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -75,9 +81,42 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.configureBrewingLabel(withText: settingsListPosessed[indexPath.row].name)
         cell.configureBrewingImage(withImage: brewImage)
         
-        return cell
+        // Keep the right values in the textfields (due to cell reuse)
+        configureCellTextFields(cell: cell, indexPath: indexPath)
         
+        return cell
     }
+    
+    
+    // MARK: Internal Functions
+    
+    func configureCellTextFields(cell: AddCoffeeCell, indexPath: IndexPath) {
+        cell.groundTextField.text = brewTypeList[indexPath.row].groundSetting
+        cell.groundTextField.tag = indexPath.row
+        cell.groundTextField.addTarget(self, action: #selector(groundTextFieldDidChange), for: UIControlEvents.editingChanged)
+        let weight: Int = Int(brewTypeList[indexPath.row].groundWeight)
+        cell.weightTextField.text = String(weight)
+        cell.weightTextField.tag = indexPath.row
+        cell.weightTextField.addTarget(self, action: #selector(weightTextFieldDidChange), for: UIControlEvents.editingChanged)
+    
+    }
+    
+    
+    func groundTextFieldDidChange(textField: UITextField) {
+        if let grind = textField.text {
+            brewTypeList[textField.tag].groundSetting = grind
+        }
+        
+        print(brewTypeList[textField.tag].groundSetting)
+    }
+    
+    
+    func weightTextFieldDidChange(textField: UITextField) {
+        if let weightString = textField.text, let weightInt = Int(weightString) {
+            brewTypeList[textField.tag].groundWeight = Int32(weightInt)
+        }
+    }
+    
     
     func configureHeaderTextFields() {
         let attributes = [
@@ -90,51 +129,82 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         shopTextField.attributedPlaceholder = NSAttributedString(string: "DEVOCION, BLIND BARBER, ...", attributes:attributes)
     }
     
+    
+    // Will load the Brewing Method defined in the settings and create a BrewType for each.
+    // A BrewType is the Brewing Method applied to a Coffee Bean, it will get properties like a grind setting, bean weight and brewing time.
+    // A CoffeeBean can have multiple BrewType and one BrewType is unique and specific to one CoffeeBean
     func loadSettings() {
+        // CoreData
+        let managedContext = dataController.managedObjectContext
+        let entity =  NSEntityDescription.entity(forEntityName: BrewType.identifier, in:managedContext)
+        
+        // User Info
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
-            settingsList = archivedItems
             
-            for BrewSetting in settingsList where BrewSetting.isPosessed {
-                settingsListPosessed.append(BrewSetting)
-                print(BrewSetting.name)
+            for brewSetting in archivedItems where brewSetting.isPosessed {
+                
+                settingsListPosessed.append(brewSetting)
+                
+                // Core Data : Create a Brewing Type per BrewSetting selected in the app Settings
+                let newBrewingType = NSManagedObject(entity: entity!, insertInto: managedContext) as! BrewType
+                newBrewingType.setValue(brewSetting.name, forKey: "brewingMethodName")
+                newBrewingType.setValue("0", forKey: "groundSetting")
+                newBrewingType.setValue(0, forKey: "groundWeight")
+                newBrewingType.setValue(0, forKey: "brewingTime")
+                brewTypeList.append(newBrewingType)
             }
         }
-        
-        let defaults = UserDefaults.standard
-        if let weightArchived = defaults.string(forKey: "weightSetting") {
-            weightUnitSelected = weightArchived
-        } else {
-            weightUnitSelected = WeightUnit.grams.rawValue
-        }
     }
     
-    @IBAction func validateButtonTapped(_ sender: UIButton) {
-        saveCoffeeBeans()
-        self.navigationController?.popViewController(animated: true)
-        
+    
+    // Create a brewing type and insert it in the brewing type list
+    func initBrewingType() {
+        let managedContext = dataController.managedObjectContext
+        let entity =  NSEntityDescription.entity(forEntityName: BrewType.identifier, in:managedContext)
+        let newBrewingType = NSManagedObject(entity: entity!, insertInto: managedContext) as! BrewType
+        brewTypeList.append(newBrewingType)
     }
+
     
     func saveCoffeeBeans() {
+        // For Core Data
         let managedContext = dataController.managedObjectContext
         let entity =  NSEntityDescription.entity(forEntityName: CoffeeBean.identifier, in:managedContext)
         
-        let newCoffeeBean = NSManagedObject(entity: entity!, insertInto: managedContext)
+        // Create a CoffeeBean in the context
+        let newCoffeeBean = NSManagedObject(entity: entity!, insertInto: managedContext) as! CoffeeBean
         newCoffeeBean.setValue(nameTextField.text, forKey: "name")
         newCoffeeBean.setValue(originTextField.text, forKey: "origin")
         newCoffeeBean.setValue(shopTextField.text, forKey: "shop")
         newCoffeeBean.setValue(true, forKey: "isCaffeinated")
         
-        // Créer les BrewType aussi
-        // Ajouter les BrewType au coffeeBean
-    
+        // Link every BrewType to the CoffeeBean
+        for brewType in brewTypeList {
+            newCoffeeBean.addBrewTypeObject(brewType: brewType)
+        }
+        
         do {
+            // Save the modifications on the context
             try managedContext.save()
+            
+            // Dismiss the view controller
             dismiss(animated: true, completion: nil)
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
     }
     
+    
+    // MARK: IBActions
+    
+    @IBAction func validateButtonTapped(_ sender: UIButton) {
+        saveCoffeeBeans()
+        //self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
+    /*
     func fetchCoffeeBean() {
         let managedContext = dataController.managedObjectContext
         let fetchRequest = NSFetchRequest<CoffeeBean>(entityName: "CoffeeBean")
@@ -147,10 +217,6 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
             print("Could not fetch \(error), \(error.userInfo)")
         }
     }
+    */
     
-    func didThisWork() {
-        for coffeeBean in coffeeListFromDB {
-            print(coffeeBean.value(forKey: "name"))
-        }
-    }
 }

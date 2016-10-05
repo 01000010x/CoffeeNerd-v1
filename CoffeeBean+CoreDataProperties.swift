@@ -17,7 +17,6 @@ extension CoffeeBean {
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         request.sortDescriptors = [sortDescriptor]
         return request
-        //return NSFetchRequest<CoffeeBean>(entityName: "CoffeeBean");
     }
 
     @NSManaged public var name: String

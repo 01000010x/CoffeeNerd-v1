@@ -15,7 +15,25 @@ class AddCoffeeCell: UITableViewCell {
     @IBOutlet var brewingMethodContainerView: UIView!
     
     @IBOutlet var weightTextField: UITextField!
-    @IBOutlet var groundTextField: UITextField!
+    @IBOutlet var groundTextField: UITextField! {
+        willSet {
+            print("WILL")
+        }
+        
+        didSet {
+            self.grind = groundTextField.text!
+            print("set \(self.grind)")
+        }
+    }
+    
+    var weight: Int
+    var grind: String
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.weight = 0
+        self.grind = "0"
+        super.init(coder: aDecoder)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
