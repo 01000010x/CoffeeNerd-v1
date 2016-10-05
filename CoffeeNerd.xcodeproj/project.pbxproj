@@ -51,7 +51,6 @@
 		1DC8AFE11D9E705000478934 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE01D9E705000478934 /* CoreDataStack.swift */; };
 		1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */; };
 		1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */; };
-		1DC8AFFB1DA1467300478934 /* FooterReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFFA1DA1467300478934 /* FooterReusableCell.swift */; };
 		1DC8B0061DA14EF000478934 /* BeehouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFFC1DA14EF000478934 /* BeehouseWhite.pdf */; };
 		1DC8B0071DA14EF000478934 /* BonmacWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFFD1DA14EF000478934 /* BonmacWhite.pdf */; };
 		1DC8B0081DA14EF000478934 /* EvasoloWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8AFFE1DA14EF000478934 /* EvasoloWhite.pdf */; };
@@ -86,6 +85,7 @@
 		1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35601D860F6E004086F7 /* ProjectColors.swift */; };
 		1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */; };
 		1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */; };
+		1DD330F31DA51B9F009F2222 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD330F21DA51B9F009F2222 /* TabBarController.swift */; };
 		1DDA5C4D1D89F0FC00D75110 /* BrewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */; };
 		1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */; };
 /* End PBXBuildFile section */
@@ -137,7 +137,6 @@
 		1DC8AFE01D9E705000478934 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeFetchResultsController.swift; sourceTree = "<group>"; };
 		1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListDataSourceController.swift; sourceTree = "<group>"; };
-		1DC8AFFA1DA1467300478934 /* FooterReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterReusableCell.swift; sourceTree = "<group>"; };
 		1DC8AFFC1DA14EF000478934 /* BeehouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/BeehouseWhite.pdf"; sourceTree = "<group>"; };
 		1DC8AFFD1DA14EF000478934 /* BonmacWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BonmacWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/BonmacWhite.pdf"; sourceTree = "<group>"; };
 		1DC8AFFE1DA14EF000478934 /* EvasoloWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvasoloWhite.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/EvasoloWhite.pdf"; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		1DCC35601D860F6E004086F7 /* ProjectColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
 		1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawBorders.swift"; sourceTree = "<group>"; };
 		1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawLines.swift"; sourceTree = "<group>"; };
+		1DD330F21DA51B9F009F2222 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSetting.swift; sourceTree = "<group>"; };
 		1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Default.pdf; path = ../../../../Downloads/Default.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -322,7 +322,6 @@
 		1DBDB7291D75A94B00C996E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1DC8AFFA1DA1467300478934 /* FooterReusableCell.swift */,
 				1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */,
 				1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */,
 				1DC8AFDE1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift */,
@@ -342,6 +341,7 @@
 				1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */,
 				1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */,
 				1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */,
+				1DD330F21DA51B9F009F2222 /* TabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -482,13 +482,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBDB6F01D75642500C996E1 /* CoffeeListViewController.swift in Sources */,
+				1DD330F31DA51B9F009F2222 /* TabBarController.swift in Sources */,
 				1D494F651D944B09008A07C5 /* CoffeeListExpendableCell.swift in Sources */,
 				1DC8AFDD1D9D288A00478934 /* BrewType+CoreDataProperties.swift in Sources */,
 				1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */,
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
 				1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */,
 				1DC8AFDA1D9D27FF00478934 /* BrewType+CoreDataClass.swift in Sources */,
-				1DC8AFFB1DA1467300478934 /* FooterReusableCell.swift in Sources */,
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
 				1DC8AFDF1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift in Sources */,
 				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
