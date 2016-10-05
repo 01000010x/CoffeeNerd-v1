@@ -61,7 +61,6 @@
 		1DC8B00C1DA14EF000478934 /* Evasolo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8B0021DA14EF000478934 /* Evasolo.pdf */; };
 		1DC8B00D1DA14EF000478934 /* KalitaWave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8B0031DA14EF000478934 /* KalitaWave.pdf */; };
 		1DC8B00E1DA14EF000478934 /* V60.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8B0041DA14EF000478934 /* V60.pdf */; };
-		1DC8B00F1DA14EF000478934 /* Beehouse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC8B0051DA14EF000478934 /* Beehouse.pdf */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
 		1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35281D847B0C004086F7 /* Shop.pdf */; };
@@ -87,14 +86,6 @@
 		1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35601D860F6E004086F7 /* ProjectColors.swift */; };
 		1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */; };
 		1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */; };
-		1DD53DCC1DA56A2E00D7F3F9 /* AddCoffeeSelected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DC41DA56A2E00D7F3F9 /* AddCoffeeSelected.pdf */; };
-		1DD53DCD1DA56A2E00D7F3F9 /* AddCoffeeDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DC51DA56A2E00D7F3F9 /* AddCoffeeDeselected.pdf */; };
-		1DD53DCE1DA56A2E00D7F3F9 /* CoffeeListDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DC61DA56A2E00D7F3F9 /* CoffeeListDeselected.pdf */; };
-		1DD53DCF1DA56A2E00D7F3F9 /* SettingsSelected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DC71DA56A2E00D7F3F9 /* SettingsSelected.pdf */; };
-		1DD53DD01DA56A2E00D7F3F9 /* CoffeeListSelected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DC81DA56A2E00D7F3F9 /* CoffeeListSelected.pdf */; };
-		1DD53DD11DA56A2E00D7F3F9 /* ShopsSelected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DC91DA56A2E00D7F3F9 /* ShopsSelected.pdf */; };
-		1DD53DD21DA56A2E00D7F3F9 /* ShopsDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DCA1DA56A2E00D7F3F9 /* ShopsDeselected.pdf */; };
-		1DD53DD31DA56A2E00D7F3F9 /* SettingsDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DCB1DA56A2E00D7F3F9 /* SettingsDeselected.pdf */; };
 		1DDA5C4D1D89F0FC00D75110 /* BrewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */; };
 		1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */; };
 /* End PBXBuildFile section */
@@ -156,7 +147,6 @@
 		1DC8B0021DA14EF000478934 /* Evasolo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Evasolo.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/Evasolo.pdf"; sourceTree = "<group>"; };
 		1DC8B0031DA14EF000478934 /* KalitaWave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWave.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/KalitaWave.pdf"; sourceTree = "<group>"; };
 		1DC8B0041DA14EF000478934 /* V60.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/V60.pdf"; sourceTree = "<group>"; };
-		1DC8B0051DA14EF000478934 /* Beehouse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Beehouse.pdf; path = "../../../../Downloads/drive-download-20161002T133104Z/Beehouse.pdf"; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
 		1DCC35281D847B0C004086F7 /* Shop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Shop.pdf; path = ../../../../Downloads/Shop.pdf; sourceTree = "<group>"; };
@@ -182,14 +172,6 @@
 		1DCC35601D860F6E004086F7 /* ProjectColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
 		1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawBorders.swift"; sourceTree = "<group>"; };
 		1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DrawLines.swift"; sourceTree = "<group>"; };
-		1DD53DC41DA56A2E00D7F3F9 /* AddCoffeeSelected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AddCoffeeSelected.pdf; path = ../../../../Downloads/AddCoffeeSelected.pdf; sourceTree = "<group>"; };
-		1DD53DC51DA56A2E00D7F3F9 /* AddCoffeeDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AddCoffeeDeselected.pdf; path = ../../../../Downloads/AddCoffeeDeselected.pdf; sourceTree = "<group>"; };
-		1DD53DC61DA56A2E00D7F3F9 /* CoffeeListDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CoffeeListDeselected.pdf; path = ../../../../Downloads/CoffeeListDeselected.pdf; sourceTree = "<group>"; };
-		1DD53DC71DA56A2E00D7F3F9 /* SettingsSelected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SettingsSelected.pdf; path = ../../../../Downloads/SettingsSelected.pdf; sourceTree = "<group>"; };
-		1DD53DC81DA56A2E00D7F3F9 /* CoffeeListSelected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CoffeeListSelected.pdf; path = ../../../../Downloads/CoffeeListSelected.pdf; sourceTree = "<group>"; };
-		1DD53DC91DA56A2E00D7F3F9 /* ShopsSelected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ShopsSelected.pdf; path = ../../../../Downloads/ShopsSelected.pdf; sourceTree = "<group>"; };
-		1DD53DCA1DA56A2E00D7F3F9 /* ShopsDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ShopsDeselected.pdf; path = ../../../../Downloads/ShopsDeselected.pdf; sourceTree = "<group>"; };
-		1DD53DCB1DA56A2E00D7F3F9 /* SettingsDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SettingsDeselected.pdf; path = ../../../../Downloads/SettingsDeselected.pdf; sourceTree = "<group>"; };
 		1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSetting.swift; sourceTree = "<group>"; };
 		1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Default.pdf; path = ../../../../Downloads/Default.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -302,15 +284,6 @@
 		1DBDB7221D75929E00C996E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1DD53DC41DA56A2E00D7F3F9 /* AddCoffeeSelected.pdf */,
-				1DD53DC51DA56A2E00D7F3F9 /* AddCoffeeDeselected.pdf */,
-				1DD53DC61DA56A2E00D7F3F9 /* CoffeeListDeselected.pdf */,
-				1DD53DC71DA56A2E00D7F3F9 /* SettingsSelected.pdf */,
-				1DD53DC81DA56A2E00D7F3F9 /* CoffeeListSelected.pdf */,
-				1DD53DC91DA56A2E00D7F3F9 /* ShopsSelected.pdf */,
-				1DD53DCA1DA56A2E00D7F3F9 /* ShopsDeselected.pdf */,
-				1DD53DCB1DA56A2E00D7F3F9 /* SettingsDeselected.pdf */,
-				1DC8B0051DA14EF000478934 /* Beehouse.pdf */,
 				1DC8AFFC1DA14EF000478934 /* BeehouseWhite.pdf */,
 				1DC8B0011DA14EF000478934 /* Bonmac.pdf */,
 				1DC8AFFD1DA14EF000478934 /* BonmacWhite.pdf */,
@@ -443,8 +416,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DD53DCD1DA56A2E00D7F3F9 /* AddCoffeeDeselected.pdf in Resources */,
-				1DD53DD31DA56A2E00D7F3F9 /* SettingsDeselected.pdf in Resources */,
 				1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */,
 				1DBDB7131D7582C100C996E1 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 				1DBDB7281D75998C00C996E1 /* CustomCell.xib in Resources */,
@@ -461,7 +432,6 @@
 				1DBDB7161D7582C100C996E1 /* Raleway-Italic.ttf in Resources */,
 				1DBDB7111D7582C100C996E1 /* Raleway-BoldItalic.ttf in Resources */,
 				1DCC35451D8592F3004086F7 /* FrenchPressWhite.pdf in Resources */,
-				1DD53DD01DA56A2E00D7F3F9 /* CoffeeListSelected.pdf in Resources */,
 				1DCC35481D8592F3004086F7 /* ItalienneWhite.pdf in Resources */,
 				1DBDB7121D7582C100C996E1 /* Raleway-ExtraBold.ttf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
@@ -483,11 +453,8 @@
 				1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */,
 				1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */,
 				1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */,
-				1DD53DD11DA56A2E00D7F3F9 /* ShopsSelected.pdf in Resources */,
 				1DCC354F1D8592F3004086F7 /* Aeropress.pdf in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
-				1DD53DD21DA56A2E00D7F3F9 /* ShopsDeselected.pdf in Resources */,
-				1DD53DCC1DA56A2E00D7F3F9 /* AddCoffeeSelected.pdf in Resources */,
 				1DBDB7151D7582C100C996E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
 				1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */,
@@ -501,11 +468,8 @@
 				1DBDB71F1D7582C100C996E1 /* Raleway-ThinItalic.ttf in Resources */,
 				1DCC35431D8592F3004086F7 /* ColdBrewWhite.pdf in Resources */,
 				1DCC35471D8592F3004086F7 /* AeropressWhite.pdf in Resources */,
-				1DC8B00F1DA14EF000478934 /* Beehouse.pdf in Resources */,
 				1DBDB70F1D7582C100C996E1 /* Raleway-BlackItalic.ttf in Resources */,
 				1DCC35501D8592F3004086F7 /* FrenchPress.pdf in Resources */,
-				1DD53DCE1DA56A2E00D7F3F9 /* CoffeeListDeselected.pdf in Resources */,
-				1DD53DCF1DA56A2E00D7F3F9 /* SettingsSelected.pdf in Resources */,
 				1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
