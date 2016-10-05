@@ -48,7 +48,7 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
             DataController.sharedInstance.saveContext()
         }
         
-        delete.backgroundColor = ProjectColors.Red
+        delete.backgroundColor = UIColor.red
         
         return [edit, delete]
     }

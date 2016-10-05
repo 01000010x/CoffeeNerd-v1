@@ -11,7 +11,7 @@ import UIKit
 
 struct ProjectColors {
     static let Sand = UIColor(red: 240/255.0, green: 237/255.0, blue: 227/255.0, alpha: 1.0)
-    static let Red = UIColor(red: 188/255.0, green: 74/255.0, blue: 70/255.0, alpha: 1.0)
+    static let MediumBlue = UIColor(red: 80/255.0, green: 148/255.0, blue: 222/255.0, alpha: 1.0)
     
     struct Grey {
         static let Dark = UIColor(red: 160/255.0, green: 143/255.0, blue: 143/255.0, alpha: 1.0)
@@ -40,4 +40,6 @@ struct ProjectColors {
         static let DarkGrey = UIColor(red: 151/255.0, green: 151/255.0, blue: 151/255.0, alpha: 1.0)
         static let Yellow = UIColor(red: 221/255.0, green: 216/255.0, blue: 190/255.0, alpha: 1.0)
     }
+    
+    
 }
