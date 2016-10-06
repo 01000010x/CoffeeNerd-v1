@@ -99,7 +99,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = (self.view.frame.size.width - 1) / 2.0
-        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y - 176) / 6
+        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y - 150) / 6
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
