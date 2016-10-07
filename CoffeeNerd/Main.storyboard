@@ -523,6 +523,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="add coffee" image="AddCoffeeDeselected" id="pz0-CP-90e"/>
                     <connections>
+                        <outlet property="brewingTableView" destination="FwL-66-hBG" id="7ks-w3-BMH"/>
                         <outlet property="caffeinatedSegmentedControl" destination="rcP-lq-hPH" id="oKf-sd-ny5"/>
                         <outlet property="nameTextField" destination="iQJ-HU-mWV" id="BbO-XF-uQh"/>
                         <outlet property="originTextField" destination="dp6-3b-TLX" id="KCK-Ux-ahd"/>

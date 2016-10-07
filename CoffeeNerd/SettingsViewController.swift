@@ -30,11 +30,11 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     
     // MARK: View Controller
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         loadSettings()
     }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -45,7 +45,10 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         self.automaticallyAdjustsScrollViewInsets = false
         collectionView.reloadData()
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        saveSettings()
+    }
     
     
     // MARK: Collection View Data Source
@@ -65,19 +68,17 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         let selected = settingsList[(indexPath as NSIndexPath).row].isPosessed
         cell.labelView.text = settingsList[(indexPath as NSIndexPath).row].name
         updateCellAppearance(cell, atIndexPath: indexPath, isSelected: selected)
-        
+        print("cell")
         return cell
     }
     
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let reusableview: UICollectionReusableView
-        
-       // if kind == UICollectionElementKindSectionHeader {
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableCell", for: indexPath) as! HeaderReusableCell
-            headerView.headerLabel.text = "What kind of brewing method\ndo you use?"
-            reusableview = headerView
-       
+
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableCell", for: indexPath) as! HeaderReusableCell
+        headerView.headerLabel.text = "What kind of brewing method\ndo you use?"
+        reusableview = headerView
         
         return reusableview
     }
@@ -88,9 +89,11 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         if settingsList[(indexPath as NSIndexPath).row].isPosessed {
             settingsList[(indexPath as NSIndexPath).row].isPosessed = false
             updateCellAppearance(cell, atIndexPath: indexPath, isSelected: false)
+            print("deposessed")
         } else {
             settingsList[(indexPath as NSIndexPath).row].isPosessed = true
             updateCellAppearance(cell, atIndexPath: indexPath, isSelected: true)
+            print("posessed")
         }
     }
     
@@ -131,12 +134,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     
-    func presentListViewController() {
-        let listView =  self.storyboard?.instantiateViewController(withIdentifier: "ListViewController") as! CoffeeListViewController
-        self.present(listView, animated: true, completion: nil)
-    }
-    
-    
     func presentAlertPickABrewingMethod() {
         let alertController = UIAlertController(title: "Brewing Method Missing", message: "You must pick at least one brewing method", preferredStyle: .alert)
         let callAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -162,17 +159,16 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     
-    // Replace saving / loading and controller var : settingsList with a CoffeeSettings Class and a
-    // a singleton design pattern on app delegate level.
-    // instead of creating the load functions and the two variables in each controller needed it
     func saveSettings() {
         NSKeyedArchiver.archiveRootObject(settingsList, toFile: itemArchiveURL.path!)
+        print(itemArchiveURL)
     }
     
     
     func loadSettings() {
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
             settingsList = archivedItems
+            print("load Archive")
         }
     }
 
@@ -183,7 +179,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     @IBAction func validateButtonTapped(_ sender: UIButton) {
         if isBrewMethodWasPicked() {
             saveSettings()
-            presentListViewController()
         } else {
             presentAlertPickABrewingMethod()
         }

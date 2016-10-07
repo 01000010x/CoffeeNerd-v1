@@ -17,9 +17,6 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         // If no settings recorded, display the settings view
         self.selectedViewController = self.viewControllers![selectedItem]
         configureTabBarColors()
-        
-        
-
     }
     
     

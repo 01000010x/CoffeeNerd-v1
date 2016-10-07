@@ -21,7 +21,7 @@ class BrewSetting: NSObject, NSCoding {
     required init(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObject(forKey: "name") as! String
         isPosessed = aDecoder.decodeBool(forKey: "isPosessed")
-        print("NAME : \(name)")
+        //print("NAME : \(name)")
         super.init()
     }
     

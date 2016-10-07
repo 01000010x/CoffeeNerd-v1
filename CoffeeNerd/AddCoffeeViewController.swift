@@ -18,6 +18,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet var shopTextField: UITextField!
     @IBOutlet var caffeinatedSegmentedControl: UISegmentedControl!
     @IBOutlet var validateButton: UIButton!
+    @IBOutlet var brewingTableView: UITableView!
     
     // Singleton of CoreData Stack
     let dataController = DataController.sharedInstance
@@ -41,10 +42,21 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     // MARK: View Controller
     
-    override func viewWillAppear(_ animated: Bool) {
+   /* override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureHeaderTextFields()
         loadSettings()
+        brewingTableView.reloadData()
+    }
+    */
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        configureHeaderTextFields()
+        loadSettings()
+        brewingTableView.reloadData()
+        brewingTableView.setContentOffset(CGPoint.zero, animated: false)
+        
     }
     
     
@@ -77,6 +89,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeCell", for: indexPath) as! AddCoffeeCell
+        print("index : \(indexPath.row)")
         let brewImage: UIImage = settingsListPosessed[(indexPath as NSIndexPath).row].iconNotSelected()
         cell.configureBrewingLabel(withText: settingsListPosessed[indexPath.row].name)
         cell.configureBrewingImage(withImage: brewImage)
@@ -139,10 +152,12 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         let entity =  NSEntityDescription.entity(forEntityName: BrewType.identifier, in:managedContext)
         
         // User Info
+        settingsListPosessed.removeAll()
         if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
+            brewTypeList.removeAll()
             
             for brewSetting in archivedItems where brewSetting.isPosessed {
-                
+                print("load : \(brewSetting.name)")
                 settingsListPosessed.append(brewSetting)
                 
                 // Core Data : Create a Brewing Type per BrewSetting selected in the app Settings
