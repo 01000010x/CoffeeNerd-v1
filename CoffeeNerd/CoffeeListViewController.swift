@@ -10,14 +10,24 @@ import UIKit
 import CoreData
 
 class CoffeeListViewController: UIViewController, UITableViewDelegate {
+    
+    // MARK: Variables and IBOutlets
+    
     @IBOutlet var tableListView: UITableView!
-    @IBOutlet var addCoffeeButton: UIButton!
     
     let textCellIdentifier = "coffeeCell"
         
     lazy var dataSource: CoffeeListDataSource = {
         return CoffeeListDataSource(tableView: self.tableListView)
     }()
+    
+    var selectedIndexPath: IndexPath?
+    
+    var coffeeBean: CoffeeBean?
+    var brewTypes = [BrewType]()
+    
+    
+    // MARK: View Controller
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +42,48 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
         super.viewWillDisappear(animated)
     }
     
+    
     // MARK: UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath == selectedIndexPath {
+            let brewTypeNumber = brewTypes.count
+            print("typeNum : \(brewTypeNumber)")
+            return (CustomCell.expandedHeight * 2) + CustomCell.defaultHeight
+        } else {
+            return CustomCell.defaultHeight
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let previousIndexPath = selectedIndexPath
+        if indexPath == selectedIndexPath {
+            selectedIndexPath = nil
+        } else {
+            selectedIndexPath = indexPath
+            
+            // Retrieve the selected CoffeeBean from the data
+            coffeeBean = dataSource.whichCoffeeBean(atIndexPath: indexPath)
+            brewTypes.removeAll()
+            for brewType in (coffeeBean?.brewTypes)! {
+                brewTypes.append(brewType as! BrewType)
+                print("Brew Type : \(brewTypes[indexPath.row].brewingMethodName)")
+            }
+        }
+        
+        var indexPaths : Array<IndexPath> = []
+        if let previous = previousIndexPath {
+            indexPaths += [previous]
+        }
+        if let current = selectedIndexPath {
+            indexPaths += [current]
+        }
+        if indexPaths.count > 0 {
+            tableView.reloadRows(at: indexPaths as [IndexPath], with: UITableViewRowAnimation.automatic)
+        }
+    }
+    
+    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
             let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "AddCoffeeController") as! AddCoffeeViewController
@@ -57,15 +108,5 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     // MARK: FetchedResultsControllerDelegate
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableListView.reloadData()
-    }
-    
-    // MARK: Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DetailsViewSegue" {
-            guard let destinationController = segue.destination as? CoffeeDetailsViewController, let indexPath = tableListView.indexPathForSelectedRow else { return }
-            
-            let coffeeBeanSelected = self.dataSource.object(atIndexPath: indexPath)
-            destinationController.coffeeBean = coffeeBeanSelected
-        }
     }
 }

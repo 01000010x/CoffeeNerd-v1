@@ -29,6 +29,7 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
     func object(atIndexPath indexPath: IndexPath) -> CoffeeBean{
         return fetchedResultsController.object(at: indexPath)
     }
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return fetchedResultsController.sections?.count ?? 0
@@ -43,13 +44,22 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeCell", for: indexPath)
-        return configureCell(cell: cell, atIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeCell", for: indexPath) as! CustomCell
+        cell.name.text = "Essai"
+        
+        //return configureCell(cell: cell, atIndexPath: indexPath)
+        return cell
     }
     
+    
+    // MARK: Internal Functions
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) -> UITableViewCell {
         let coffeeBean = fetchedResultsController.object(at: indexPath)
         cell.textLabel?.text = coffeeBean.name
         return cell
+    }
+    
+    func whichCoffeeBean(atIndexPath indexPath: IndexPath) -> CoffeeBean {
+        return fetchedResultsController.object(at: indexPath)
     }
 }
