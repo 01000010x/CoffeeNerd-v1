@@ -21,7 +21,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet var brewingTableView: UITableView!
     
     // Singleton of CoreData Stack
-    let dataController = DataController.sharedInstance
+    var dataController = DataController.sharedInstance
     
     // Path to save users info. We use it to save and fetch the user settings
     let itemArchiveURL: NSURL = {
@@ -39,6 +39,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     // Coffee Bean that will be created and set in this view Controller
     var coffeeBean: CoffeeBean?
     
+    var alert:UIAlertController!
     
     // MARK: View Controller
     
@@ -55,8 +56,9 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         configureHeaderTextFields()
         loadSettings()
         brewingTableView.reloadData()
-        brewingTableView.setContentOffset(CGPoint.zero, animated: false)
         
+        // Scroll to the top when user play with tab bar and goes again on that view
+        brewingTableView.setContentOffset(CGPoint.zero, animated: false)
     }
     
     
@@ -172,16 +174,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
-    // Create a brewing type and insert it in the brewing type list
-    func initBrewingType() {
-        let managedContext = dataController.managedObjectContext
-        let entity =  NSEntityDescription.entity(forEntityName: BrewType.identifier, in:managedContext)
-        let newBrewingType = NSManagedObject(entity: entity!, insertInto: managedContext) as! BrewType
-        brewTypeList.append(newBrewingType)
-    }
-
-    
-    func saveCoffeeBeans() {
+   func saveCoffeeBeans() {
         // For Core Data
         let managedContext = dataController.managedObjectContext
         let entity =  NSEntityDescription.entity(forEntityName: CoffeeBean.identifier, in:managedContext)
@@ -210,11 +203,44 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     
+    func resetCollectionView() {
+        nameTextField.text = nil
+        originTextField.text = nil
+        shopTextField.text = nil
+    }
+    
+    
+    func showAlert() {
+        self.alert = UIAlertController(title: nil, message: "Saving successful !", preferredStyle: UIAlertControllerStyle.alert)
+        self.present(self.alert, animated: true, completion: nil)
+        Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(AddCoffeeViewController.dismissAlert), userInfo: nil, repeats: false)
+    }
+    
+    
+    func dismissAlert(){
+        // Dismiss the alert from here
+        self.alert.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    func displaySuccessfulSaveMessage() {
+        
+        
+        
+    }
+    
     // MARK: IBActions
     
     @IBAction func validateButtonTapped(_ sender: UIButton) {
         saveCoffeeBeans()
-        //self.navigationController?.popViewController(animated: true)
+        self.nameTextField.becomeFirstResponder()
+        self.nameTextField.resignFirstResponder()
+        showAlert()
+        resetCollectionView()
+        configureHeaderTextFields()
+        loadSettings()
+        brewingTableView.reloadData()
+        
     }
     
     
