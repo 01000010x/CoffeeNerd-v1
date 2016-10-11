@@ -15,7 +15,7 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet var tableListView: UITableView!
     
-    let textCellIdentifier = "coffeeCell"
+    //let textCellIdentifier = "CoffeeCell"
     
     lazy var dataSource: CoffeeListDataSource = {
         return CoffeeListDataSource(tableView: self.tableListView)
@@ -24,7 +24,6 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     var selectedIndexPath: IndexPath?
     var coffeeBean: CoffeeBean?
     let brewSettingList = BrewSettingList.sharedInstance.settingsList
-    var posessedSettingList = [BrewSetting]()
     
     
     // MARK: View Controller
@@ -33,14 +32,9 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         self.tableListView.dataSource = dataSource
     }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
     
     override func viewWillAppear(_ animated: Bool) {
-        initPosessedSettingList()
-        if let indexPath = selectedIndexPath {
+       if let indexPath = selectedIndexPath {
             let cell = tableListView.cellForRow(at: indexPath) as! CustomCell
             cell.ignoreFrameChanges();
             tableListView.reloadRows(at: [indexPath], with: .automatic)
@@ -54,7 +48,12 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        // print("height For Row at : \(indexPath.row)")
         if indexPath == selectedIndexPath {
-            let customExpandedHeight = CGFloat(posessedSettingList.count) * CustomCell.expandedHeight
+            var nbSettingsPosessed = 0
+            for brewSetting in BrewSettingList.sharedInstance.settingsList where brewSetting.isPosessed == true {
+                nbSettingsPosessed+=1
+            }
+            
+            let customExpandedHeight = CGFloat(nbSettingsPosessed) * CustomCell.expandedHeight
             return (customExpandedHeight + CustomCell.defaultHeight)
         } else {
             return CustomCell.defaultHeight
@@ -90,16 +89,11 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
         
         if indexPaths.count > 0 {
             tableView.reloadRows(at: indexPaths as [IndexPath], with: UITableViewRowAnimation.automatic)
-
-            if let current = selectedIndexPath { // a cell has just been tapped that is not the previous
-                // Get the cell buttons array
+            
+            // a cell has just been tapped that is not the previous
+            if let current = selectedIndexPath {
+                // Configure the buttons action
                 configureButtonsTarget(atIndexPath: current)
-                //let brewingButtons = (tableView.cellForRow(at: current) as! CustomCell).returnButtonsArray()
-                    
-                // Add actions to the cell buttons
-                //for button in brewingButtons {
-                //    button.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
-                //}
             }
         }
     }
@@ -136,16 +130,11 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     
     
     // MARK: FetchedResultsControllerDelegate
+    
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableListView.reloadData()
     }
     
-    func initPosessedSettingList() {
-        posessedSettingList.removeAll()
-        for brewSetting in brewSettingList where brewSetting.isPosessed == true {
-            posessedSettingList.append(brewSetting)
-        }
-    }
     
     func buttonTapped(sender: UIButton!) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
@@ -163,6 +152,7 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
         
         present(coffeeDetailsVC, animated: true, completion: nil)
     }
+    
     
     func configureButtonsTarget(atIndexPath indexPath: IndexPath) {
         let brewingButtons = (self.tableListView.cellForRow(at: indexPath) as! CustomCell).returnButtonsArray()

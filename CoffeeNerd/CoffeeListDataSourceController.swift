@@ -12,6 +12,8 @@ import CoreData
 
 class CoffeeListDataSource: NSObject, UITableViewDataSource {
     
+    // Mark: Variables
+    
     private let tableView: UITableView
     
     let managedObjectContext = DataController.sharedInstance.managedObjectContext
@@ -20,13 +22,6 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
         let controller = CoffeeFetchedResultsController(managedObjectContext: self.managedObjectContext, withTableView: self.tableView)
         return controller
     }()
-    
-    // Path to save users info. We use it to save and fetch the user settings
-    let itemArchiveURL: NSURL = {
-        let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentDirectory = documentDirectories.first!
-        return documentDirectory.appendingPathComponent("item.archive") as NSURL
-    }()
 
     
     init(tableView: UITableView) {
@@ -34,6 +29,7 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
     }
     
     // MARK: Table View Data Source Protocol
+    
     func object(atIndexPath indexPath: IndexPath) -> CoffeeBean{
         return fetchedResultsController.object(at: indexPath)
     }
@@ -56,14 +52,8 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
         let coffeeBean = fetchedResultsController.object(at: indexPath)
         
         cell.configAppearance()
-        print(coffeeBean.name)
         cell.configureLabel(withLabel: coffeeBean.name)
         
         return cell
     }
-    
-    
-    
-    
-    // MARK: Internal Functions
 }
