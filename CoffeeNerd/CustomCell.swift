@@ -146,10 +146,4 @@ class CustomCell: UITableViewCell {
         self.name.text = label
     }
     
-    func reloadCellToBlank() {
-        for brewingButton in brewingButtons {
-            brewingButton.isHidden = true
-            self.frame.size.height = CustomCell.defaultHeight
-        }
-    }
 }
