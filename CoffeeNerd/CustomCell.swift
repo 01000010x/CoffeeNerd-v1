@@ -121,11 +121,19 @@ class CustomCell: UITableViewCell {
         if brewSettingsPosessedNumber >= 1 {
             for i in 0...(brewSettingsPosessedNumber - 1) {
                 brewingButtons[i].isHidden = (frame.size.height == CustomCell.defaultHeight)
+                brewingButtons[i].reloadInputViews()
             }
         }
     }
     
     func configureLabel(withLabel label: String) {
         self.name.text = label
+    }
+    
+    func reloadCellToBlank() {
+        for brewingButton in brewingButtons {
+            brewingButton.isHidden = true
+            self.frame.size.height = CustomCell.defaultHeight
+        }
     }
 }

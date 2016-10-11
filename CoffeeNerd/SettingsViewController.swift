@@ -30,15 +30,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     
     // MARK: View Controller
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        //loadSettings()
-    }
-    
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

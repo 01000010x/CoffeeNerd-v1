@@ -115,23 +115,23 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
        
-        let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
-            let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "AddCoffeeController") as! AddCoffeeViewController
-            let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath)
-            destinationController.coffeeBean = selectedCoffeeBean
-            self.present(destinationController, animated:true, completion: nil)
-        }
-        edit.backgroundColor = ProjectColors.Grey.Faded
-        
-        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
-            let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath) as NSManagedObject
-            self.dataSource.managedObjectContext.delete(selectedCoffeeBean) // créer une méhode dans le data source nan ?
-            DataController.sharedInstance.saveContext()
-        }
-        
-        delete.backgroundColor = UIColor.red
-        
-        return [edit, delete]
+            let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+                let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "AddCoffeeController") as! AddCoffeeViewController
+                let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath)
+                destinationController.coffeeBean = selectedCoffeeBean
+                self.present(destinationController, animated:true, completion: nil)
+            }
+            edit.backgroundColor = ProjectColors.Grey.Faded
+            
+            let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+                let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath) as NSManagedObject
+                self.dataSource.managedObjectContext.delete(selectedCoffeeBean) // créer une méhode dans le data source nan ?
+                DataController.sharedInstance.saveContext()
+            }
+            
+            delete.backgroundColor = UIColor.red
+            
+            return [edit, delete]
     }
     
     
