@@ -84,24 +84,6 @@ class CustomCell: UITableViewCell {
         return brewingButtons
     }
     
-    /*
-    func displayButtons() {
-        var i = 0
-        for button in self.brewingButtons  {
-            button.isHidden = false
-            i+=1
-        }
-    }
-    
-    func hideButtons() {
-        var i = 0
-        for button in self.brewingButtons {
-            button.isHidden = true
-            i+=1
-        }
-    }
- */
-    
     func watchFrameChanges() {
         if !isObserving {
             addObserver(self, forKeyPath: "frame", options: [NSKeyValueObservingOptions.new, NSKeyValueObservingOptions.initial], context: nil)
@@ -136,8 +118,10 @@ class CustomCell: UITableViewCell {
         }
         
         // hide or show depending on number of brewSettings
-        for i in 0...(brewSettingsPosessedNumber - 1) {
-            brewingButtons[i].isHidden = (frame.size.height == CustomCell.defaultHeight)
+        if brewSettingsPosessedNumber >= 1 {
+            for i in 0...(brewSettingsPosessedNumber - 1) {
+                brewingButtons[i].isHidden = (frame.size.height == CustomCell.defaultHeight)
+            }
         }
     }
     

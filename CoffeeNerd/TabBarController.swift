@@ -10,11 +10,17 @@ import UIKit
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
-    var selectedItem: Int = 3
+    var selectedItem: Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // If no settings recorded, display the settings view
+        if BrewSettingList.sharedInstance.settingsList.count == 0 {
+            selectedItem = 3
+        } else {
+            selectedItem = 0
+        }
+        
         self.selectedViewController = self.viewControllers![selectedItem]
         configureTabBarColors()
     }
@@ -53,7 +59,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     func configureItemFonts() {
         let attributesUnselected = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName : UIFont(name: "Raleway-Regular", size: 13)!]
-        let attributesSelected = [NSForegroundColorAttributeName: ProjectColors.MediumBlue, NSFontAttributeName : UIFont(name: "Raleway-Bold", size: 13)!]
+        let attributesSelected = [NSForegroundColorAttributeName: ProjectColors.Blue.medium, NSFontAttributeName : UIFont(name: "Raleway-Bold", size: 13)!]
         
         for item in self.tabBar.items! {
             if item.tag == selectedItem {

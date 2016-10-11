@@ -44,13 +44,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         collectionView.reloadData()
-        let notificationCenter = NotificationCenter.default
-        
-        // Add observer:
-        notificationCenter.addObserver(self,
-                                       selector:#selector(BrewSettingList.sharedInstance.save),
-                                       name:NSNotification.Name.UIApplicationWillTerminate,
-                                       object:nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -106,34 +99,35 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     // MARK: - UICollectionViewFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellWidth = (self.view.frame.size.width - 1) / 2.0
-        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y - 150) / 6
+        let cellWidth = (self.view.frame.size.width - 30) / 2.0
+        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y - 150) / 5
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1.0
+        return 0.0
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(1.0, 0, 1.0, 0)
+        return UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)
     }
+
     
-    
+
     // MARK: Internal Controller Functions
     
     func updateCellAppearance(_ cell: SettingCellView, atIndexPath indexPath: IndexPath, isSelected selected: Bool) {
         if selected {
             cell.labelView.font = UIFont(name: "Raleway-Medium", size: 14.0)
-            cell.labelView.textColor = ProjectColors.Sand
-            cell.contentView.backgroundColor = ProjectColors.Brown.Dark
+            cell.labelView.textColor = UIColor.white
+            cell.contentView.backgroundColor = ProjectColors.Blue.medium
             cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconSelected()
         } else {
             cell.labelView.font = UIFont(name: "Raleway-light", size: 14.0)
-            cell.labelView.textColor = ProjectColors.Brown.Dark
-            cell.contentView.backgroundColor = ProjectColors.Sand
+            cell.labelView.textColor = ProjectColors.Grey.medium
+            cell.contentView.backgroundColor = ProjectColors.Grey.light
             cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconNotSelected()
         }
     }
