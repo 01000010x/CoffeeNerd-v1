@@ -19,6 +19,8 @@ struct ProjectColors {
         static let light = UIColor(red: 247/255.0, green: 247/255.0, blue: 247/255.0, alpha: 1.0)
         static let medium = UIColor(red: 158/255.0, green: 158/255.0, blue: 158/255.0, alpha: 1.0)
         static let deep = UIColor(red: 81/255.0, green: 81/255.0, blue: 81/255.0, alpha: 1.0)
+        static let lightPlaceholder = UIColor(red: 75/255.0, green: 75/255.0, blue: 75/255.0, alpha: 0.5)
+        
     }
     
     struct Brown {
@@ -39,6 +41,7 @@ struct ProjectColors {
     
     struct SeparatorColor {
         static let LightGrey = UIColor(red: 206/255.0, green: 206/255.0, blue: 206/255.0, alpha: 1.0)
+        static let lightGrey = UIColor(red: 211/255.0, green: 211/255.0, blue: 211/255.0, alpha: 1.0)
         static let DarkGrey = UIColor(red: 151/255.0, green: 151/255.0, blue: 151/255.0, alpha: 1.0)
         static let Yellow = UIColor(red: 221/255.0, green: 216/255.0, blue: 190/255.0, alpha: 1.0)
     }

@@ -23,13 +23,6 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     // Singleton of CoreData Stack
     var dataController = DataController.sharedInstance
     
-    // Path to save users info. We use it to save and fetch the user settings
-    let itemArchiveURL: NSURL = {
-        let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentDirectory = documentDirectories.first!
-        return documentDirectory.appendingPathComponent("item.archive") as NSURL
-    }()
-    
     // Array of BrewType. It contains the BrewTypes for a single CoffeeBean
     var brewTypeList = [BrewType]()
     
@@ -42,15 +35,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     var alert:UIAlertController!
     
     // MARK: View Controller
-    
-   /* override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        configureHeaderTextFields()
-        loadSettings()
-        brewingTableView.reloadData()
-    }
-    */
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         configureHeaderTextFields()
@@ -69,7 +54,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let separatorColor = ProjectColors.SeparatorColor.Yellow
+        let separatorColor = ProjectColors.SeparatorColor.lightGrey
         let padding: CGFloat = nameTextField.frame.height / 4.0
         nameTextField.drawBottomLine(separatorColor, padding: padding)
         originTextField.drawBottomLine(separatorColor, padding: padding)
@@ -135,7 +120,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func configureHeaderTextFields() {
         let attributes = [
-            NSForegroundColorAttributeName: ProjectColors.Brown.Faded,
+            NSForegroundColorAttributeName: ProjectColors.Grey.lightPlaceholder,
             NSFontAttributeName : UIFont(name: "Raleway-LightItalic", size: 14)!
         ]
         
@@ -155,21 +140,19 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // User Info
         settingsListPosessed.removeAll()
-        if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
-            brewTypeList.removeAll()
+        brewTypeList.removeAll()
             
-            for brewSetting in archivedItems where brewSetting.isPosessed {
-                print("load : \(brewSetting.name)")
-                settingsListPosessed.append(brewSetting)
-                
-                // Core Data : Create a Brewing Type per BrewSetting selected in the app Settings
-                let newBrewingType = NSManagedObject(entity: entity!, insertInto: managedContext) as! BrewType
-                newBrewingType.setValue(brewSetting.name, forKey: "brewingMethodName")
-                newBrewingType.setValue("0", forKey: "groundSetting")
-                newBrewingType.setValue(0, forKey: "groundWeight")
-                newBrewingType.setValue(0, forKey: "brewingTime")
-                brewTypeList.append(newBrewingType)
-            }
+        for brewSetting in BrewSettingList.sharedInstance.settingsList where brewSetting.isPosessed {
+            print("load : \(brewSetting.name)")
+            settingsListPosessed.append(brewSetting)
+            
+            // Core Data : Create a Brewing Type per BrewSetting selected in the app Settings
+            let newBrewingType = NSManagedObject(entity: entity!, insertInto: managedContext) as! BrewType
+            newBrewingType.setValue(brewSetting.name, forKey: "brewingMethodName")
+            newBrewingType.setValue("0", forKey: "groundSetting")
+            newBrewingType.setValue(0, forKey: "groundWeight")
+            newBrewingType.setValue(0, forKey: "brewingTime")
+            brewTypeList.append(newBrewingType)
         }
     }
     
@@ -222,12 +205,6 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         self.alert.dismiss(animated: true, completion: nil)
     }
     
-    
-    func displaySuccessfulSaveMessage() {
-        
-        
-        
-    }
     
     // MARK: IBActions
     

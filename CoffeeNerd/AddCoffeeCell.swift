@@ -62,9 +62,4 @@ class AddCoffeeCell: UITableViewCell {
         brewingMethodLabel.drawLine(lineOneStartPoint, end: lineOneEndPoint, color: ProjectColors.Brown.Dark)
         brewingMethodLabel.drawLine(lineTwoStartPoint, end: lineTwoEndPoint, color: ProjectColors.Brown.Dark)
     }
-    
-    /* func configureBrewingSettings(withCoffeeSettings coffeeSettings: CoffeeSettings) {
-        
-    }*/
-
 }
