@@ -20,14 +20,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     // Singleton instance for Brewing Settings List
     let brewSettingList = BrewSettingList.sharedInstance.settingsList
     
-    // Place where are stored the app settings (ie: Which brew methods did the user select
-    let itemArchiveURL: NSURL = {
-        let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentDirectory = documentDirectories.first!
-        return documentDirectory.appendingPathComponent("item.archive") as NSURL
-    }()
-    
-    
     
     // MARK: View Controller
     
@@ -120,31 +112,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
             cell.labelView.textColor = ProjectColors.Grey.medium
             cell.contentView.backgroundColor = ProjectColors.Grey.light
             cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconNotSelected()
-        }
-    }
-    
-    
-    func presentAlertPickABrewingMethod() {
-        let alertController = UIAlertController(title: "Brewing Method Missing", message: "You must pick at least one brewing method", preferredStyle: .alert)
-        let callAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(callAction)
-        present(alertController, animated: true, completion: nil)
-    }
-    
-    
-    func isBrewMethodWasPicked() -> Bool {
-        var brewingMethodPicked: Int = 0
-        
-        for setting in brewSettingList {
-            if setting.isPosessed == true {
-                brewingMethodPicked += 1
-            }
-        }
-        
-        if brewingMethodPicked == 0 {
-            return false
-        } else {
-            return true
         }
     }
 }
