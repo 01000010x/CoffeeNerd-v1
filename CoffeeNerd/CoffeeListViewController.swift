@@ -16,15 +16,15 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     @IBOutlet var tableListView: UITableView!
     
     let textCellIdentifier = "coffeeCell"
-        
+    
     lazy var dataSource: CoffeeListDataSource = {
         return CoffeeListDataSource(tableView: self.tableListView)
     }()
     
     var selectedIndexPath: IndexPath?
-    
     var coffeeBean: CoffeeBean?
-    var brewTypes = [BrewType]()
+    let brewSettingList = BrewSettingList.sharedInstance.settingsList
+    var posessedSettingList = [BrewSetting]()
     
     
     // MARK: View Controller
@@ -34,57 +34,87 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
         self.tableListView.dataSource = dataSource
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        initPosessedSettingList()
+        if let indexPath = selectedIndexPath {
+            let cell = tableListView.cellForRow(at: indexPath) as! CustomCell
+            cell.ignoreFrameChanges();
+            tableListView.reloadRows(at: [indexPath], with: .automatic)
+            configureButtonsTarget(atIndexPath: indexPath)
+        }
     }
     
     
     // MARK: UITableViewDelegate
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       // print("height For Row at : \(indexPath.row)")
         if indexPath == selectedIndexPath {
-            let brewTypeNumber = brewTypes.count
-            print("typeNum : \(brewTypeNumber)")
-            return (CustomCell.expandedHeight * 2) + CustomCell.defaultHeight
+            let customExpandedHeight = CGFloat(posessedSettingList.count) * CustomCell.expandedHeight
+            return (customExpandedHeight + CustomCell.defaultHeight)
         } else {
             return CustomCell.defaultHeight
         }
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        //print("ESTIMATED height For Row at : \(indexPath.row)")
+        return CustomCell.defaultHeight
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let previousIndexPath = selectedIndexPath
-        if indexPath == selectedIndexPath {
+       //print("Did select Row : \(indexPath.row)")
+        
+        let previousIndexPath = selectedIndexPath // if a cell was expanded
+        
+        if indexPath == selectedIndexPath { // case of a retap on same cell
             selectedIndexPath = nil
-        } else {
+        } else { // case of tap on a new cell
             selectedIndexPath = indexPath
-            
             // Retrieve the selected CoffeeBean from the data
-            coffeeBean = dataSource.whichCoffeeBean(atIndexPath: indexPath)
-            brewTypes.removeAll()
-            for brewType in (coffeeBean?.brewTypes)! {
-                brewTypes.append(brewType as! BrewType)
-                print("Brew Type : \(brewTypes[indexPath.row].brewingMethodName)")
-            }
+            coffeeBean = dataSource.object(atIndexPath: indexPath)
         }
         
         var indexPaths : Array<IndexPath> = []
-        if let previous = previousIndexPath {
+        if let previous = previousIndexPath { // a cell was tapped
             indexPaths += [previous]
         }
-        if let current = selectedIndexPath {
+        
+        if let current = selectedIndexPath { // a cell has just been tapped that is not the previous
             indexPaths += [current]
         }
+        
         if indexPaths.count > 0 {
             tableView.reloadRows(at: indexPaths as [IndexPath], with: UITableViewRowAnimation.automatic)
+
+            if let current = selectedIndexPath { // a cell has just been tapped that is not the previous
+                // Get the cell buttons array
+                configureButtonsTarget(atIndexPath: current)
+                //let brewingButtons = (tableView.cellForRow(at: current) as! CustomCell).returnButtonsArray()
+                    
+                // Add actions to the cell buttons
+                //for button in brewingButtons {
+                //    button.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
+                //}
+            }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as! CustomCell).watchFrameChanges()
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as! CustomCell).ignoreFrameChanges()
     }
     
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+       
         let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
             let destinationController = self.storyboard?.instantiateViewController(withIdentifier: "AddCoffeeController") as! AddCoffeeViewController
             let selectedCoffeeBean = self.dataSource.object(atIndexPath: indexPath)
@@ -108,5 +138,38 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     // MARK: FetchedResultsControllerDelegate
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableListView.reloadData()
+    }
+    
+    func initPosessedSettingList() {
+        posessedSettingList.removeAll()
+        for brewSetting in brewSettingList where brewSetting.isPosessed == true {
+            posessedSettingList.append(brewSetting)
+        }
+    }
+    
+    func buttonTapped(sender: UIButton!) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let coffeeDetailsVC = storyboard.instantiateViewController(withIdentifier: "CoffeeDetailsViewController") as! CoffeeDetailsViewController
+        
+        if let coffeeBean = self.coffeeBean {
+            coffeeDetailsVC.coffeeBean = coffeeBean;
+        }
+        
+        if let buttonTitle = sender.title(for: .normal) {
+            coffeeDetailsVC.brewSetting = BrewSetting(name: buttonTitle)
+        }
+        
+        coffeeDetailsVC.modalPresentationStyle = .overCurrentContext
+        
+        present(coffeeDetailsVC, animated: true, completion: nil)
+    }
+    
+    func configureButtonsTarget(atIndexPath indexPath: IndexPath) {
+        let brewingButtons = (self.tableListView.cellForRow(at: indexPath) as! CustomCell).returnButtonsArray()
+        
+        // Add actions to the cell buttons
+        for button in brewingButtons {
+            button.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
+        }
     }
 }

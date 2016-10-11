@@ -21,6 +21,14 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
         return controller
     }()
     
+    // Path to save users info. We use it to save and fetch the user settings
+    let itemArchiveURL: NSURL = {
+        let documentDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectory = documentDirectories.first!
+        return documentDirectory.appendingPathComponent("item.archive") as NSURL
+    }()
+
+    
     init(tableView: UITableView) {
         self.tableView = tableView
     }
@@ -45,21 +53,17 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeCell", for: indexPath) as! CustomCell
-        cell.name.text = "Essai"
+        let coffeeBean = fetchedResultsController.object(at: indexPath)
         
-        //return configureCell(cell: cell, atIndexPath: indexPath)
+        cell.configAppearance()
+        print(coffeeBean.name)
+        cell.configureLabel(withLabel: coffeeBean.name)
+        
         return cell
     }
+    
+    
     
     
     // MARK: Internal Functions
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) -> UITableViewCell {
-        let coffeeBean = fetchedResultsController.object(at: indexPath)
-        cell.textLabel?.text = coffeeBean.name
-        return cell
-    }
-    
-    func whichCoffeeBean(atIndexPath indexPath: IndexPath) -> CoffeeBean {
-        return fetchedResultsController.object(at: indexPath)
-    }
 }

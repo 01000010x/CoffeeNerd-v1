@@ -17,8 +17,8 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     // MARK: Constants and Variables Declaration
     
-    // List of the possible brew method in the app - will evolve depending on the user will
-    var settingsList: [BrewSetting] = [BrewSetting(name: "Espresso"), BrewSetting(name: "French Press"), BrewSetting(name: "Cold Brew"),  BrewSetting(name: "Chemex"), BrewSetting(name: "V60"), BrewSetting(name: "Kalita Wave"), BrewSetting(name: "Bonmac"), BrewSetting(name: "Italian"), BrewSetting(name: "Vacuum"), BrewSetting(name: "Aeropress"), BrewSetting(name: "Bee House"), BrewSetting(name: "Eva Solo")]
+    // Singleton instance for Brewing Settings List
+    let brewSettingList = BrewSettingList.sharedInstance.settingsList
     
     // Place where are stored the app settings (ie: Which brew methods did the user select
     let itemArchiveURL: NSURL = {
@@ -32,7 +32,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     // MARK: View Controller
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadSettings()
+        //loadSettings()
     }
     
     
@@ -44,13 +44,20 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         collectionView.reloadData()
+        let notificationCenter = NotificationCenter.default
+        
+        // Add observer:
+        notificationCenter.addObserver(self,
+                                       selector:#selector(BrewSettingList.sharedInstance.save),
+                                       name:NSNotification.Name.UIApplicationWillTerminate,
+                                       object:nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        saveSettings()
+        BrewSettingList.sharedInstance.save()
     }
     
-    
+
     // MARK: Collection View Data Source
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -59,16 +66,16 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return settingsList.count
+        print(brewSettingList.count)
+        return brewSettingList.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SettingCellView", for: indexPath) as! SettingCellView
-        let selected = settingsList[(indexPath as NSIndexPath).row].isPosessed
-        cell.labelView.text = settingsList[(indexPath as NSIndexPath).row].name
+        let selected = brewSettingList[(indexPath as NSIndexPath).row].isPosessed
+        cell.labelView.text = brewSettingList[(indexPath as NSIndexPath).row].name
         updateCellAppearance(cell, atIndexPath: indexPath, isSelected: selected)
-        print("cell")
         return cell
     }
     
@@ -86,14 +93,12 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! SettingCellView
-        if settingsList[(indexPath as NSIndexPath).row].isPosessed {
-            settingsList[(indexPath as NSIndexPath).row].isPosessed = false
+        if brewSettingList[(indexPath as NSIndexPath).row].isPosessed {
+            brewSettingList[(indexPath as NSIndexPath).row].isPosessed = false
             updateCellAppearance(cell, atIndexPath: indexPath, isSelected: false)
-            print("deposessed")
         } else {
-            settingsList[(indexPath as NSIndexPath).row].isPosessed = true
+            brewSettingList[(indexPath as NSIndexPath).row].isPosessed = true
             updateCellAppearance(cell, atIndexPath: indexPath, isSelected: true)
-            print("posessed")
         }
     }
     
@@ -124,12 +129,12 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
             cell.labelView.font = UIFont(name: "Raleway-Medium", size: 14.0)
             cell.labelView.textColor = ProjectColors.Sand
             cell.contentView.backgroundColor = ProjectColors.Brown.Dark
-            cell.itemImageView.image = settingsList[(indexPath as NSIndexPath).row].iconSelected()
+            cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconSelected()
         } else {
             cell.labelView.font = UIFont(name: "Raleway-light", size: 14.0)
             cell.labelView.textColor = ProjectColors.Brown.Dark
             cell.contentView.backgroundColor = ProjectColors.Sand
-            cell.itemImageView.image = settingsList[(indexPath as NSIndexPath).row].iconNotSelected()
+            cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconNotSelected()
         }
     }
     
@@ -145,7 +150,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     func isBrewMethodWasPicked() -> Bool {
         var brewingMethodPicked: Int = 0
         
-        for setting in settingsList {
+        for setting in brewSettingList {
             if setting.isPosessed == true {
                 brewingMethodPicked += 1
             }
@@ -155,32 +160,6 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
             return false
         } else {
             return true
-        }
-    }
-    
-    
-    func saveSettings() {
-        NSKeyedArchiver.archiveRootObject(settingsList, toFile: itemArchiveURL.path!)
-        print(itemArchiveURL)
-    }
-    
-    
-    func loadSettings() {
-        if let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: itemArchiveURL.path!) as? [BrewSetting] {
-            settingsList = archivedItems
-            print("load Archive")
-        }
-    }
-
-
-    
-    // MARK: IBActions
-    
-    @IBAction func validateButtonTapped(_ sender: UIButton) {
-        if isBrewMethodWasPicked() {
-            saveSettings()
-        } else {
-            presentAlertPickABrewingMethod()
         }
     }
 }

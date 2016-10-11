@@ -24,6 +24,7 @@ class CoffeeDetailsViewController: UIViewController, UITableViewDelegate {
     
     var coffeeBean: CoffeeBean?
     var brewType: BrewType?
+    var brewSetting: BrewSetting?
     
     
     // MARK: View Controller
@@ -61,5 +62,10 @@ class CoffeeDetailsViewController: UIViewController, UITableViewDelegate {
         coffeeOriginLabel.text = coffeeBean?.origin
         coffeeShopLabel.text = coffeeBean?.shop
     }
+    
+    @IBAction func closeViewButtonTapped(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: {});
+    }
+    
     
 }

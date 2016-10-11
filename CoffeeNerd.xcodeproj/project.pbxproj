@@ -94,6 +94,7 @@
 		1DD53DE31DA56CD600D7F3F9 /* SettingsDeselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD53DDB1DA56CD600D7F3F9 /* SettingsDeselected.pdf */; };
 		1DDA5C4D1D89F0FC00D75110 /* BrewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */; };
 		1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */; };
+		1DE631311DAB9D0A00C7E8D1 /* BrewSettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE631301DAB9D0A00C7E8D1 /* BrewSettingList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +187,7 @@
 		1DD53DDB1DA56CD600D7F3F9 /* SettingsDeselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SettingsDeselected.pdf; path = ../../../../Downloads/SettingsDeselected.pdf; sourceTree = "<group>"; };
 		1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSetting.swift; sourceTree = "<group>"; };
 		1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Default.pdf; path = ../../../../Downloads/Default.pdf; sourceTree = "<group>"; };
+		1DE631301DAB9D0A00C7E8D1 /* BrewSettingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSettingList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */,
+				1DE631301DAB9D0A00C7E8D1 /* BrewSettingList.swift */,
 				1DC8AFD81D9D27FF00478934 /* BrewType+CoreDataClass.swift */,
 				1DC8AFDC1D9D288A00478934 /* BrewType+CoreDataProperties.swift */,
 				1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */,
@@ -510,6 +513,7 @@
 				1DD330F31DA51B9F009F2222 /* TabBarController.swift in Sources */,
 				1DC8AFDD1D9D288A00478934 /* BrewType+CoreDataProperties.swift in Sources */,
 				1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */,
+				1DE631311DAB9D0A00C7E8D1 /* BrewSettingList.swift in Sources */,
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
 				1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */,
 				1DC8AFDA1D9D27FF00478934 /* BrewType+CoreDataClass.swift in Sources */,
