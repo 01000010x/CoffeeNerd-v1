@@ -22,7 +22,7 @@
 		1D3811E31DAD4B1E008FCEF2 /* FrenchPress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */; };
 		1D3811E41DAD4B1E008FCEF2 /* MokaPot.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */; };
 		1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */; };
-		1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */; };
+		1D3811F21DAD4B2C008FCEF2 /* AeropressWhite2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E61DAD4B2C008FCEF2 /* AeropressWhite2.pdf */; };
 		1D3811F31DAD4B2C008FCEF2 /* ChemexWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */; };
 		1D3811F41DAD4B2C008FCEF2 /* ColdBrewWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */; };
 		1D3811F51DAD4B2C008FCEF2 /* VacuumWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */; };
@@ -85,13 +85,13 @@
 		1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */; };
 		1DCB7D421DAE03650037AF39 /* BeeHouse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */; };
 		1DCB7D441DAE03720037AF39 /* BeeHouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */; };
+		1DCB7D461DAE08F50037AF39 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D451DAE08F50037AF39 /* Media.xcassets */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
 		1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35281D847B0C004086F7 /* Shop.pdf */; };
 		1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35301D847FF9004086F7 /* Main.storyboard */; };
 		1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */; };
 		1DCC35571D8593A9004086F7 /* Filter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35551D8593A9004086F7 /* Filter.pdf */; };
-		1DCC35591D85942F004086F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35581D85942F004086F7 /* Assets.xcassets */; };
 		1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */; };
 		1DCC355F1D860CF1004086F7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */; };
 		1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35601D860F6E004086F7 /* ProjectColors.swift */; };
@@ -127,7 +127,7 @@
 		1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPress.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/FrenchPress.pdf"; sourceTree = "<group>"; };
 		1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MokaPot.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/MokaPot.pdf"; sourceTree = "<group>"; };
 		1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSolo.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/EvaSolo.pdf"; sourceTree = "<group>"; };
-		1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/AeropressWhite.pdf"; sourceTree = "<group>"; };
+		1D3811E61DAD4B2C008FCEF2 /* AeropressWhite2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite2.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/AeropressWhite2.pdf"; sourceTree = "<group>"; };
 		1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ChemexWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ChemexWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrewWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ColdBrewWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/VacuumWhite.pdf"; sourceTree = "<group>"; };
@@ -192,13 +192,13 @@
 		1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListDataSourceController.swift; sourceTree = "<group>"; };
 		1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeeHouse.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/BeeHouse.pdf"; sourceTree = "<group>"; };
 		1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeeHouseWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/BeeHouseWhite.pdf"; sourceTree = "<group>"; };
+		1DCB7D451DAE08F50037AF39 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
 		1DCC35281D847B0C004086F7 /* Shop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Shop.pdf; path = ../../../../Downloads/Shop.pdf; sourceTree = "<group>"; };
 		1DCC35301D847FF9004086F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MenuButtonBrown.pdf; path = ../../../../Downloads/MenuButtonBrown.pdf; sourceTree = "<group>"; };
 		1DCC35551D8593A9004086F7 /* Filter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Filter.pdf; path = ../../../../Downloads/Filter.pdf; sourceTree = "<group>"; };
-		1DCC35581D85942F004086F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerCup.pdf; path = ../../../../Downloads/TimerCup.pdf; sourceTree = "<group>"; };
 		1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1DCC35601D860F6E004086F7 /* ProjectColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
@@ -284,7 +284,7 @@
 		1DBDB6F61D75823B00C996E1 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				1DCC35581D85942F004086F7 /* Assets.xcassets */,
+				1DCB7D451DAE08F50037AF39 /* Media.xcassets */,
 				1DBDB6DE1D7441DA00C996E1 /* Info.plist */,
 				1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */,
 				1DCC35601D860F6E004086F7 /* ProjectColors.swift */,
@@ -327,7 +327,7 @@
 			children = (
 				1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */,
 				1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */,
-				1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */,
+				1D3811E61DAD4B2C008FCEF2 /* AeropressWhite2.pdf */,
 				1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */,
 				1D3812031DAD4B3B008FCEF2 /* BeeHouseSmall.pdf */,
 				1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */,
@@ -504,7 +504,8 @@
 				1DD53DE11DA56CD600D7F3F9 /* ShopsSelected.pdf in Resources */,
 				1D3811F41DAD4B2C008FCEF2 /* ColdBrewWhite.pdf in Resources */,
 				1DD53DE01DA56CD600D7F3F9 /* CoffeeListSelected.pdf in Resources */,
-				1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */,
+				1D3811F21DAD4B2C008FCEF2 /* AeropressWhite2.pdf in Resources */,
+				1DCB7D461DAE08F50037AF39 /* Media.xcassets in Resources */,
 				1DBDB7121D7582C100C996E1 /* Raleway-ExtraBold.ttf in Resources */,
 				1DD53DE21DA56CD600D7F3F9 /* ShopsDeselected.pdf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
@@ -519,7 +520,6 @@
 				1DD53DDE1DA56CD600D7F3F9 /* CoffeeListDeselected.pdf in Resources */,
 				1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */,
 				1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */,
-				1DCC35591D85942F004086F7 /* Assets.xcassets in Resources */,
 				1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */,
 				1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */,
 				1D3812151DAD4B3B008FCEF2 /* EspressoSmall.pdf in Resources */,
