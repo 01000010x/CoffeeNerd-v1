@@ -48,7 +48,6 @@
 		1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */; };
 		1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */; };
 		1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */; };
-		1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */; };
 		1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */; };
 		1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6DB1D7441DA00C996E1 /* LaunchScreen.storyboard */; };
 		1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */; };
@@ -73,7 +72,6 @@
 		1DBDB71D1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB70A1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf */; };
 		1DBDB71E1D7582C100C996E1 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB70B1D7582C100C996E1 /* Raleway-Thin.ttf */; };
 		1DBDB71F1D7582C100C996E1 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB70C1D7582C100C996E1 /* Raleway-ThinItalic.ttf */; };
-		1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */; };
 		1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB7251D75998C00C996E1 /* CustomCell.swift */; };
 		1DC8AFBF1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */; };
 		1DC8AFC31D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFC11D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld */; };
@@ -88,10 +86,7 @@
 		1DCB7D461DAE08F50037AF39 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D451DAE08F50037AF39 /* Media.xcassets */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
-		1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35281D847B0C004086F7 /* Shop.pdf */; };
 		1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35301D847FF9004086F7 /* Main.storyboard */; };
-		1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */; };
-		1DCC35571D8593A9004086F7 /* Filter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35551D8593A9004086F7 /* Filter.pdf */; };
 		1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */; };
 		1DCC355F1D860CF1004086F7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */; };
 		1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC35601D860F6E004086F7 /* ProjectColors.swift */; };
@@ -153,7 +148,6 @@
 		1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeViewController.swift; sourceTree = "<group>"; };
 		1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeCell.swift; sourceTree = "<group>"; };
 		1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CloseMenu.pdf; path = ../../../../Downloads/CloseMenu.pdf; sourceTree = "<group>"; };
 		1DBDB6CF1D7441DA00C996E1 /* CoffeeNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DBDB6DC1D7441DA00C996E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -180,7 +174,6 @@
 		1DBDB70A1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBoldItalic.ttf"; path = "../../../../Downloads/Raleway/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		1DBDB70B1D7582C100C996E1 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "../../../../Downloads/Raleway/Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		1DBDB70C1D7582C100C996E1 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ThinItalic.ttf"; path = "../../../../Downloads/Raleway/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
-		1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Magnifier.pdf; path = ../../../../Downloads/Magnifier.pdf; sourceTree = "<group>"; };
 		1DBDB7251D75998C00C996E1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		1DC8AFBD1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoffeeBean+CoreDataClass.swift"; path = "../CoffeeBean+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1DC8AFC21D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeeNerdDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -195,10 +188,7 @@
 		1DCB7D451DAE08F50037AF39 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
-		1DCC35281D847B0C004086F7 /* Shop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Shop.pdf; path = ../../../../Downloads/Shop.pdf; sourceTree = "<group>"; };
 		1DCC35301D847FF9004086F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MenuButtonBrown.pdf; path = ../../../../Downloads/MenuButtonBrown.pdf; sourceTree = "<group>"; };
-		1DCC35551D8593A9004086F7 /* Filter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Filter.pdf; path = ../../../../Downloads/Filter.pdf; sourceTree = "<group>"; };
 		1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerCup.pdf; path = ../../../../Downloads/TimerCup.pdf; sourceTree = "<group>"; };
 		1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1DCC35601D860F6E004086F7 /* ProjectColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
@@ -367,14 +357,9 @@
 				1DD53DD61DA56CD600D7F3F9 /* CoffeeListDeselected.pdf */,
 				1DD53DD71DA56CD600D7F3F9 /* SettingsSelected.pdf */,
 				1DD53DDB1DA56CD600D7F3F9 /* SettingsDeselected.pdf */,
-				1DCC35281D847B0C004086F7 /* Shop.pdf */,
 				1DD53DD91DA56CD600D7F3F9 /* ShopsSelected.pdf */,
 				1DD53DDA1DA56CD600D7F3F9 /* ShopsDeselected.pdf */,
-				1DBC959E1D7CD2A000A18D5B /* CloseMenu.pdf */,
 				1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */,
-				1DCC35551D8593A9004086F7 /* Filter.pdf */,
-				1DBDB7231D7594EE00C996E1 /* Magnifier.pdf */,
-				1DCC35541D8593A9004086F7 /* MenuButtonBrown.pdf */,
 				1DCC35231D847A8D004086F7 /* Origin.pdf */,
 				1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */,
 				1DCC35271D847B0C004086F7 /* TimerIcon.pdf */,
@@ -483,7 +468,6 @@
 				1D3811DE1DAD4B1E008FCEF2 /* KalitaWave.pdf in Resources */,
 				1D3811F81DAD4B2C008FCEF2 /* V60White.pdf in Resources */,
 				1DBDB7131D7582C100C996E1 /* Raleway-ExtraBoldItalic.ttf in Resources */,
-				1DCC352B1D847B0C004086F7 /* Shop.pdf in Resources */,
 				1D3811E41DAD4B1E008FCEF2 /* MokaPot.pdf in Resources */,
 				1D3811F61DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf in Resources */,
 				1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */,
@@ -510,7 +494,6 @@
 				1DD53DE21DA56CD600D7F3F9 /* ShopsDeselected.pdf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
 				1D38120D1DAD4B3B008FCEF2 /* VacuumSmall.pdf in Resources */,
-				1DCC35571D8593A9004086F7 /* Filter.pdf in Resources */,
 				1D3811FD1DAD4B2C008FCEF2 /* EvaSoloWhite.pdf in Resources */,
 				1D3811E31DAD4B1E008FCEF2 /* FrenchPress.pdf in Resources */,
 				1D3811FC1DAD4B2C008FCEF2 /* MokaPotWhite.pdf in Resources */,
@@ -518,7 +501,6 @@
 				1DBDB71A1D7582C100C996E1 /* Raleway-MediumItalic.ttf in Resources */,
 				1D3812121DAD4B3B008FCEF2 /* MokaPotSmall.pdf in Resources */,
 				1DD53DDE1DA56CD600D7F3F9 /* CoffeeListDeselected.pdf in Resources */,
-				1DBC959F1D7CD2A000A18D5B /* CloseMenu.pdf in Resources */,
 				1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */,
 				1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */,
 				1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */,
@@ -529,7 +511,6 @@
 				1D3812101DAD4B3B008FCEF2 /* V60Small.pdf in Resources */,
 				1D3811E11DAD4B1E008FCEF2 /* Bonmac.pdf in Resources */,
 				1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */,
-				1DCC35561D8593A9004086F7 /* MenuButtonBrown.pdf in Resources */,
 				1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */,
 				1D3811FB1DAD4B2C008FCEF2 /* FrenchPressWhite.pdf in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
@@ -537,7 +518,6 @@
 				1D3811DA1DAD4B1E008FCEF2 /* Aeropress.pdf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
 				1D3811F51DAD4B2C008FCEF2 /* VacuumWhite.pdf in Resources */,
-				1DBDB7241D7594EE00C996E1 /* Magnifier.pdf in Resources */,
 				1D38120C1DAD4B3B008FCEF2 /* ColdBrewSmall.pdf in Resources */,
 				1DBDB71C1D7582C100C996E1 /* Raleway-SemiBold.ttf in Resources */,
 				1D38120B1DAD4B3B008FCEF2 /* ChemexSmall.pdf in Resources */,
