@@ -15,35 +15,35 @@
 		1D3811DB1DAD4B1E008FCEF2 /* Chemex.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */; };
 		1D3811DC1DAD4B1E008FCEF2 /* Cold Brew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */; };
 		1D3811DD1DAD4B1E008FCEF2 /* Vacuum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D11DAD4B1E008FCEF2 /* Vacuum.pdf */; };
-		1D3811DE1DAD4B1E008FCEF2 /* KalitaWave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D21DAD4B1E008FCEF2 /* KalitaWave.pdf */; };
+		1D3811DE1DAD4B1E008FCEF2 /* Kalita Wave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D21DAD4B1E008FCEF2 /* Kalita Wave.pdf */; };
 		1D3811E01DAD4B1E008FCEF2 /* V60.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D41DAD4B1E008FCEF2 /* V60.pdf */; };
 		1D3811E11DAD4B1E008FCEF2 /* Bonmac.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D51DAD4B1E008FCEF2 /* Bonmac.pdf */; };
 		1D3811E21DAD4B1E008FCEF2 /* Espresso.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D61DAD4B1E008FCEF2 /* Espresso.pdf */; };
-		1D3811E31DAD4B1E008FCEF2 /* FrenchPress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */; };
-		1D3811E41DAD4B1E008FCEF2 /* MokaPot.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */; };
-		1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */; };
+		1D3811E31DAD4B1E008FCEF2 /* French Press.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D71DAD4B1E008FCEF2 /* French Press.pdf */; };
+		1D3811E41DAD4B1E008FCEF2 /* Moka Pot.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D81DAD4B1E008FCEF2 /* Moka Pot.pdf */; };
+		1D3811E51DAD4B1E008FCEF2 /* Eva Solo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D91DAD4B1E008FCEF2 /* Eva Solo.pdf */; };
 		1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */; };
 		1D3811F31DAD4B2C008FCEF2 /* ChemexWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */; };
 		1D3811F41DAD4B2C008FCEF2 /* Cold BrewWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E81DAD4B2C008FCEF2 /* Cold BrewWhite.pdf */; };
 		1D3811F51DAD4B2C008FCEF2 /* VacuumWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */; };
-		1D3811F61DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EA1DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf */; };
+		1D3811F61DAD4B2C008FCEF2 /* Kalita WaveWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EA1DAD4B2C008FCEF2 /* Kalita WaveWhite.pdf */; };
 		1D3811F81DAD4B2C008FCEF2 /* V60White.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EC1DAD4B2C008FCEF2 /* V60White.pdf */; };
 		1D3811F91DAD4B2C008FCEF2 /* BonmacWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811ED1DAD4B2C008FCEF2 /* BonmacWhite.pdf */; };
 		1D3811FA1DAD4B2C008FCEF2 /* EspressoWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EE1DAD4B2C008FCEF2 /* EspressoWhite.pdf */; };
-		1D3811FB1DAD4B2C008FCEF2 /* FrenchPressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EF1DAD4B2C008FCEF2 /* FrenchPressWhite.pdf */; };
-		1D3811FC1DAD4B2C008FCEF2 /* MokaPotWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811F01DAD4B2C008FCEF2 /* MokaPotWhite.pdf */; };
-		1D3811FD1DAD4B2C008FCEF2 /* EvaSoloWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811F11DAD4B2C008FCEF2 /* EvaSoloWhite.pdf */; };
+		1D3811FB1DAD4B2C008FCEF2 /* French PressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EF1DAD4B2C008FCEF2 /* French PressWhite.pdf */; };
+		1D3811FC1DAD4B2C008FCEF2 /* Moka PotWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811F01DAD4B2C008FCEF2 /* Moka PotWhite.pdf */; };
+		1D3811FD1DAD4B2C008FCEF2 /* Eva SoloWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811F11DAD4B2C008FCEF2 /* Eva SoloWhite.pdf */; };
 		1D38120A1DAD4B3B008FCEF2 /* AeropressSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */; };
 		1D38120B1DAD4B3B008FCEF2 /* ChemexSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811FF1DAD4B3B008FCEF2 /* ChemexSmall.pdf */; };
 		1D38120C1DAD4B3B008FCEF2 /* Cold BrewSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812001DAD4B3B008FCEF2 /* Cold BrewSmall.pdf */; };
 		1D38120D1DAD4B3B008FCEF2 /* VacuumSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812011DAD4B3B008FCEF2 /* VacuumSmall.pdf */; };
-		1D38120E1DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */; };
+		1D38120E1DAD4B3B008FCEF2 /* Kalita WaveSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812021DAD4B3B008FCEF2 /* Kalita WaveSmall.pdf */; };
 		1D38120F1DAD4B3B008FCEF2 /* BeehouseSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */; };
 		1D3812101DAD4B3B008FCEF2 /* V60Small.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812041DAD4B3B008FCEF2 /* V60Small.pdf */; };
 		1D3812111DAD4B3B008FCEF2 /* BonmacSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812051DAD4B3B008FCEF2 /* BonmacSmall.pdf */; };
-		1D3812121DAD4B3B008FCEF2 /* MokaPotSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812061DAD4B3B008FCEF2 /* MokaPotSmall.pdf */; };
-		1D3812131DAD4B3B008FCEF2 /* EvaSoloSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812071DAD4B3B008FCEF2 /* EvaSoloSmall.pdf */; };
-		1D3812141DAD4B3B008FCEF2 /* FrenchPressSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812081DAD4B3B008FCEF2 /* FrenchPressSmall.pdf */; };
+		1D3812121DAD4B3B008FCEF2 /* Moka PotSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812061DAD4B3B008FCEF2 /* Moka PotSmall.pdf */; };
+		1D3812131DAD4B3B008FCEF2 /* Eva SoloSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812071DAD4B3B008FCEF2 /* Eva SoloSmall.pdf */; };
+		1D3812141DAD4B3B008FCEF2 /* French PressSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812081DAD4B3B008FCEF2 /* French PressSmall.pdf */; };
 		1D3812151DAD4B3B008FCEF2 /* EspressoSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812091DAD4B3B008FCEF2 /* EspressoSmall.pdf */; };
 		1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */; };
 		1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */; };
@@ -115,35 +115,35 @@
 		1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Chemex.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Chemex.pdf"; sourceTree = "<group>"; };
 		1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold Brew.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Cold Brew.pdf"; sourceTree = "<group>"; };
 		1D3811D11DAD4B1E008FCEF2 /* Vacuum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Vacuum.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Vacuum.pdf"; sourceTree = "<group>"; };
-		1D3811D21DAD4B1E008FCEF2 /* KalitaWave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWave.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/KalitaWave.pdf"; sourceTree = "<group>"; };
+		1D3811D21DAD4B1E008FCEF2 /* Kalita Wave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Kalita Wave.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Kalita Wave.pdf"; sourceTree = "<group>"; };
 		1D3811D41DAD4B1E008FCEF2 /* V60.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/V60.pdf"; sourceTree = "<group>"; };
 		1D3811D51DAD4B1E008FCEF2 /* Bonmac.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Bonmac.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Bonmac.pdf"; sourceTree = "<group>"; };
 		1D3811D61DAD4B1E008FCEF2 /* Espresso.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Espresso.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Espresso.pdf"; sourceTree = "<group>"; };
-		1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPress.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/FrenchPress.pdf"; sourceTree = "<group>"; };
-		1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MokaPot.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/MokaPot.pdf"; sourceTree = "<group>"; };
-		1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSolo.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/EvaSolo.pdf"; sourceTree = "<group>"; };
+		1D3811D71DAD4B1E008FCEF2 /* French Press.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "French Press.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/French Press.pdf"; sourceTree = "<group>"; };
+		1D3811D81DAD4B1E008FCEF2 /* Moka Pot.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Moka Pot.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Moka Pot.pdf"; sourceTree = "<group>"; };
+		1D3811D91DAD4B1E008FCEF2 /* Eva Solo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Eva Solo.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Eva Solo.pdf"; sourceTree = "<group>"; };
 		1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/AeropressWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ChemexWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ChemexWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E81DAD4B2C008FCEF2 /* Cold BrewWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold BrewWhite.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/white/Cold BrewWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/VacuumWhite.pdf"; sourceTree = "<group>"; };
-		1D3811EA1DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWaveWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/KalitaWaveWhite.pdf"; sourceTree = "<group>"; };
+		1D3811EA1DAD4B2C008FCEF2 /* Kalita WaveWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Kalita WaveWhite.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/white/Kalita WaveWhite.pdf"; sourceTree = "<group>"; };
 		1D3811EC1DAD4B2C008FCEF2 /* V60White.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60White.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/V60White.pdf"; sourceTree = "<group>"; };
 		1D3811ED1DAD4B2C008FCEF2 /* BonmacWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BonmacWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/BonmacWhite.pdf"; sourceTree = "<group>"; };
 		1D3811EE1DAD4B2C008FCEF2 /* EspressoWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EspressoWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/EspressoWhite.pdf"; sourceTree = "<group>"; };
-		1D3811EF1DAD4B2C008FCEF2 /* FrenchPressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPressWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/FrenchPressWhite.pdf"; sourceTree = "<group>"; };
-		1D3811F01DAD4B2C008FCEF2 /* MokaPotWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MokaPotWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/MokaPotWhite.pdf"; sourceTree = "<group>"; };
-		1D3811F11DAD4B2C008FCEF2 /* EvaSoloWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSoloWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/EvaSoloWhite.pdf"; sourceTree = "<group>"; };
+		1D3811EF1DAD4B2C008FCEF2 /* French PressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "French PressWhite.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/white/French PressWhite.pdf"; sourceTree = "<group>"; };
+		1D3811F01DAD4B2C008FCEF2 /* Moka PotWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Moka PotWhite.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/white/Moka PotWhite.pdf"; sourceTree = "<group>"; };
+		1D3811F11DAD4B2C008FCEF2 /* Eva SoloWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Eva SoloWhite.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/white/Eva SoloWhite.pdf"; sourceTree = "<group>"; };
 		1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/AeropressSmall.pdf"; sourceTree = "<group>"; };
 		1D3811FF1DAD4B3B008FCEF2 /* ChemexSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ChemexSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/ChemexSmall.pdf"; sourceTree = "<group>"; };
 		1D3812001DAD4B3B008FCEF2 /* Cold BrewSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold BrewSmall.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/small/Cold BrewSmall.pdf"; sourceTree = "<group>"; };
 		1D3812011DAD4B3B008FCEF2 /* VacuumSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/VacuumSmall.pdf"; sourceTree = "<group>"; };
-		1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWaveSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/KalitaWaveSmall.pdf"; sourceTree = "<group>"; };
+		1D3812021DAD4B3B008FCEF2 /* Kalita WaveSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Kalita WaveSmall.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/small/Kalita WaveSmall.pdf"; sourceTree = "<group>"; };
 		1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/BeehouseSmall.pdf"; sourceTree = "<group>"; };
 		1D3812041DAD4B3B008FCEF2 /* V60Small.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60Small.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/V60Small.pdf"; sourceTree = "<group>"; };
 		1D3812051DAD4B3B008FCEF2 /* BonmacSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BonmacSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/BonmacSmall.pdf"; sourceTree = "<group>"; };
-		1D3812061DAD4B3B008FCEF2 /* MokaPotSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MokaPotSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/MokaPotSmall.pdf"; sourceTree = "<group>"; };
-		1D3812071DAD4B3B008FCEF2 /* EvaSoloSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSoloSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/EvaSoloSmall.pdf"; sourceTree = "<group>"; };
-		1D3812081DAD4B3B008FCEF2 /* FrenchPressSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPressSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/FrenchPressSmall.pdf"; sourceTree = "<group>"; };
+		1D3812061DAD4B3B008FCEF2 /* Moka PotSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Moka PotSmall.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/small/Moka PotSmall.pdf"; sourceTree = "<group>"; };
+		1D3812071DAD4B3B008FCEF2 /* Eva SoloSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Eva SoloSmall.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/small/Eva SoloSmall.pdf"; sourceTree = "<group>"; };
+		1D3812081DAD4B3B008FCEF2 /* French PressSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "French PressSmall.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/small/French PressSmall.pdf"; sourceTree = "<group>"; };
 		1D3812091DAD4B3B008FCEF2 /* EspressoSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EspressoSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/EspressoSmall.pdf"; sourceTree = "<group>"; };
 		1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeViewController.swift; sourceTree = "<group>"; };
 		1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeCell.swift; sourceTree = "<group>"; };
@@ -333,18 +333,18 @@
 				1D3811D61DAD4B1E008FCEF2 /* Espresso.pdf */,
 				1D3812091DAD4B3B008FCEF2 /* EspressoSmall.pdf */,
 				1D3811EE1DAD4B2C008FCEF2 /* EspressoWhite.pdf */,
-				1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */,
-				1D3812071DAD4B3B008FCEF2 /* EvaSoloSmall.pdf */,
-				1D3811F11DAD4B2C008FCEF2 /* EvaSoloWhite.pdf */,
-				1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */,
-				1D3812081DAD4B3B008FCEF2 /* FrenchPressSmall.pdf */,
-				1D3811EF1DAD4B2C008FCEF2 /* FrenchPressWhite.pdf */,
-				1D3811D21DAD4B1E008FCEF2 /* KalitaWave.pdf */,
-				1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */,
-				1D3811EA1DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf */,
-				1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */,
-				1D3812061DAD4B3B008FCEF2 /* MokaPotSmall.pdf */,
-				1D3811F01DAD4B2C008FCEF2 /* MokaPotWhite.pdf */,
+				1D3811D91DAD4B1E008FCEF2 /* Eva Solo.pdf */,
+				1D3812071DAD4B3B008FCEF2 /* Eva SoloSmall.pdf */,
+				1D3811F11DAD4B2C008FCEF2 /* Eva SoloWhite.pdf */,
+				1D3811D71DAD4B1E008FCEF2 /* French Press.pdf */,
+				1D3812081DAD4B3B008FCEF2 /* French PressSmall.pdf */,
+				1D3811EF1DAD4B2C008FCEF2 /* French PressWhite.pdf */,
+				1D3811D21DAD4B1E008FCEF2 /* Kalita Wave.pdf */,
+				1D3812021DAD4B3B008FCEF2 /* Kalita WaveSmall.pdf */,
+				1D3811EA1DAD4B2C008FCEF2 /* Kalita WaveWhite.pdf */,
+				1D3811D81DAD4B1E008FCEF2 /* Moka Pot.pdf */,
+				1D3812061DAD4B3B008FCEF2 /* Moka PotSmall.pdf */,
+				1D3811F01DAD4B2C008FCEF2 /* Moka PotWhite.pdf */,
 				1D3811D41DAD4B1E008FCEF2 /* V60.pdf */,
 				1D3812041DAD4B3B008FCEF2 /* V60Small.pdf */,
 				1D3811EC1DAD4B2C008FCEF2 /* V60White.pdf */,
@@ -465,13 +465,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */,
-				1D3811DE1DAD4B1E008FCEF2 /* KalitaWave.pdf in Resources */,
+				1D3811DE1DAD4B1E008FCEF2 /* Kalita Wave.pdf in Resources */,
 				1D3811F81DAD4B2C008FCEF2 /* V60White.pdf in Resources */,
 				1DBDB7131D7582C100C996E1 /* Raleway-ExtraBoldItalic.ttf in Resources */,
-				1D3811E41DAD4B1E008FCEF2 /* MokaPot.pdf in Resources */,
-				1D3811F61DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf in Resources */,
+				1D3811E41DAD4B1E008FCEF2 /* Moka Pot.pdf in Resources */,
+				1D3811F61DAD4B2C008FCEF2 /* Kalita WaveWhite.pdf in Resources */,
 				1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */,
-				1D3812131DAD4B3B008FCEF2 /* EvaSoloSmall.pdf in Resources */,
+				1D3812131DAD4B3B008FCEF2 /* Eva SoloSmall.pdf in Resources */,
 				1D3811E21DAD4B1E008FCEF2 /* Espresso.pdf in Resources */,
 				1DBDB7141D7582C100C996E1 /* Raleway-ExtraLight.ttf in Resources */,
 				1D3811F91DAD4B2C008FCEF2 /* BonmacWhite.pdf in Resources */,
@@ -494,25 +494,25 @@
 				1DD53DE21DA56CD600D7F3F9 /* ShopsDeselected.pdf in Resources */,
 				1DBDB71B1D7582C100C996E1 /* Raleway-Regular.ttf in Resources */,
 				1D38120D1DAD4B3B008FCEF2 /* VacuumSmall.pdf in Resources */,
-				1D3811FD1DAD4B2C008FCEF2 /* EvaSoloWhite.pdf in Resources */,
-				1D3811E31DAD4B1E008FCEF2 /* FrenchPress.pdf in Resources */,
-				1D3811FC1DAD4B2C008FCEF2 /* MokaPotWhite.pdf in Resources */,
+				1D3811FD1DAD4B2C008FCEF2 /* Eva SoloWhite.pdf in Resources */,
+				1D3811E31DAD4B1E008FCEF2 /* French Press.pdf in Resources */,
+				1D3811FC1DAD4B2C008FCEF2 /* Moka PotWhite.pdf in Resources */,
 				1DCB7D441DAE03720037AF39 /* BeehouseWhite.pdf in Resources */,
 				1DBDB71A1D7582C100C996E1 /* Raleway-MediumItalic.ttf in Resources */,
-				1D3812121DAD4B3B008FCEF2 /* MokaPotSmall.pdf in Resources */,
+				1D3812121DAD4B3B008FCEF2 /* Moka PotSmall.pdf in Resources */,
 				1DD53DDE1DA56CD600D7F3F9 /* CoffeeListDeselected.pdf in Resources */,
-				1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */,
+				1D3811E51DAD4B1E008FCEF2 /* Eva Solo.pdf in Resources */,
 				1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */,
 				1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */,
 				1D3812151DAD4B3B008FCEF2 /* EspressoSmall.pdf in Resources */,
 				1D3811E01DAD4B1E008FCEF2 /* V60.pdf in Resources */,
-				1D3812141DAD4B3B008FCEF2 /* FrenchPressSmall.pdf in Resources */,
+				1D3812141DAD4B3B008FCEF2 /* French PressSmall.pdf in Resources */,
 				1D3811F31DAD4B2C008FCEF2 /* ChemexWhite.pdf in Resources */,
 				1D3812101DAD4B3B008FCEF2 /* V60Small.pdf in Resources */,
 				1D3811E11DAD4B1E008FCEF2 /* Bonmac.pdf in Resources */,
 				1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */,
 				1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */,
-				1D3811FB1DAD4B2C008FCEF2 /* FrenchPressWhite.pdf in Resources */,
+				1D3811FB1DAD4B2C008FCEF2 /* French PressWhite.pdf in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
 				1DBDB7151D7582C100C996E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				1D3811DA1DAD4B1E008FCEF2 /* Aeropress.pdf in Resources */,
@@ -522,7 +522,7 @@
 				1DBDB71C1D7582C100C996E1 /* Raleway-SemiBold.ttf in Resources */,
 				1D38120B1DAD4B3B008FCEF2 /* ChemexSmall.pdf in Resources */,
 				1DCB7D421DAE03650037AF39 /* Beehouse.pdf in Resources */,
-				1D38120E1DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf in Resources */,
+				1D38120E1DAD4B3B008FCEF2 /* Kalita WaveSmall.pdf in Resources */,
 				1D3811DD1DAD4B1E008FCEF2 /* Vacuum.pdf in Resources */,
 				1DBDB7101D7582C100C996E1 /* Raleway-Bold.ttf in Resources */,
 				1D3811DB1DAD4B1E008FCEF2 /* Chemex.pdf in Resources */,
