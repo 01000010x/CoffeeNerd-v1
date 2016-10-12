@@ -60,7 +60,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         let reusableview: UICollectionReusableView
 
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableCell", for: indexPath) as! HeaderReusableCell
-        headerView.headerLabel.text = "What kind of brewing method\ndo you use?"
+        //headerView.headerLabel.text = "What kind of brewing method do you use?"
         reusableview = headerView
         
         return reusableview
@@ -83,7 +83,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = (self.view.frame.size.width - 30) / 2.0
-        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y - 150) / 5
+        let cellHeight = (self.view.frame.size.height - self.collectionView.frame.origin.y) / 8
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
@@ -103,12 +103,12 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func updateCellAppearance(_ cell: SettingCellView, atIndexPath indexPath: IndexPath, isSelected selected: Bool) {
         if selected {
-            cell.labelView.font = UIFont(name: "Raleway-Medium", size: 14.0)
+            cell.labelView.font = UIFont(name: "Raleway-Bold", size: 14.0)
             cell.labelView.textColor = UIColor.white
             cell.contentView.backgroundColor = ProjectColors.Blue.medium
             cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconSelected()
         } else {
-            cell.labelView.font = UIFont(name: "Raleway-light", size: 14.0)
+            cell.labelView.font = UIFont(name: "Raleway-Bold", size: 14.0)
             cell.labelView.textColor = ProjectColors.Grey.medium
             cell.contentView.backgroundColor = ProjectColors.Grey.light
             cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconNotSelected()
