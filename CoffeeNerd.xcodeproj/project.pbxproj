@@ -22,7 +22,7 @@
 		1D3811E31DAD4B1E008FCEF2 /* FrenchPress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */; };
 		1D3811E41DAD4B1E008FCEF2 /* MokaPot.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */; };
 		1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */; };
-		1D3811F21DAD4B2C008FCEF2 /* AeropressWhite2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E61DAD4B2C008FCEF2 /* AeropressWhite2.pdf */; };
+		1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */; };
 		1D3811F31DAD4B2C008FCEF2 /* ChemexWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */; };
 		1D3811F41DAD4B2C008FCEF2 /* ColdBrewWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */; };
 		1D3811F51DAD4B2C008FCEF2 /* VacuumWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */; };
@@ -122,7 +122,7 @@
 		1D3811D71DAD4B1E008FCEF2 /* FrenchPress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FrenchPress.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/FrenchPress.pdf"; sourceTree = "<group>"; };
 		1D3811D81DAD4B1E008FCEF2 /* MokaPot.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MokaPot.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/MokaPot.pdf"; sourceTree = "<group>"; };
 		1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSolo.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/EvaSolo.pdf"; sourceTree = "<group>"; };
-		1D3811E61DAD4B2C008FCEF2 /* AeropressWhite2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite2.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/AeropressWhite2.pdf"; sourceTree = "<group>"; };
+		1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/AeropressWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ChemexWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ChemexWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrewWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ColdBrewWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/VacuumWhite.pdf"; sourceTree = "<group>"; };
@@ -317,7 +317,7 @@
 			children = (
 				1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */,
 				1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */,
-				1D3811E61DAD4B2C008FCEF2 /* AeropressWhite2.pdf */,
+				1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */,
 				1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */,
 				1D3812031DAD4B3B008FCEF2 /* BeeHouseSmall.pdf */,
 				1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */,
@@ -488,7 +488,7 @@
 				1DD53DE11DA56CD600D7F3F9 /* ShopsSelected.pdf in Resources */,
 				1D3811F41DAD4B2C008FCEF2 /* ColdBrewWhite.pdf in Resources */,
 				1DD53DE01DA56CD600D7F3F9 /* CoffeeListSelected.pdf in Resources */,
-				1D3811F21DAD4B2C008FCEF2 /* AeropressWhite2.pdf in Resources */,
+				1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */,
 				1DCB7D461DAE08F50037AF39 /* Media.xcassets in Resources */,
 				1DBDB7121D7582C100C996E1 /* Raleway-ExtraBold.ttf in Resources */,
 				1DD53DE21DA56CD600D7F3F9 /* ShopsDeselected.pdf in Resources */,
