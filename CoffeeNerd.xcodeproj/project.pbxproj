@@ -38,7 +38,7 @@
 		1D38120C1DAD4B3B008FCEF2 /* ColdBrewSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812001DAD4B3B008FCEF2 /* ColdBrewSmall.pdf */; };
 		1D38120D1DAD4B3B008FCEF2 /* VacuumSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812011DAD4B3B008FCEF2 /* VacuumSmall.pdf */; };
 		1D38120E1DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */; };
-		1D38120F1DAD4B3B008FCEF2 /* BeeHouseSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812031DAD4B3B008FCEF2 /* BeeHouseSmall.pdf */; };
+		1D38120F1DAD4B3B008FCEF2 /* BeehouseSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */; };
 		1D3812101DAD4B3B008FCEF2 /* V60Small.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812041DAD4B3B008FCEF2 /* V60Small.pdf */; };
 		1D3812111DAD4B3B008FCEF2 /* BonmacSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812051DAD4B3B008FCEF2 /* BonmacSmall.pdf */; };
 		1D3812121DAD4B3B008FCEF2 /* MokaPotSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812061DAD4B3B008FCEF2 /* MokaPotSmall.pdf */; };
@@ -81,8 +81,8 @@
 		1DC8AFE11D9E705000478934 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE01D9E705000478934 /* CoreDataStack.swift */; };
 		1DC8AFE31D9EC5E300478934 /* CoffeeFetchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */; };
 		1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */; };
-		1DCB7D421DAE03650037AF39 /* BeeHouse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */; };
-		1DCB7D441DAE03720037AF39 /* BeeHouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */; };
+		1DCB7D421DAE03650037AF39 /* Beehouse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D411DAE03650037AF39 /* Beehouse.pdf */; };
+		1DCB7D441DAE03720037AF39 /* BeehouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */; };
 		1DCB7D461DAE08F50037AF39 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D451DAE08F50037AF39 /* Media.xcassets */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
@@ -138,7 +138,7 @@
 		1D3812001DAD4B3B008FCEF2 /* ColdBrewSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrewSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/ColdBrewSmall.pdf"; sourceTree = "<group>"; };
 		1D3812011DAD4B3B008FCEF2 /* VacuumSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/VacuumSmall.pdf"; sourceTree = "<group>"; };
 		1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWaveSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/KalitaWaveSmall.pdf"; sourceTree = "<group>"; };
-		1D3812031DAD4B3B008FCEF2 /* BeeHouseSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeeHouseSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/BeeHouseSmall.pdf"; sourceTree = "<group>"; };
+		1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/BeehouseSmall.pdf"; sourceTree = "<group>"; };
 		1D3812041DAD4B3B008FCEF2 /* V60Small.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60Small.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/V60Small.pdf"; sourceTree = "<group>"; };
 		1D3812051DAD4B3B008FCEF2 /* BonmacSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BonmacSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/BonmacSmall.pdf"; sourceTree = "<group>"; };
 		1D3812061DAD4B3B008FCEF2 /* MokaPotSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MokaPotSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/MokaPotSmall.pdf"; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		1DC8AFE01D9E705000478934 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeFetchResultsController.swift; sourceTree = "<group>"; };
 		1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeListDataSourceController.swift; sourceTree = "<group>"; };
-		1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeeHouse.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/BeeHouse.pdf"; sourceTree = "<group>"; };
-		1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeeHouseWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/BeeHouseWhite.pdf"; sourceTree = "<group>"; };
+		1DCB7D411DAE03650037AF39 /* Beehouse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Beehouse.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Beehouse.pdf"; sourceTree = "<group>"; };
+		1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/BeehouseWhite.pdf"; sourceTree = "<group>"; };
 		1DCB7D451DAE08F50037AF39 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
@@ -318,9 +318,9 @@
 				1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */,
 				1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */,
 				1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */,
-				1DCB7D411DAE03650037AF39 /* BeeHouse.pdf */,
-				1D3812031DAD4B3B008FCEF2 /* BeeHouseSmall.pdf */,
-				1DCB7D431DAE03720037AF39 /* BeeHouseWhite.pdf */,
+				1DCB7D411DAE03650037AF39 /* Beehouse.pdf */,
+				1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */,
+				1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */,
 				1D3811D51DAD4B1E008FCEF2 /* Bonmac.pdf */,
 				1D3812051DAD4B3B008FCEF2 /* BonmacSmall.pdf */,
 				1D3811ED1DAD4B2C008FCEF2 /* BonmacWhite.pdf */,
@@ -497,7 +497,7 @@
 				1D3811FD1DAD4B2C008FCEF2 /* EvaSoloWhite.pdf in Resources */,
 				1D3811E31DAD4B1E008FCEF2 /* FrenchPress.pdf in Resources */,
 				1D3811FC1DAD4B2C008FCEF2 /* MokaPotWhite.pdf in Resources */,
-				1DCB7D441DAE03720037AF39 /* BeeHouseWhite.pdf in Resources */,
+				1DCB7D441DAE03720037AF39 /* BeehouseWhite.pdf in Resources */,
 				1DBDB71A1D7582C100C996E1 /* Raleway-MediumItalic.ttf in Resources */,
 				1D3812121DAD4B3B008FCEF2 /* MokaPotSmall.pdf in Resources */,
 				1DD53DDE1DA56CD600D7F3F9 /* CoffeeListDeselected.pdf in Resources */,
@@ -521,7 +521,7 @@
 				1D38120C1DAD4B3B008FCEF2 /* ColdBrewSmall.pdf in Resources */,
 				1DBDB71C1D7582C100C996E1 /* Raleway-SemiBold.ttf in Resources */,
 				1D38120B1DAD4B3B008FCEF2 /* ChemexSmall.pdf in Resources */,
-				1DCB7D421DAE03650037AF39 /* BeeHouse.pdf in Resources */,
+				1DCB7D421DAE03650037AF39 /* Beehouse.pdf in Resources */,
 				1D38120E1DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf in Resources */,
 				1D3811DD1DAD4B1E008FCEF2 /* Vacuum.pdf in Resources */,
 				1DBDB7101D7582C100C996E1 /* Raleway-Bold.ttf in Resources */,
@@ -532,7 +532,7 @@
 				1DBDB71D1D7582C100C996E1 /* Raleway-SemiBoldItalic.ttf in Resources */,
 				1DBDB71F1D7582C100C996E1 /* Raleway-ThinItalic.ttf in Resources */,
 				1DD53DDD1DA56CD600D7F3F9 /* AddCoffeeDeselected.pdf in Resources */,
-				1D38120F1DAD4B3B008FCEF2 /* BeeHouseSmall.pdf in Resources */,
+				1D38120F1DAD4B3B008FCEF2 /* BeehouseSmall.pdf in Resources */,
 				1DBDB70F1D7582C100C996E1 /* Raleway-BlackItalic.ttf in Resources */,
 				1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */,
 			);
