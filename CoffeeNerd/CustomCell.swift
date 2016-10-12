@@ -70,7 +70,7 @@ class CustomCell: UITableViewCell {
                
                 let attributedTitle = NSAttributedString(string:  brewingSetting.name, attributes:attributes)
                 brewingButtons[i].setAttributedTitle(attributedTitle, for: .normal)
-                brewingButtons[i].setImage(brewingSetting.iconSelected(), for: .normal)
+                brewingButtons[i].setImage(brewingSetting.iconSmall(), for: .normal)
                 brewingButtons[i].isHidden = false
                 i+=1
             }
@@ -128,7 +128,7 @@ class CustomCell: UITableViewCell {
             
             let attributedTitle = NSAttributedString(string:  brewingSetting.name, attributes:attributes)
             brewingButtons[i].setAttributedTitle(attributedTitle, for: .normal)
-            brewingButtons[i].setImage(brewingSetting.iconSelected(), for: .normal)
+            brewingButtons[i].setImage(brewingSetting.iconSmall(), for: .normal)
             brewingButtons[i].isHidden = false
             i+=1
         }

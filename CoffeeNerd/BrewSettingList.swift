@@ -24,7 +24,7 @@ class BrewSettingList: NSObject {
         // Test if a BrewSetting array is found in archive
         guard let archivedItems = NSKeyedUnarchiver.unarchiveObject(withFile: self.itemArchiveURL.path!) as? [BrewSetting] else {
             // In case we couldn't retrieve data in archive (ie: 1st launch or data erase) we initiate and return a table of BrewSetting with every settings isPosessed = false
-            var firstInitSettingsList: [BrewSetting] = [BrewSetting(name: "Espresso"), BrewSetting(name: "French Press"), BrewSetting(name: "Cold Brew"),  BrewSetting(name: "Chemex"), BrewSetting(name: "V60"), BrewSetting(name: "Kalita Wave"), BrewSetting(name: "Bonmac"), BrewSetting(name: "Italian"), BrewSetting(name: "Vacuum"), BrewSetting(name: "Aeropress"), BrewSetting(name: "Bee House"), BrewSetting(name: "Eva Solo")]
+            var firstInitSettingsList: [BrewSetting] = [BrewSetting(name: "Espresso"), BrewSetting(name: "French Press"), BrewSetting(name: "Cold Brew"),  BrewSetting(name: "Chemex"), BrewSetting(name: "V60"), BrewSetting(name: "Kalita Wave"), BrewSetting(name: "Bonmac"), BrewSetting(name: "Moka Pot"), BrewSetting(name: "Vacuum"), BrewSetting(name: "Aeropress"), BrewSetting(name: "Beehouse"), BrewSetting(name: "Eva Solo")]
             return firstInitSettingsList
         }
         

@@ -102,8 +102,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="8oq-D7-LkY"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -114,8 +115,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="QcP-my-Umh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -126,8 +128,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="4eP-6K-V3e"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -138,8 +141,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="cDY-c3-ZbQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -150,8 +154,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="mIz-ma-UMG"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -162,8 +167,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="1mn-ZG-6hh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -174,8 +180,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="88w-vj-BV0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -186,8 +193,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="nwc-Eb-B4u"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -198,8 +206,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="eSG-py-Wst"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -210,8 +219,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="qib-02-OPd"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -222,8 +232,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="8L5-2z-1dq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -234,8 +245,9 @@
                                                         <constraint firstAttribute="height" constant="35" id="T5a-Mh-fjE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                                    <inset key="titleEdgeInsets" minX="86" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <inset key="imageEdgeInsets" minX="60" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
                                                     <state key="normal" title="BOUTOn" image="Bee House">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -694,17 +706,17 @@
                                                             <color key="textColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvk-Fu-CGh">
+                                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvk-Fu-CGh">
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="25" id="Lmm-RV-gE4"/>
-                                                                <constraint firstAttribute="height" constant="32" id="ZN6-GB-zih"/>
+                                                                <constraint firstAttribute="width" constant="40" id="Lmm-RV-gE4"/>
+                                                                <constraint firstAttribute="height" constant="40" id="ZN6-GB-zih"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="92" id="0pt-Ri-Lpm"/>
-                                                        <constraint firstItem="uvk-Fu-CGh" firstAttribute="top" secondItem="jSo-c5-a7O" secondAttribute="top" constant="30" id="GbP-U7-jlO"/>
+                                                        <constraint firstItem="uvk-Fu-CGh" firstAttribute="top" secondItem="jSo-c5-a7O" secondAttribute="top" constant="20" id="GbP-U7-jlO"/>
                                                         <constraint firstItem="uvk-Fu-CGh" firstAttribute="centerX" secondItem="jSo-c5-a7O" secondAttribute="centerX" id="V9Z-T3-DWO"/>
                                                         <constraint firstItem="Yx0-DG-xq4" firstAttribute="leading" secondItem="jSo-c5-a7O" secondAttribute="leading" constant="20" id="aan-W6-ZMQ"/>
                                                         <constraint firstItem="Yx0-DG-xq4" firstAttribute="top" secondItem="uvk-Fu-CGh" secondAttribute="bottom" constant="18" id="l9v-3g-yNN"/>

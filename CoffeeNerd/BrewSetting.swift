@@ -41,6 +41,14 @@ class BrewSetting: NSObject, NSCoding {
         }
     }
     
+    func iconSmall() -> UIImage {
+        if let image = UIImage(named: "\(self.name)Small") {
+            return image
+        } else {
+            return UIImage(named: "Default")!
+        }
+    }
+    
     func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey: "name")
         aCoder.encode(isPosessed, forKey: "isPosessed")
