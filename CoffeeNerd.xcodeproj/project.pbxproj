@@ -13,7 +13,7 @@
 		1D065A4F1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */; };
 		1D3811DA1DAD4B1E008FCEF2 /* Aeropress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */; };
 		1D3811DB1DAD4B1E008FCEF2 /* Chemex.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */; };
-		1D3811DC1DAD4B1E008FCEF2 /* ColdBrew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D01DAD4B1E008FCEF2 /* ColdBrew.pdf */; };
+		1D3811DC1DAD4B1E008FCEF2 /* Cold Brew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */; };
 		1D3811DD1DAD4B1E008FCEF2 /* Vacuum.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D11DAD4B1E008FCEF2 /* Vacuum.pdf */; };
 		1D3811DE1DAD4B1E008FCEF2 /* KalitaWave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D21DAD4B1E008FCEF2 /* KalitaWave.pdf */; };
 		1D3811E01DAD4B1E008FCEF2 /* V60.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D41DAD4B1E008FCEF2 /* V60.pdf */; };
@@ -24,7 +24,7 @@
 		1D3811E51DAD4B1E008FCEF2 /* EvaSolo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */; };
 		1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */; };
 		1D3811F31DAD4B2C008FCEF2 /* ChemexWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */; };
-		1D3811F41DAD4B2C008FCEF2 /* ColdBrewWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */; };
+		1D3811F41DAD4B2C008FCEF2 /* Cold BrewWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E81DAD4B2C008FCEF2 /* Cold BrewWhite.pdf */; };
 		1D3811F51DAD4B2C008FCEF2 /* VacuumWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */; };
 		1D3811F61DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EA1DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf */; };
 		1D3811F81DAD4B2C008FCEF2 /* V60White.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811EC1DAD4B2C008FCEF2 /* V60White.pdf */; };
@@ -35,7 +35,7 @@
 		1D3811FD1DAD4B2C008FCEF2 /* EvaSoloWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811F11DAD4B2C008FCEF2 /* EvaSoloWhite.pdf */; };
 		1D38120A1DAD4B3B008FCEF2 /* AeropressSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */; };
 		1D38120B1DAD4B3B008FCEF2 /* ChemexSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811FF1DAD4B3B008FCEF2 /* ChemexSmall.pdf */; };
-		1D38120C1DAD4B3B008FCEF2 /* ColdBrewSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812001DAD4B3B008FCEF2 /* ColdBrewSmall.pdf */; };
+		1D38120C1DAD4B3B008FCEF2 /* Cold BrewSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812001DAD4B3B008FCEF2 /* Cold BrewSmall.pdf */; };
 		1D38120D1DAD4B3B008FCEF2 /* VacuumSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812011DAD4B3B008FCEF2 /* VacuumSmall.pdf */; };
 		1D38120E1DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */; };
 		1D38120F1DAD4B3B008FCEF2 /* BeehouseSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */; };
@@ -113,7 +113,7 @@
 		1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ChangeAppearanceBasedOnState.swift"; sourceTree = "<group>"; };
 		1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Aeropress.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Aeropress.pdf"; sourceTree = "<group>"; };
 		1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Chemex.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Chemex.pdf"; sourceTree = "<group>"; };
-		1D3811D01DAD4B1E008FCEF2 /* ColdBrew.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrew.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/ColdBrew.pdf"; sourceTree = "<group>"; };
+		1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold Brew.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Cold Brew.pdf"; sourceTree = "<group>"; };
 		1D3811D11DAD4B1E008FCEF2 /* Vacuum.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Vacuum.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Vacuum.pdf"; sourceTree = "<group>"; };
 		1D3811D21DAD4B1E008FCEF2 /* KalitaWave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWave.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/KalitaWave.pdf"; sourceTree = "<group>"; };
 		1D3811D41DAD4B1E008FCEF2 /* V60.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/V60.pdf"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		1D3811D91DAD4B1E008FCEF2 /* EvaSolo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSolo.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/EvaSolo.pdf"; sourceTree = "<group>"; };
 		1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/AeropressWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ChemexWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ChemexWhite.pdf"; sourceTree = "<group>"; };
-		1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrewWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/ColdBrewWhite.pdf"; sourceTree = "<group>"; };
+		1D3811E81DAD4B2C008FCEF2 /* Cold BrewWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold BrewWhite.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/white/Cold BrewWhite.pdf"; sourceTree = "<group>"; };
 		1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/VacuumWhite.pdf"; sourceTree = "<group>"; };
 		1D3811EA1DAD4B2C008FCEF2 /* KalitaWaveWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWaveWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/KalitaWaveWhite.pdf"; sourceTree = "<group>"; };
 		1D3811EC1DAD4B2C008FCEF2 /* V60White.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = V60White.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/V60White.pdf"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		1D3811F11DAD4B2C008FCEF2 /* EvaSoloWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EvaSoloWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/EvaSoloWhite.pdf"; sourceTree = "<group>"; };
 		1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AeropressSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/AeropressSmall.pdf"; sourceTree = "<group>"; };
 		1D3811FF1DAD4B3B008FCEF2 /* ChemexSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ChemexSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/ChemexSmall.pdf"; sourceTree = "<group>"; };
-		1D3812001DAD4B3B008FCEF2 /* ColdBrewSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ColdBrewSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/ColdBrewSmall.pdf"; sourceTree = "<group>"; };
+		1D3812001DAD4B3B008FCEF2 /* Cold BrewSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold BrewSmall.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/small/Cold BrewSmall.pdf"; sourceTree = "<group>"; };
 		1D3812011DAD4B3B008FCEF2 /* VacuumSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = VacuumSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/VacuumSmall.pdf"; sourceTree = "<group>"; };
 		1D3812021DAD4B3B008FCEF2 /* KalitaWaveSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = KalitaWaveSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/KalitaWaveSmall.pdf"; sourceTree = "<group>"; };
 		1D3812031DAD4B3B008FCEF2 /* BeehouseSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/BeehouseSmall.pdf"; sourceTree = "<group>"; };
@@ -327,9 +327,9 @@
 				1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */,
 				1D3811FF1DAD4B3B008FCEF2 /* ChemexSmall.pdf */,
 				1D3811E71DAD4B2C008FCEF2 /* ChemexWhite.pdf */,
-				1D3811D01DAD4B1E008FCEF2 /* ColdBrew.pdf */,
-				1D3812001DAD4B3B008FCEF2 /* ColdBrewSmall.pdf */,
-				1D3811E81DAD4B2C008FCEF2 /* ColdBrewWhite.pdf */,
+				1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */,
+				1D3812001DAD4B3B008FCEF2 /* Cold BrewSmall.pdf */,
+				1D3811E81DAD4B2C008FCEF2 /* Cold BrewWhite.pdf */,
 				1D3811D61DAD4B1E008FCEF2 /* Espresso.pdf */,
 				1D3812091DAD4B3B008FCEF2 /* EspressoSmall.pdf */,
 				1D3811EE1DAD4B2C008FCEF2 /* EspressoWhite.pdf */,
@@ -478,7 +478,7 @@
 				1DD53DE31DA56CD600D7F3F9 /* SettingsDeselected.pdf in Resources */,
 				1D3812111DAD4B3B008FCEF2 /* BonmacSmall.pdf in Resources */,
 				1DBDB70E1D7582C100C996E1 /* Raleway-Black.ttf in Resources */,
-				1D3811DC1DAD4B1E008FCEF2 /* ColdBrew.pdf in Resources */,
+				1D3811DC1DAD4B1E008FCEF2 /* Cold Brew.pdf in Resources */,
 				1D3811FA1DAD4B2C008FCEF2 /* EspressoWhite.pdf in Resources */,
 				1DBDB71E1D7582C100C996E1 /* Raleway-Thin.ttf in Resources */,
 				1DBDB7161D7582C100C996E1 /* Raleway-Italic.ttf in Resources */,
@@ -486,7 +486,7 @@
 				1DD53DDC1DA56CD600D7F3F9 /* AddCoffeeSelected.pdf in Resources */,
 				1DD53DDF1DA56CD600D7F3F9 /* SettingsSelected.pdf in Resources */,
 				1DD53DE11DA56CD600D7F3F9 /* ShopsSelected.pdf in Resources */,
-				1D3811F41DAD4B2C008FCEF2 /* ColdBrewWhite.pdf in Resources */,
+				1D3811F41DAD4B2C008FCEF2 /* Cold BrewWhite.pdf in Resources */,
 				1DD53DE01DA56CD600D7F3F9 /* CoffeeListSelected.pdf in Resources */,
 				1D3811F21DAD4B2C008FCEF2 /* AeropressWhite.pdf in Resources */,
 				1DCB7D461DAE08F50037AF39 /* Media.xcassets in Resources */,
@@ -518,7 +518,7 @@
 				1D3811DA1DAD4B1E008FCEF2 /* Aeropress.pdf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
 				1D3811F51DAD4B2C008FCEF2 /* VacuumWhite.pdf in Resources */,
-				1D38120C1DAD4B3B008FCEF2 /* ColdBrewSmall.pdf in Resources */,
+				1D38120C1DAD4B3B008FCEF2 /* Cold BrewSmall.pdf in Resources */,
 				1DBDB71C1D7582C100C996E1 /* Raleway-SemiBold.ttf in Resources */,
 				1D38120B1DAD4B3B008FCEF2 /* ChemexSmall.pdf in Resources */,
 				1DCB7D421DAE03650037AF39 /* Beehouse.pdf in Resources */,
