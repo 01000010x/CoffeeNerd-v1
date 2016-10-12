@@ -58,10 +58,14 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let reusableview: UICollectionReusableView
-
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableCell", for: indexPath) as! HeaderReusableCell
-        //headerView.headerLabel.text = "What kind of brewing method do you use?"
-        reusableview = headerView
+        
+        if kind == UICollectionElementKindSectionHeader {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderReusableCell", for: indexPath) as! HeaderReusableCell
+            reusableview = headerView
+        } else {
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FooterSettings", for: indexPath) as! FooterSettingsCollectionView
+            reusableview = footerView
+        }
         
         return reusableview
     }

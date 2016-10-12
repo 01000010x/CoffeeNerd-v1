@@ -50,9 +50,14 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeCell", for: indexPath) as! CustomCell
         let coffeeBean = fetchedResultsController.object(at: indexPath)
+        let selectedBackgroundView = UIView()
         
+        selectedBackgroundView.backgroundColor = UIColor.white
+        cell.backgroundView = selectedBackgroundView
+
         cell.configAppearance()
         cell.configureLabel(withLabel: coffeeBean.name)
+        cell.configureOrigin(withString: coffeeBean.origin)
         
         return cell
     }

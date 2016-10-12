@@ -11,6 +11,9 @@ import UIKit
 class CustomCell: UITableViewCell {
 
     @IBOutlet var name: UILabel!
+    @IBOutlet var origin: UILabel!
+    
+    
     @IBOutlet var brewingButton1: UIButton!
     @IBOutlet var brewingButton2: UIButton!
     @IBOutlet var brewingButton3: UIButton!
@@ -30,9 +33,10 @@ class CustomCell: UITableViewCell {
     var isAppearanceConfig = false
     var brewingButtons = [UIButton]()
     
-    class var defaultHeight: CGFloat { get { return 44.0 } }
-    class var expandedHeight: CGFloat { get { return 35.0 } } // One size expand (use one size per brew settings to display
-    
+    class var defaultHeight: CGFloat { get { return 75.0 } }
+    class var expandedHeight: CGFloat { get { return 42.0 } } // One size expand (use one size per brew settings to display
+
+
     private let attributes = [
         NSForegroundColorAttributeName: UIColor.white,
         NSFontAttributeName : UIFont(name: "Raleway-Regular", size: 14)!
@@ -144,6 +148,17 @@ class CustomCell: UITableViewCell {
     
     func configureLabel(withLabel label: String) {
         self.name.text = label
+    }
+    
+    func configureOrigin(withString origin: String) {
+        self.origin.text = origin
+    }
+    
+    func changeLabelFont() {
+        let selectedNameAttribute = [NSForegroundColorAttributeName: UIColor.green,
+                                             NSFontAttributeName : UIFont(name: "Raleway-Bold", size: 18)!]
+        
+        self.name.attributedText = NSAttributedString(string:  self.name.text!, attributes:selectedNameAttribute)
     }
     
 }

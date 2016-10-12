@@ -49,7 +49,15 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
 
     
     override func viewDidLayoutSubviews() {
@@ -217,6 +225,7 @@ class AddCoffeeViewController: UIViewController, UITableViewDelegate, UITableVie
         configureHeaderTextFields()
         loadSettings()
         brewingTableView.reloadData()
+        brewingTableView.setContentOffset(CGPoint.zero, animated: true)
         
     }
     

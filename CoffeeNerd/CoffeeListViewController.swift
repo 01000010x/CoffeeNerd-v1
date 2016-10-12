@@ -34,10 +34,17 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       if let indexPath = selectedIndexPath {
+       tableListView.reloadData()
+       
+        if let indexPath = selectedIndexPath {
             let cell = tableListView.cellForRow(at: indexPath) as! CustomCell
             cell.ignoreFrameChanges();
-            tableListView.reloadRows(at: [indexPath], with: .automatic)
+            print("\(cell.name.text)")
+            let selectedBackgroundView = UIView()
+            selectedBackgroundView.backgroundColor = ProjectColors.Blue.medium
+            cell.backgroundView = selectedBackgroundView
+            //tableListView.reloadRows(at: [indexPath], with: .automatic)
+            
             configureButtonsTarget(atIndexPath: indexPath)
         }
     }
@@ -93,10 +100,33 @@ class CoffeeListViewController: UIViewController, UITableViewDelegate {
             // a cell has just been tapped that is not the previous
             if let current = selectedIndexPath {
                 // Configure the buttons action
+                let selectedBackgroundView = UIView()
+                selectedBackgroundView.backgroundColor = ProjectColors.Blue.medium
+                let cell = tableView.cellForRow(at: indexPath) as! CustomCell
+                cell.backgroundView = selectedBackgroundView
+                cell.changeLabelFont()
                 configureButtonsTarget(atIndexPath: current)
             }
         }
     }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.backgroundColor = UIColor.white
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.backgroundView = selectedBackgroundView
+
+    }
+    
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        if let indexPath = selectedIndexPath {
+            let cell = self.tableListView.cellForRow(at: indexPath)
+            (cell as! CustomCell).ignoreFrameChanges()
+            selectedIndexPath = nil
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         (cell as! CustomCell).watchFrameChanges()

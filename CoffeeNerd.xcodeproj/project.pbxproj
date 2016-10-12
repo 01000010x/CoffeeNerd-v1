@@ -84,6 +84,7 @@
 		1DCB7D421DAE03650037AF39 /* Beehouse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D411DAE03650037AF39 /* Beehouse.pdf */; };
 		1DCB7D441DAE03720037AF39 /* BeehouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */; };
 		1DCB7D461DAE08F50037AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D451DAE08F50037AF39 /* Assets.xcassets */; };
+		1DCB7D4C1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB7D4B1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
 		1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35301D847FF9004086F7 /* Main.storyboard */; };
@@ -186,6 +187,7 @@
 		1DCB7D411DAE03650037AF39 /* Beehouse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Beehouse.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Beehouse.pdf"; sourceTree = "<group>"; };
 		1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/BeehouseWhite.pdf"; sourceTree = "<group>"; };
 		1DCB7D451DAE08F50037AF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DCB7D4B1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterSettingsCollectionView.swift; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
 		1DCC35301D847FF9004086F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				1DBDB7251D75998C00C996E1 /* CustomCell.swift */,
 				1D065A3C1D8C8860002231A1 /* HeaderReusableCell.swift */,
 				1D065A3E1D8C88CB002231A1 /* SettingCellView.swift */,
+				1DCB7D4B1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
 				1DC8AFDF1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift in Sources */,
 				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
+				1DCB7D4C1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift in Sources */,
 				1D065A3F1D8C88CB002231A1 /* SettingCellView.swift in Sources */,
 				1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */,
 				1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */,
