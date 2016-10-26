@@ -14,6 +14,8 @@ class CoffeeFetchedResultsController: NSFetchedResultsController<CoffeeBean>, NS
     
     private let tableView: UITableView
     
+    var predicate = ""
+    
     init(managedObjectContext: NSManagedObjectContext, withTableView tableView: UITableView) {
         self.tableView = tableView
         super.init(fetchRequest: CoffeeBean.fetchRequest(), managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
@@ -27,6 +29,10 @@ class CoffeeFetchedResultsController: NSFetchedResultsController<CoffeeBean>, NS
         } catch let error as NSError {
             print("Unresolved error : \(error), \(error.userInfo)")
         }
+        
+    }
+    
+    func fetchRequestWithPredicate(predicate: NSPredicate) {
         
     }
 

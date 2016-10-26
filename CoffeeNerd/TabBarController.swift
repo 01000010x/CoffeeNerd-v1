@@ -14,12 +14,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // If no settings recorded, display the settings view
-        if BrewSettingList.sharedInstance.settingsList.count == 0 {
-            selectedItem = 3
-        } else {
-            selectedItem = 0
-        }
+        // DIsplay list view
+        selectedItem = 0
         
         self.selectedViewController = self.viewControllers![selectedItem]
         configureTabBarColors()
@@ -76,13 +72,10 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         // To display a different font for selected and un selected tab bar item
         // Didn't work while setting normal and selected states
         // Reset font on each tab bar item
-        
         selectedItem = item.tag
         configureItemFonts()
-    
     }
     
     
-
     
 }

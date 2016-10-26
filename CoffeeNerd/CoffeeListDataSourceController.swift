@@ -23,6 +23,7 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
         return controller
     }()
 
+    var filteredCoffeeBeans = [CoffeeBean]()
     
     init(tableView: UITableView) {
         self.tableView = tableView
@@ -61,4 +62,5 @@ class CoffeeListDataSource: NSObject, UITableViewDataSource {
         
         return cell
     }
+
 }

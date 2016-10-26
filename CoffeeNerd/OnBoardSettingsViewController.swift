@@ -1,25 +1,24 @@
 //
-//  SettingsViewController.swift
+//  OnBoardSettingsViewController.swift
 //  CoffeeNerd
 //
-//  Created by Baptiste Leguey on 9/11/16.
+//  Created by Baptiste Leguey on 10/26/16.
 //  Copyright © 2016 Baptiste Leguey. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class OnBoardSettings: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     // MARK: IBOutlets
     
     @IBOutlet var collectionView: UICollectionView!
     
-    
     // MARK: Constants and Variables Declaration
     
     // Singleton instance for Brewing Settings List
     let brewSettingList = BrewSettingList.sharedInstance.settingsList
-    
+    var alert:UIAlertController!
     
     // MARK: View Controller
     
@@ -29,11 +28,7 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
         collectionView.reloadData()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        BrewSettingList.sharedInstance.save()
-    }
     
-
     // MARK: Collection View Data Source
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -99,9 +94,9 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0)
     }
-
     
-
+    
+    
     // MARK: Internal Controller Functions
     
     func updateCellAppearance(_ cell: SettingCellView, atIndexPath indexPath: IndexPath, isSelected selected: Bool) {
@@ -117,7 +112,25 @@ class SettingsViewController: UIViewController, UICollectionViewDataSource, UICo
             cell.itemImageView.image = brewSettingList[(indexPath as NSIndexPath).row].iconNotSelected()
         }
     }
+    
+
+    @IBAction func validateButtonTapped(_ sender: AnyObject) {
+        if BrewSettingList.sharedInstance.settingsList.index(where: ({$0.isPosessed == true})) != nil {
+            BrewSettingList.sharedInstance.save()
+            performSegue(withIdentifier: "presentTabBar", sender: self)
+        } else {
+            showAlert()
+        }
+    }
+    
+    func showAlert() {
+        self.alert = UIAlertController(title: nil, message: "Pick a least one brewing method :3", preferredStyle: UIAlertControllerStyle.alert)
+        self.present(self.alert, animated: true, completion: nil)
+        Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(OnBoardSettings.dismissAlert), userInfo: nil, repeats: false)
+    }
+    
+    func dismissAlert(){
+        // Dismiss the alert from here
+        self.alert.dismiss(animated: true, completion: nil)
+    }
 }
-
-
-

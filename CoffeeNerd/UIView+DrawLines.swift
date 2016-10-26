@@ -5,6 +5,8 @@
 //  Created by Baptiste Leguey on 9/13/16.
 //  Copyright © 2016 Baptiste Leguey. All rights reserved.
 //
+// This class extension provides a function to draw and set a line from a point to another with a defined color in a view
+
 
 import Foundation
 import UIKit

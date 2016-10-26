@@ -5,6 +5,9 @@
 //  Created by Baptiste Leguey on 9/30/16.
 //  Copyright © 2016 Baptiste Leguey. All rights reserved.
 //
+// Data Controller Class // Standard
+// Pretty much what Xcode does in the AppDelegate when you choose to use CoreData at the beginning of the project
+
 
 import Foundation
 import UIKit

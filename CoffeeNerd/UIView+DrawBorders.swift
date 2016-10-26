@@ -5,28 +5,13 @@
 //  Created by Baptiste Leguey on 9/12/16.
 //  Copyright © 2016 Baptiste Leguey. All rights reserved.
 //
+// This class extension provides functions to draw and set a line on each side of a view
+
 
 import Foundation
 import UIKit
 
 extension UIView {
-    
-    func drawButtonBorders(_ sides: [String], color: UIColor, padding: CGFloat) {
-        for side: String in sides {
-            switch side {
-            case "Left":
-                self.drawLeftLine(color, padding: padding)
-            case "Right":
-                self.drawRightLine(color, padding: padding)
-            case "Top":
-                self.drawTopLine(color, padding: padding)
-            case "Bottom":
-                self.drawBottomLine(color, padding: padding)
-            default:
-                print("Wrong Parameters")
-            }
-        }
-    }
     
     func drawBottomLine(_ color: UIColor, padding: CGFloat) {
         let bottomBorder = CALayer()
@@ -34,7 +19,6 @@ extension UIView {
         bottomBorder.backgroundColor = color.cgColor
         self.layer.addSublayer(bottomBorder)
     }
-    
     
     
     func drawTopLine(_ color: UIColor, padding: CGFloat) {

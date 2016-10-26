@@ -5,6 +5,10 @@
 //  Created by Baptiste Leguey on 9/14/16.
 //  Copyright © 2016 Baptiste Leguey. All rights reserved.
 //
+// This class represent a Brewing method. 
+// The User can choose any number of method of BrewSetting in the setting tab
+// The BrewSetting chosen in the settings will constitute a list that will be saved in the user info
+// -----------------------------------------------------------------------------------------------------
 
 import Foundation
 import UIKit
@@ -21,10 +25,10 @@ class BrewSetting: NSObject, NSCoding {
     required init(coder aDecoder: NSCoder) {
         name = aDecoder.decodeObject(forKey: "name") as! String
         isPosessed = aDecoder.decodeBool(forKey: "isPosessed")
-        //print("NAME : \(name)")
         super.init()
     }
     
+    // Return the icon for the NORMAL state
     func iconNotSelected() -> UIImage {
         if let image = UIImage(named: self.name) {
             return image
@@ -33,6 +37,7 @@ class BrewSetting: NSObject, NSCoding {
         }
     }
     
+    // Return the icon for the SELECTED state
     func iconSelected() -> UIImage {
         if let image = UIImage(named: "\(self.name)White") {
             return image
@@ -41,6 +46,7 @@ class BrewSetting: NSObject, NSCoding {
         }
     }
     
+    // Return the NORMAL state icon in a SMALLER dimension
     func iconSmall() -> UIImage {
         if let image = UIImage(named: "\(self.name)Small") {
             return image
@@ -52,7 +58,6 @@ class BrewSetting: NSObject, NSCoding {
     func encode(with aCoder: NSCoder) {
         aCoder.encode(name, forKey: "name")
         aCoder.encode(isPosessed, forKey: "isPosessed")
-        
     }
     
 }

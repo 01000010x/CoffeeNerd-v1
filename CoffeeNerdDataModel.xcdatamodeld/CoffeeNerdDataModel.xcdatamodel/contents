@@ -2,7 +2,8 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="BrewType" representedClassName=".BrewType" syncable="YES">
         <attribute name="brewingMethodName" attributeType="String" syncable="YES"/>
-        <attribute name="brewingTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="brewingTimeMinutes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="brewingTimeSeconds" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="groundSetting" attributeType="String" syncable="YES"/>
         <attribute name="groundWeight" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="coffeeBeans" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoffeeBean" inverseName="brewTypes" inverseEntity="CoffeeBean" syncable="YES"/>
@@ -15,7 +16,7 @@
         <relationship name="brewTypes" toMany="YES" deletionRule="Nullify" destinationEntity="BrewType" inverseName="coffeeBeans" inverseEntity="BrewType" syncable="YES"/>
     </entity>
     <elements>
-        <element name="BrewType" positionX="-36" positionY="36" width="128" height="120"/>
+        <element name="BrewType" positionX="-36" positionY="36" width="128" height="135"/>
         <element name="CoffeeBean" positionX="-54" positionY="-9" width="128" height="120"/>
     </elements>
 </model>

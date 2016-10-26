@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1D065A3D1D8C8860002231A1 /* HeaderReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A3C1D8C8860002231A1 /* HeaderReusableCell.swift */; };
 		1D065A3F1D8C88CB002231A1 /* SettingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A3E1D8C88CB002231A1 /* SettingCellView.swift */; };
-		1D065A431D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A421D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift */; };
-		1D065A4F1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */; };
 		1D3811DA1DAD4B1E008FCEF2 /* Aeropress.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */; };
 		1D3811DB1DAD4B1E008FCEF2 /* Chemex.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */; };
 		1D3811DC1DAD4B1E008FCEF2 /* Cold Brew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */; };
@@ -47,7 +45,12 @@
 		1D3812151DAD4B3B008FCEF2 /* EspressoSmall.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D3812091DAD4B3B008FCEF2 /* EspressoSmall.pdf */; };
 		1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */; };
 		1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */; };
-		1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */; };
+		1D4AAAB01DB51F1C00003D3B /* UITextField+ErrorStateAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAAAF1DB51F1C00003D3B /* UITextField+ErrorStateAppearance.swift */; };
+		1D9AB4DE1DBDF6BA00741CFA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9AB4DD1DBDF6BA00741CFA /* MapKit.framework */; };
+		1D9AB4E01DBE028A00741CFA /* ShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB4DF1DBE028A00741CFA /* ShopsViewController.swift */; };
+		1D9AB4EA1DBFA90300741CFA /* Decaf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1D9AB4E91DBFA90300741CFA /* Decaf.pdf */; };
+		1D9AB4EC1DC0B40D00741CFA /* OnBoardSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AB4EB1DC0B40D00741CFA /* OnBoardSettingsViewController.swift */; };
+		1DA385CC1DBDEE0F00C48580 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1DA385CB1DBDEE0F00C48580 /* Podfile */; };
 		1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */; };
 		1DBDB6DD1D7441DA00C996E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6DB1D7441DA00C996E1 /* LaunchScreen.storyboard */; };
 		1DBDB6E91D7447CF00C996E1 /* CellDescriptor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */; };
@@ -85,6 +88,11 @@
 		1DCB7D441DAE03720037AF39 /* BeehouseWhite.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */; };
 		1DCB7D461DAE08F50037AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D451DAE08F50037AF39 /* Assets.xcassets */; };
 		1DCB7D4C1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB7D4B1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift */; };
+		1DCB7D6F1DAE84D90037AF39 /* CloseMenu.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D6E1DAE84D90037AF39 /* CloseMenu.pdf */; };
+		1DCB7D711DAE86010037AF39 /* Shop.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCB7D701DAE86010037AF39 /* Shop.pdf */; };
+		1DCB7D731DAFB35D0037AF39 /* RadialGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB7D721DAFB35D0037AF39 /* RadialGradientLayer.swift */; };
+		1DCB7D751DB23C3B0037AF39 /* UIView+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB7D741DB23C3B0037AF39 /* UIView+RoundedCorners.swift */; };
+		1DCB7D771DB260930037AF39 /* UITextField+DoneButtonKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB7D761DB260930037AF39 /* UITextField+DoneButtonKeyboard.swift */; };
 		1DCC35251D847A8D004086F7 /* Origin.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35231D847A8D004086F7 /* Origin.pdf */; };
 		1DCC352A1D847B0C004086F7 /* TimerIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35271D847B0C004086F7 /* TimerIcon.pdf */; };
 		1DCC35311D847FF9004086F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCC35301D847FF9004086F7 /* Main.storyboard */; };
@@ -110,8 +118,6 @@
 /* Begin PBXFileReference section */
 		1D065A3C1D8C8860002231A1 /* HeaderReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderReusableCell.swift; sourceTree = "<group>"; };
 		1D065A3E1D8C88CB002231A1 /* SettingCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCellView.swift; sourceTree = "<group>"; };
-		1D065A421D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+SelectiveRoundedCorners.swift"; sourceTree = "<group>"; };
-		1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ChangeAppearanceBasedOnState.swift"; sourceTree = "<group>"; };
 		1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Aeropress.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Aeropress.pdf"; sourceTree = "<group>"; };
 		1D3811CF1DAD4B1E008FCEF2 /* Chemex.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Chemex.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Chemex.pdf"; sourceTree = "<group>"; };
 		1D3811D01DAD4B1E008FCEF2 /* Cold Brew.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Cold Brew.pdf"; path = "../../../../Downloads/drive-download-20161011T115935Z/grey/Cold Brew.pdf"; sourceTree = "<group>"; };
@@ -148,7 +154,12 @@
 		1D3812091DAD4B3B008FCEF2 /* EspressoSmall.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = EspressoSmall.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/small/EspressoSmall.pdf"; sourceTree = "<group>"; };
 		1D494F661D96FED1008A07C5 /* AddCoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeViewController.swift; sourceTree = "<group>"; };
 		1D494F901D992A41008A07C5 /* AddCoffeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCoffeeCell.swift; sourceTree = "<group>"; };
-		1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1D4AAAAF1DB51F1C00003D3B /* UITextField+ErrorStateAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+ErrorStateAppearance.swift"; sourceTree = "<group>"; };
+		1D9AB4DD1DBDF6BA00741CFA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1D9AB4DF1DBE028A00741CFA /* ShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsViewController.swift; sourceTree = "<group>"; };
+		1D9AB4E91DBFA90300741CFA /* Decaf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Decaf.pdf; path = ../../../../Downloads/Decaf.pdf; sourceTree = "<group>"; };
+		1D9AB4EB1DC0B40D00741CFA /* OnBoardSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardSettingsViewController.swift; sourceTree = "<group>"; };
+		1DA385CB1DBDEE0F00C48580 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1DBDB6CF1D7441DA00C996E1 /* CoffeeNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBDB6D21D7441DA00C996E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DBDB6DC1D7441DA00C996E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -188,6 +199,11 @@
 		1DCB7D431DAE03720037AF39 /* BeehouseWhite.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = BeehouseWhite.pdf; path = "../../../../Downloads/drive-download-20161011T115935Z/white/BeehouseWhite.pdf"; sourceTree = "<group>"; };
 		1DCB7D451DAE08F50037AF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DCB7D4B1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterSettingsCollectionView.swift; sourceTree = "<group>"; };
+		1DCB7D6E1DAE84D90037AF39 /* CloseMenu.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = CloseMenu.pdf; path = ../../../../Downloads/CloseMenu.pdf; sourceTree = "<group>"; };
+		1DCB7D701DAE86010037AF39 /* Shop.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Shop.pdf; path = ../../../../Downloads/Shop.pdf; sourceTree = "<group>"; };
+		1DCB7D721DAFB35D0037AF39 /* RadialGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientLayer.swift; sourceTree = "<group>"; };
+		1DCB7D741DB23C3B0037AF39 /* UIView+RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundedCorners.swift"; sourceTree = "<group>"; };
+		1DCB7D761DB260930037AF39 /* UITextField+DoneButtonKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+DoneButtonKeyboard.swift"; sourceTree = "<group>"; };
 		1DCC35231D847A8D004086F7 /* Origin.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Origin.pdf; path = ../../../../Downloads/Origin.pdf; sourceTree = "<group>"; };
 		1DCC35271D847B0C004086F7 /* TimerIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = TimerIcon.pdf; path = ../../../../Downloads/TimerIcon.pdf; sourceTree = "<group>"; };
 		1DCC35301D847FF9004086F7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -208,6 +224,9 @@
 		1DDA5C4C1D89F0FC00D75110 /* BrewSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSetting.swift; sourceTree = "<group>"; };
 		1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Default.pdf; path = ../../../../Downloads/Default.pdf; sourceTree = "<group>"; };
 		1DE631301DAB9D0A00C7E8D1 /* BrewSettingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrewSettingList.swift; sourceTree = "<group>"; };
+		7E51ADD6DF1211937441E770 /* Pods-CoffeeNerd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeNerd.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeNerd/Pods-CoffeeNerd.release.xcconfig"; sourceTree = "<group>"; };
+		9537B60CBF36895B8F61EA6A /* Pods-CoffeeNerd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeNerd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeNerd/Pods-CoffeeNerd.debug.xcconfig"; sourceTree = "<group>"; };
+		BE61D79A7C534F7754C83020 /* Pods_CoffeeNerd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeNerd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9AB4DE1DBDF6BA00741CFA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +244,11 @@
 		1D065A441D8D6956002231A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1D065A4E1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift */,
-				1D065A421D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift */,
 				1DCC35621D872ACE004086F7 /* UIView+DrawBorders.swift */,
 				1DCC35671D88897D004086F7 /* UIView+DrawLines.swift */,
+				1DCB7D741DB23C3B0037AF39 /* UIView+RoundedCorners.swift */,
+				1DCB7D761DB260930037AF39 /* UITextField+DoneButtonKeyboard.swift */,
+				1D4AAAAF1DB51F1C00003D3B /* UITextField+ErrorStateAppearance.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +270,8 @@
 			children = (
 				1DBDB6D11D7441DA00C996E1 /* CoffeeNerd */,
 				1DBDB6D01D7441DA00C996E1 /* Products */,
+				9D55E7C718D8566BA2F4BD21 /* Pods */,
+				6505089850199DA5E9A7B0F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +293,7 @@
 				1D065A451D8D6978002231A1 /* View */,
 				1D065A441D8D6956002231A1 /* Extensions */,
 				1DBDB6F61D75823B00C996E1 /* Ressources */,
+				1DA385CB1DBDEE0F00C48580 /* Podfile */,
 			);
 			path = CoffeeNerd;
 			sourceTree = "<group>";
@@ -280,9 +304,10 @@
 				1DCB7D451DAE08F50037AF39 /* Assets.xcassets */,
 				1DBDB6DE1D7441DA00C996E1 /* Info.plist */,
 				1DBDB6E81D7447CF00C996E1 /* CellDescriptor.plist */,
-				1DCC35601D860F6E004086F7 /* ProjectColors.swift */,
-				1DC8AFC11D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld */,
 				1DC8AFE01D9E705000478934 /* CoreDataStack.swift */,
+				1DCC35601D860F6E004086F7 /* ProjectColors.swift */,
+				1DCB7D721DAFB35D0037AF39 /* RadialGradientLayer.swift */,
+				1DC8AFC11D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld */,
 				1DBDB7221D75929E00C996E1 /* Images */,
 				1DBDB6F71D75824A00C996E1 /* Fonts */,
 			);
@@ -318,6 +343,7 @@
 		1DBDB7221D75929E00C996E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1D9AB4E91DBFA90300741CFA /* Decaf.pdf */,
 				1D3811CE1DAD4B1E008FCEF2 /* Aeropress.pdf */,
 				1D3811FE1DAD4B3B008FCEF2 /* AeropressSmall.pdf */,
 				1D3811E61DAD4B2C008FCEF2 /* AeropressWhite.pdf */,
@@ -356,6 +382,7 @@
 				1D3811E91DAD4B2C008FCEF2 /* VacuumWhite.pdf */,
 				1DD53DD41DA56CD600D7F3F9 /* AddCoffeeSelected.pdf */,
 				1DD53DD51DA56CD600D7F3F9 /* AddCoffeeDeselected.pdf */,
+				1DCB7D6E1DAE84D90037AF39 /* CloseMenu.pdf */,
 				1DD53DD81DA56CD600D7F3F9 /* CoffeeListSelected.pdf */,
 				1DD53DD61DA56CD600D7F3F9 /* CoffeeListDeselected.pdf */,
 				1DD53DD71DA56CD600D7F3F9 /* SettingsSelected.pdf */,
@@ -364,6 +391,7 @@
 				1DD53DDA1DA56CD600D7F3F9 /* ShopsDeselected.pdf */,
 				1DDA5C4E1D8A0C6D00D75110 /* Default.pdf */,
 				1DCC35231D847A8D004086F7 /* Origin.pdf */,
+				1DCB7D701DAE86010037AF39 /* Shop.pdf */,
 				1DCC355C1D85D9DD004086F7 /* TimerCup.pdf */,
 				1DCC35271D847B0C004086F7 /* TimerIcon.pdf */,
 			);
@@ -391,8 +419,9 @@
 				1DC8AFE21D9EC5E300478934 /* CoffeeFetchResultsController.swift */,
 				1DBDB6EE1D75642500C996E1 /* CoffeeListViewController.swift */,
 				1DC8AFE41DA1036700478934 /* CoffeeListDataSourceController.swift */,
-				1DBC959A1D7CD01E00A18D5B /* MenuViewController.swift */,
+				1D9AB4EB1DC0B40D00741CFA /* OnBoardSettingsViewController.swift */,
 				1DCC355E1D860CF1004086F7 /* SettingsViewController.swift */,
+				1D9AB4DF1DBE028A00741CFA /* ShopsViewController.swift */,
 				1DD330F21DA51B9F009F2222 /* TabBarController.swift */,
 			);
 			name = Controller;
@@ -407,6 +436,24 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		6505089850199DA5E9A7B0F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D9AB4DD1DBDF6BA00741CFA /* MapKit.framework */,
+				BE61D79A7C534F7754C83020 /* Pods_CoffeeNerd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D55E7C718D8566BA2F4BD21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9537B60CBF36895B8F61EA6A /* Pods-CoffeeNerd.debug.xcconfig */,
+				7E51ADD6DF1211937441E770 /* Pods-CoffeeNerd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,9 +461,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DBDB6E11D7441DA00C996E1 /* Build configuration list for PBXNativeTarget "CoffeeNerd" */;
 			buildPhases = (
+				AB672B37FD940856D2F03C00 /* [CP] Check Pods Manifest.lock */,
 				1DBDB6CB1D7441DA00C996E1 /* Sources */,
 				1DBDB6CC1D7441DA00C996E1 /* Frameworks */,
 				1DBDB6CD1D7441DA00C996E1 /* Resources */,
+				AD59828B4E045FF95C65FCBA /* [CP] Embed Pods Frameworks */,
+				C9684073F1D579242DEE15AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -467,7 +517,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DCB7D711DAE86010037AF39 /* Shop.pdf in Resources */,
 				1DDA5C4F1D8A0C6D00D75110 /* Default.pdf in Resources */,
+				1D9AB4EA1DBFA90300741CFA /* Decaf.pdf in Resources */,
 				1D3811DE1DAD4B1E008FCEF2 /* Kalita Wave.pdf in Resources */,
 				1D3811F81DAD4B2C008FCEF2 /* V60White.pdf in Resources */,
 				1DBDB7131D7582C100C996E1 /* Raleway-ExtraBoldItalic.ttf in Resources */,
@@ -483,6 +535,7 @@
 				1DBDB70E1D7582C100C996E1 /* Raleway-Black.ttf in Resources */,
 				1D3811DC1DAD4B1E008FCEF2 /* Cold Brew.pdf in Resources */,
 				1D3811FA1DAD4B2C008FCEF2 /* EspressoWhite.pdf in Resources */,
+				1DCB7D6F1DAE84D90037AF39 /* CloseMenu.pdf in Resources */,
 				1DBDB71E1D7582C100C996E1 /* Raleway-Thin.ttf in Resources */,
 				1DBDB7161D7582C100C996E1 /* Raleway-Italic.ttf in Resources */,
 				1DBDB7111D7582C100C996E1 /* Raleway-BoldItalic.ttf in Resources */,
@@ -517,6 +570,7 @@
 				1DCC355D1D85D9DD004086F7 /* TimerCup.pdf in Resources */,
 				1D3811FB1DAD4B2C008FCEF2 /* French PressWhite.pdf in Resources */,
 				1DBDB70D1D7582C100C996E1 /* OFL.txt in Resources */,
+				1DA385CC1DBDEE0F00C48580 /* Podfile in Resources */,
 				1DBDB7151D7582C100C996E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
 				1D3811DA1DAD4B1E008FCEF2 /* Aeropress.pdf in Resources */,
 				1DBDB7181D7582C100C996E1 /* Raleway-LightItalic.ttf in Resources */,
@@ -543,6 +597,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB672B37FD940856D2F03C00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD59828B4E045FF95C65FCBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoffeeNerd/Pods-CoffeeNerd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9684073F1D579242DEE15AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoffeeNerd/Pods-CoffeeNerd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1DBDB6CB1D7441DA00C996E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -556,21 +658,24 @@
 				1DBDB7271D75998C00C996E1 /* CustomCell.swift in Sources */,
 				1D494F911D992A41008A07C5 /* AddCoffeeCell.swift in Sources */,
 				1DC8AFDA1D9D27FF00478934 /* BrewType+CoreDataClass.swift in Sources */,
+				1DCB7D771DB260930037AF39 /* UITextField+DoneButtonKeyboard.swift in Sources */,
 				1DBDB6EC1D75638E00C996E1 /* CoffeeDetailsViewController.swift in Sources */,
 				1DC8AFDF1D9D458A00478934 /* CoffeeBean+CoreDataProperties.swift in Sources */,
-				1DBC959C1D7CD01E00A18D5B /* MenuViewController.swift in Sources */,
 				1DCB7D4C1DAE3E4E0037AF39 /* FooterSettingsCollectionView.swift in Sources */,
+				1DCB7D731DAFB35D0037AF39 /* RadialGradientLayer.swift in Sources */,
 				1D065A3F1D8C88CB002231A1 /* SettingCellView.swift in Sources */,
 				1DCC35611D860F6E004086F7 /* ProjectColors.swift in Sources */,
 				1DCC35681D88897D004086F7 /* UIView+DrawLines.swift in Sources */,
+				1D9AB4E01DBE028A00741CFA /* ShopsViewController.swift in Sources */,
 				1DC8AFE51DA1036700478934 /* CoffeeListDataSourceController.swift in Sources */,
 				1D494F671D96FED1008A07C5 /* AddCoffeeViewController.swift in Sources */,
-				1D065A431D8D6229002231A1 /* UIButton+SelectiveRoundedCorners.swift in Sources */,
 				1DCC35631D872ACE004086F7 /* UIView+DrawBorders.swift in Sources */,
-				1D065A4F1D8ED3BF002231A1 /* UIButton+ChangeAppearanceBasedOnState.swift in Sources */,
 				1D065A3D1D8C8860002231A1 /* HeaderReusableCell.swift in Sources */,
+				1D4AAAB01DB51F1C00003D3B /* UITextField+ErrorStateAppearance.swift in Sources */,
 				1DC8AFC31D9BE42400478934 /* CoffeeNerdDataModel.xcdatamodeld in Sources */,
+				1D9AB4EC1DC0B40D00741CFA /* OnBoardSettingsViewController.swift in Sources */,
 				1DDA5C4D1D89F0FC00D75110 /* BrewSetting.swift in Sources */,
+				1DCB7D751DB23C3B0037AF39 /* UIView+RoundedCorners.swift in Sources */,
 				1DC8AFE11D9E705000478934 /* CoreDataStack.swift in Sources */,
 				1DBDB6D31D7441DA00C996E1 /* AppDelegate.swift in Sources */,
 				1DC8AFBF1D9BE2D100478934 /* CoffeeBean+CoreDataClass.swift in Sources */,
@@ -684,6 +789,7 @@
 		};
 		1DBDB6E21D7441DA00C996E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9537B60CBF36895B8F61EA6A /* Pods-CoffeeNerd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -699,6 +805,7 @@
 		};
 		1DBDB6E31D7441DA00C996E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E51ADD6DF1211937441E770 /* Pods-CoffeeNerd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

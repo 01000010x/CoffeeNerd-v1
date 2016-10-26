@@ -16,11 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-       /* self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let initialViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
-        window!.rootViewController = initialViewController
-        window!.makeKeyAndVisible()
- */
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController: UIViewController
+        let index = BrewSettingList.sharedInstance.settingsList.index(where: ({$0.isPosessed == true}))
+        
+        if index == nil{
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "OnBoardSettings")
+        } else {
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -44,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
+        // Save the BrewSettingList in case the app terminate
         BrewSettingList.sharedInstance.save()
     }
 
